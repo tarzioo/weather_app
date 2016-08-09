@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Please log in or Register{% endblock %}
+{% block content %}
+
+<h1>Welcome to the weather app</h1>
+
+<h1>For Existing users, please log in</h1>
+<form action='/' method="GET">
+    <label>Email (username):
+        <input type="text" name="email"></input></label><br>
+    <label>Password:
+        <input type="password" name="password"></input></label><br>
+        <input type="submit" value="Log Me In">
+    </form>
+
+{% endblock %}  
+
