@@ -4,6 +4,25 @@
     <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
 </head>
 <body>
+    <p><a href='/updates/<user_id>'>Main Page</a></p>
+
+    {% if session['user_id'] is defined %}
+        <button><a href="/logout">Logout</a></button></br>
+        <br><br>
+        <h1>Post and update</h1>
+            <form action="/updates/<user_id>" method="POST">
+                <label>Post:
+                    <input type="text" name="update"></label></label><br>
+                <input type="submit" value="Post My Update">
+        </form>
+    {% endif %}
+
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
+
     {% block content %}BLOCK CONTENT HERE{% endblock %}
 
 </body>

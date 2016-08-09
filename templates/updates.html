@@ -2,6 +2,9 @@
 {% block title %}Hello{% endblock %}
 {% block content %}
 
-<p>welcome{{ user_firstname }}</p>
+<p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}</p>
+
+
+
 
 {% endblock %}

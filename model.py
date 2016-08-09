@@ -34,6 +34,7 @@ class User(db.Model):
 class Update(db.Model):
     """Table to store updates being posted"""
 
+
     __tablename__ = "updates"
 
     update_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
@@ -43,6 +44,7 @@ class Update(db.Model):
 
     def __repr__(self):
         """Provide helpful representation when printed"""
+
 
         return "<Update update_id=%s user=%s post=%s>" % (self.update_id, self.user, self.post)      
 
@@ -89,12 +91,6 @@ def get_user_by_email(email):
     user = User.query.filter_by(email=email).first()
 
     return user 
-
-
-
-
-
-
 
 
 ##############################################################################

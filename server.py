@@ -15,7 +15,7 @@ app.secret_key = "ABC"
 # error.
 app.jinja_env.undefined = StrictUndefined
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
     """homepage"""
 
@@ -26,17 +26,17 @@ def index():
 def login():
     """Login page"""
 
-    if request.method =="POST":
-        user_email = request.form.get('email')
-        user_password = request.form.get('password')
-        result = get_user_by_email_and_password(user_email, user_password)
+    if request.method == "POST":
+        email = request.form.get('email')
+        password = request.form.get('password')
+        result = get_user_by_email_and_password(email, password)
 
         if result:
-            flash('Hello %s, you are logged in' % user_email)
+            flash('Hello %s, you are logged in' % email)
             session["user_id"] = result.user_id
-            return redirect('/updates')
+            return redirect('/updates/%s' % result.user_id)
         else:
-            flash("Error, %s and password did not match" % user_email)
+            flash("Error, %s and password did not match registered user" % email)
             return redirect('/login')
 
     else:
@@ -48,25 +48,44 @@ def register():
     """Register new user"""
 
     if request.method == 'POST':
-        user_email = request.form.get('email')
-        user_password = request.form.get('password')
-        user_firstname = request.form.get('firstname')
-        user_lastname = request.form.get('lastname')
-        user_zipcode = request.form.get('zipcode')
-        result = get_user_by_email(user_email)
+        email = request.form.get('email')
+        password = request.form.get('password')
+        first_name = request.form.get('firstname')
+        last_name = request.form.get('lastname')
+        zipcode = request.form.get('zipcode')
+        result = get_user_by_email(email)
+        print result
 
         if result:
             #Show alert, username exists
-            flash('That %s already exists. Please try login or try a different username and password') % user_email
+            flash('That %s already exists. Please try login or try a different username and password') % email
             return redirect('/register')
         else:
-            add_user(user_email, user_password, user_firstname, user_lastname, user_zipcode)
-            flash('%s has been successfully registered and logged in') % user_email
+            add_user(email, password, firstname, lastname, zipcode)
+            flash('%s has been successfully registered and logged in') % email
             session['user_id'] = result.user_id
-            return render_template('updates.html', user_firstname=user_firstname)
+            return redirect('/updates/%s' % result.user_id)
 
     else:
         return render_template("register.html")
+
+
+@app.route('/logout')
+def logout_user():
+    """logout user"""
+
+    flash('Logged out')
+    del session['user_id']
+
+    return redirect('/')
+
+
+@app.route('/updates/<user_id>')
+def post_updates(user_id):
+
+    result = User.query.get(user_id)
+
+    return render_template('updates.html', user=result)                   
 
 
 
@@ -76,6 +95,7 @@ if __name__ == "__main__":
     app.debug = True
 
     connect_to_db(app)
+    db.create_all()
 
     # Use the DebugToolbar
     DebugToolbarExtension(app)
