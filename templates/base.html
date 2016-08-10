@@ -8,13 +8,18 @@
 
     {% if session['user_id'] is defined %}
         <button><a href="/logout">Logout</a></button></br>
-        <br><br>
-        <h1>Post and update</h1>
-            <form action="/updates/<user_id>" method="POST">
-                <label>Post:
-                    <input type="text" name="update"></label></label><br>
-                <input type="submit" value="Post My Update">
+        <br>
+        <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}</p>
+        <br>
+        <form action="">
+            <p>Post and update: </p>
+            <div>
+                <textarea name="update"></textarea>
+            </div>
+            <input type="submit" value="Post My Update">
         </form>
+        </form>
+        <p>------------------------------------------------------------</p>
     {% endif %}
 
 

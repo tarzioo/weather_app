@@ -1,6 +1,7 @@
 """Models and database functions for project"""
 
 from flask_sqlalchemy import SQLAlchemy
+import datetime
 
 # This is the connection to the PostgreSQL database; we're getting this through
 # the Flask-SQLAlchemy helper library. On this, we can find the `session`
@@ -25,6 +26,37 @@ class User(db.Model):
     last_name = db.Column(db.String(30), nullable=False)
     zipcode = db.Column(db.String(15), nullable=False)
 
+    @staticmethod
+    def add_user(email, password, first_name, last_name, zipcode):
+        """Add new user"""
+
+
+        user = User(email=email, password=password, first_name=first_name,
+                last_name=last_name, zipcode=zipcode)
+
+        db.session.add(user)
+        db.session.commit()
+        return user
+
+    @staticmethod
+    def get_user_by_email_and_password(email, password):
+        """Get existing user by email and password"""
+
+
+        user = User.query.filter_by(email=email, password=password).first()
+
+        return user
+
+
+    @staticmethod
+    def get_user_by_email(email):
+        """get existing user by email"""
+
+        user = User.query.filter_by(email=email).first()
+
+        return user
+
+
     def __repr__(self):
         """Provide helpful representation when printed"""
 
@@ -39,58 +71,40 @@ class Update(db.Model):
 
     update_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     user = db.Column(db.Integer, db.ForeignKey('users.user_id'))
-    #time = db.Column()
+    time = db.Column(db.DateTime, default=datetime.datetime.utcnow())
     post = db.Column(db.String(500), nullable=False)
+
+
+    @staticmethod
+    def add_update(user, post):
+        """Add update post"""
+
+        update = Update(post=post, user=user)
+
+        db.session.add(update)
+        db.session.commit()
+
+        return update
+
 
     def __repr__(self):
         """Provide helpful representation when printed"""
 
 
-        return "<Update update_id=%s user=%s post=%s>" % (self.update_id, self.user, self.post)      
+        return "<Update update_id=%s user=%s time=%s post=%s>" % (self.update_id, self.user, self.time, self.post)
 
 
 ##############################################################################
 # Add, update, delete functions
 
-def add_user(email, password, first_name, last_name, zipcode):
-    """Add new user"""
-
-
-    user = User(email=email, password=password, first_name=first_name,
-            last_name=last_name, zipcode=zipcode)
-
-
-    db.session.add(user)
-    db.session.commit()
-
-
-def add_update(post):
-    """Add update post"""
-
-
-    update = Update(post=post)
-
-    db.session.add(update)
-    db.session.commit()
 
 
 
 ##############################################################################
 # Query functions
-def get_user_by_email_and_password(email, password):
-    """Get existing user by email and password"""
 
 
-    user = User.query.filter_by(email=email, password=password).first()
 
-    return user
-
-def get_user_by_email(email):
-    """get existing user by email"""
-
-    user = User.query.filter_by(email=email).first()
-
-    return user 
 
 
 ##############################################################################

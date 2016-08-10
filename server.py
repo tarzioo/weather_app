@@ -29,7 +29,7 @@ def login():
     if request.method == "POST":
         email = request.form.get('email')
         password = request.form.get('password')
-        result = get_user_by_email_and_password(email, password)
+        result = User.get_user_by_email_and_password(email, password)
 
         if result:
             flash('Hello %s, you are logged in' % email)
@@ -53,7 +53,7 @@ def register():
         first_name = request.form.get('firstname')
         last_name = request.form.get('lastname')
         zipcode = request.form.get('zipcode')
-        result = get_user_by_email(email)
+        result = User.get_user_by_email(email)
         print result
 
         if result:
@@ -61,7 +61,7 @@ def register():
             flash('That %s already exists. Please try login or try a different username and password') % email
             return redirect('/register')
         else:
-            add_user(email, password, firstname, lastname, zipcode)
+            User.add_user(email, password, first_name, last_name, zipcode)
             flash('%s has been successfully registered and logged in') % email
             session['user_id'] = result.user_id
             return redirect('/updates/%s' % result.user_id)
@@ -84,8 +84,9 @@ def logout_user():
 def post_updates(user_id):
 
     result = User.query.get(user_id)
+    update = Update.query.filter_by(user=user_id).all()
 
-    return render_template('updates.html', user=result)                   
+    return render_template('updates.html', user=result, update=update)                   
 
 
 

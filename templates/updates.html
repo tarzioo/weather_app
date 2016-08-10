@@ -2,7 +2,14 @@
 {% block title %}Hello{% endblock %}
 {% block content %}
 
-<p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}</p>
+<h1>UPDATES</h1>
+
+<ul>
+    {% for item in update %}
+        <li>{{ user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}<br>{{ item.post }}"</li><br>
+    {% endfor %}
+</ul>
+
 
 
 
