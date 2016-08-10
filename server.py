@@ -1,6 +1,6 @@
 from jinja2 import StrictUndefined
 
-from flask import Flask, render_template, redirect, request, flash, session
+from flask import Flask, render_template, redirect, request, flash, session, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model import *
@@ -86,7 +86,20 @@ def post_updates(user_id):
     result = User.query.get(user_id)
     update = Update.query.filter_by(user=user_id).all()
 
-    return render_template('updates.html', user=result, update=update)                   
+    return render_template('updates.html', user=result, update=update)
+
+
+@app.route('/update-zipcode', methods=["POST"])
+def zipcode_update():
+
+    print "reached route"
+
+    user_id = session['user_id']
+    zipcode = request.form.get('zipcode')
+
+    User.update_zipcode(user_id, zipcode)
+
+    return "Zip code updated"
 
 
 

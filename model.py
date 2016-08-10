@@ -52,9 +52,24 @@ class User(db.Model):
     def get_user_by_email(email):
         """get existing user by email"""
 
+
         user = User.query.filter_by(email=email).first()
 
         return user
+
+    @staticmethod
+    def update_zipcode(user_id, zipcode):
+        """update existing zipcode"""
+
+        user = User.query.filter_by(user_id=user_id).first()
+        user.zipcode = zipcode
+        db.session.commit()
+
+        return user
+
+
+
+
 
 
     def __repr__(self):

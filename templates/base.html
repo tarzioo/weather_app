@@ -9,7 +9,12 @@
     {% if session['user_id'] is defined %}
         <button><a href="/logout">Logout</a></button></br>
         <br>
-        <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}</p>
+        <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}<br>
+            <label>Change Location to:
+            <input id="change-zipcode-field" type="text" name="zipcode">
+            <button id="button-zipcode" type="button">Update Zipcode</button>
+        </label>
+        </p>
         <br>
         <form action="">
             <p>Post and update: </p>
@@ -29,6 +34,7 @@
 
 
     {% block content %}BLOCK CONTENT HERE{% endblock %}
-
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/static/weather.js"></script>
 </body>
 </html>
