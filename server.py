@@ -91,8 +91,8 @@ def post_updates(user_id):
 
 @app.route('/update-zipcode', methods=["POST"])
 def zipcode_update():
+    """replace the zipcode with a new value"""
 
-    print "reached route"
 
     user_id = session['user_id']
     zipcode = request.form.get('zipcode')
@@ -100,6 +100,20 @@ def zipcode_update():
     User.update_zipcode(user_id, zipcode)
 
     return "Zip code updated"
+
+
+@app.route('/update-post', methods=["POST"])
+def post_update():
+    """add post to updates table"""
+
+    user_id = session['user_id']
+    post = request.form.get('post')
+
+    Update.add_update(user_id, post)
+
+    return "Updated Post"
+
+
 
 
 

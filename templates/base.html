@@ -10,18 +10,16 @@
         <button><a href="/logout">Logout</a></button></br>
         <br>
         <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}<br>
-            <label>Change Location to:
+        <label>Change Location to:
             <input id="change-zipcode-field" type="text" name="zipcode">
             <button id="button-zipcode" type="button">Update Zipcode</button>
         </label>
         </p>
         <br>
-        <form action="">
-            <p>Post and update: </p>
-            <div>
-                <textarea name="update"></textarea>
-            </div>
-            <input type="submit" value="Post My Update">
+        <label>Post and update:
+            <textarea id="post-update-field" type="text" name="update"></textarea>
+            <button id="button-update" type="button">Post My Update</button>
+        </label>
         </form>
         </form>
         <p>------------------------------------------------------------</p>

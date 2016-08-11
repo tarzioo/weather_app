@@ -69,9 +69,6 @@ class User(db.Model):
 
 
 
-
-
-
     def __repr__(self):
         """Provide helpful representation when printed"""
 
@@ -93,14 +90,13 @@ class Update(db.Model):
     @staticmethod
     def add_update(user, post):
         """Add update post"""
-
-        update = Update(post=post, user=user)
+        print "reached staticmethod"
+        update = Update(user=user, post=post)
 
         db.session.add(update)
         db.session.commit()
 
         return update
-
 
     def __repr__(self):
         """Provide helpful representation when printed"""
