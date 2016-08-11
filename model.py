@@ -91,7 +91,8 @@ class Update(db.Model):
     def add_update(user, post):
         """Add update post"""
         print "reached staticmethod"
-        update = Update(user=user, post=post)
+        time = datetime.datetime.utcnow()
+        update = Update(user=user, post=post, time=time)
 
         db.session.add(update)
         db.session.commit()

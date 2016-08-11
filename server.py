@@ -32,11 +32,11 @@ def login():
         result = User.get_user_by_email_and_password(email, password)
 
         if result:
-            flash('Hello %s, you are logged in' % email)
+            #flash('Hello %s, you are logged in' % email)
             session["user_id"] = result.user_id
             return redirect('/updates/%s' % result.user_id)
         else:
-            flash("Error, %s and password did not match registered user" % email)
+            #flash("Error, %s and password did not match registered user" % email)
             return redirect('/login')
 
     else:
@@ -58,11 +58,11 @@ def register():
 
         if result:
             #Show alert, username exists
-            flash('That %s already exists. Please try login or try a different username and password') % email
+            #flash('That %s already exists. Please try login or try a different username and password') % email
             return redirect('/register')
         else:
             User.add_user(email, password, first_name, last_name, zipcode)
-            flash('%s has been successfully registered and logged in') % email
+            #flash('%s has been successfully registered and logged in') % email
             session['user_id'] = result.user_id
             return redirect('/updates/%s' % result.user_id)
 
