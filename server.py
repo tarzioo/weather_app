@@ -34,7 +34,7 @@ def login():
         if result:
             #flash('Hello %s, you are logged in' % email)
             session["user_id"] = result.user_id
-            return redirect('/updates/%s' % result.user_id)
+            return redirect('/updates')
         else:
             #flash("Error, %s and password did not match registered user" % email)
             return redirect('/login')
@@ -63,8 +63,8 @@ def register():
         else:
             User.add_user(email, password, first_name, last_name, zipcode)
             #flash('%s has been successfully registered and logged in') % email
-            session['user_id'] = result.user_id
-            return redirect('/updates/%s' % result.user_id)
+            #session['user_id'] = result.user_id
+            return redirect('/login')
 
     else:
         return render_template("register.html")
@@ -74,19 +74,20 @@ def register():
 def logout_user():
     """logout user"""
 
-    flash('Logged out')
+    # flash('Logged out')
     del session['user_id']
 
     return redirect('/')
 
 
-@app.route('/updates/<user_id>')
-def post_updates(user_id):
+@app.route('/updates')
+def post_updates():
 
-    result = User.query.get(user_id)
-    update = Update.query.filter_by(user=user_id).all()
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    update = Update.query.filter_by(user=user).all()
 
-    return render_template('updates.html', user=result, update=update)
+    return render_template('updates.html', user=user, update=update)
 
 
 @app.route('/update-zipcode', methods=["POST"])
@@ -113,6 +114,28 @@ def post_update():
 
     return "Updated Post"
 
+
+@app.route('/friends')
+def show_friends():
+    """show and add friends"""
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+
+    return render_template('friends.html', user=user)
+
+
+@app.route("/friend-search", methods=["POST"])
+def search_for_friend():
+    """Search for a friend"""
+
+
+    user_id = session['user_id']
+    email = request.form.get('email')
+
+    user = User.get_user_by_email(email)
+
+    return user
 
 
 

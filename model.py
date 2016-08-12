@@ -82,9 +82,12 @@ class Update(db.Model):
     __tablename__ = "updates"
 
     update_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    user = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     time = db.Column(db.DateTime, default=datetime.datetime.utcnow())
     post = db.Column(db.String(500), nullable=False)
+
+    #define relationship
+    user = db.relationship("User", backref=db.backref("updates"))
 
 
     @staticmethod
@@ -103,7 +106,28 @@ class Update(db.Model):
         """Provide helpful representation when printed"""
 
 
-        return "<Update update_id=%s user=%s time=%s post=%s>" % (self.update_id, self.user, self.time, self.post)
+        return "<Update update_id=%s user_id=%s time=%s post=%s>" % (self.update_id, self.user_id, self.time, self.post)
+
+
+class Friendship(db.Model):
+    """Table to store relationship between friends"""
+
+    __tablename__ = "friendships"
+
+    friendship_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+    friend_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+
+    user = db.relationship("User", foreign_keys="Friendship.user_id",
+        backref=db.backref("friendships"))
+    friend = db.relationship("User", foreign_keys="Friendship.friend_id")
+
+
+
+    def __repr__(self):
+        """provideo helpful representation when printed"""
+
+        return "<Friendship friendship_id=%s user_id=%s friend_id=%s>" % (self.friendship_id, self.user_id, self.friend_id)      
 
 
 ##############################################################################
