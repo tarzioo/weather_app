@@ -51,30 +51,27 @@ function showSearchComplete(user) {
     $("#friend-search-results").html("We found " + user.first_name + " " + user.last_name + "<br>Did you want to add them to your friends?<br><form id='add-friend-'><input type='radio' name='add-friend' value='yes'>Yes</input><input type='radio' name='add-friend' value='no'>No</input><button id='add-friend> type='button'>Add To My Friends</button></form>"
             );
     console.log("finished finding friend");
-
-
-    function showFriendAdded(result) {
-    alert("Friend has been added");
-    }
-
-
-    function addFriend(evt) {
-        evt.preventDefault();
-        console.log("entered addFriend function");
-        var value = $('input:radio[name=add-friend]:checked').val();
-
-
-        $.post("/add-friend", value, showFriendAdded);
-        console.log(value);
-
-    }
-
-
-    $("#add-friend").on("click", addFriend);
-
-
 }
    
+
+function showFriendAdded(result) {
+    alert("Friend has been added");
+}
+
+
+function addFriend(evt) {
+    evt.preventDefault();
+    console.log("entered addFriend function");
+    var value = $('input:radio[name=add-friend]:checked').val();
+
+
+    $.post("/add-friend", value, showFriendAdded);
+    console.log(value);
+
+}
+
+
+$("#add-friend").on("click", addFriend);
 
 
 function friendSearch(evt) {
