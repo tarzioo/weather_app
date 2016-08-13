@@ -129,13 +129,12 @@ def show_friends():
 def search_for_friend():
     """Search for a friend"""
 
-
     user_id = session['user_id']
     email = request.form.get('email')
 
     user = User.get_user_by_email(email)
 
-    return user
+    return jsonify(user)
 
 
 

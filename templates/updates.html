@@ -3,7 +3,7 @@
 {% block content %}
 
 <h1>UPDATES</h1>
-{{ update }}
+
 <ul>
     {% for item in update|reverse %}
         <li>{{ user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}<br>{{ item.post }}"</li><br>

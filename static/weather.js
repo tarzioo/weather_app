@@ -40,22 +40,37 @@ function postUpdate(evt) {
 $("#button-update").on("click", postUpdate);
 
 
-// function showSearchComplete(result) {
-//     alert("search completed")
-// }
 
-//     function friendSearch(evt) {
-//         evt.preventDefault();
 
-//         var textInput = {
-//             "email": $("#friend-search-input").val()
-//         };
+function showSearchComplete(user) {
+    alert("search completed");
+    $("#friend-search-results").html(user.first_name);
+}
 
-//         $.post("/friend-search", textInput, showNewUpdate);
-//             var email = 
-//         $("#friend-search-results").html(email)
-//         //reloads the page after the ajax call
-//         window.location.reload();
-//     }
+    function friendSearch(evt) {
+        evt.preventDefault();
 
-//     $("button-friend-search").on("click", friendSearch);
+        var textInput = {
+            "email": $("#friend-search-field").val()
+        };
+
+        $.post("/friend-search", textInput, showSearchComplete);
+             
+        
+        //reloads the page after the ajax call
+        //window.location.reload();
+    }
+
+    $("#button-friend-search").on("click", friendSearch);
+
+
+    // function showResults(result) {
+    //     $("friend-search-results").html(result.email);
+
+    // }
+
+    // function friendSearch() {
+    //     $.get("/friend-search", result);
+    // }
+
+    // $("button-friend-search").on("click", friendSearch)
