@@ -134,7 +134,12 @@ def search_for_friend():
 
     user = User.get_user_by_email(email)
 
-    return jsonify(user)
+    user_json = {
+                'first_name': user.first_name,
+
+    }
+
+    return jsonify(user_json)
 
 
 
