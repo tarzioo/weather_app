@@ -122,6 +122,19 @@ class Friendship(db.Model):
         backref=db.backref("friendships"))
     friend = db.relationship("User", foreign_keys="Friendship.friend_id")
 
+    @staticmethod
+    def add_friend(user_id, friend_id):
+        """add friend"""
+
+        friendship = Friendship(user_id=user_id, friend_id=friend_id)
+
+        db.session.add(friendship)
+        db.session.commit()
+
+        return friendship
+
+
+
 
 
     def __repr__(self):

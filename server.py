@@ -135,11 +135,21 @@ def search_for_friend():
     user = User.get_user_by_email(email)
 
     user_json = {
-                'first_name': user.first_name,
+                'first_name': user.first_name, 'last_name': user.last_name
 
     }
 
     return jsonify(user_json)
+
+@app.route("/add-friend", methods=["POST"])
+def add_friend():
+    user_id = session['user_id']
+    add_friend = request.get.form("add-friend")
+
+
+    print add_friend 
+
+    return "finished"   
 
 
 
