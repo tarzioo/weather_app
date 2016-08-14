@@ -10,11 +10,14 @@
 </label>
 <div id ="friend-search-results"></div>
 <h1>Your Friends</h1>
+<ul>
 
+    {% for item in user.friendships %}
+        <li>{{ item.friend.first_name }}</li>
+    {% endfor %}  
 
-{{ friendship.friend.first_name }}
+</ul>
+
 
 {% endblock %}
-
-<ul>
 

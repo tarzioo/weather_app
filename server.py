@@ -122,10 +122,6 @@ def show_friends():
     user_id = session['user_id']
     user = User.query.get(user_id)
     friendship = Friendship.query.get(user_id)
-    
-    print "-------------------"
-    print friendship
-    print "------------------"
 
     return render_template('friends.html', user=user, friendship=friendship)
 
