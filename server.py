@@ -86,8 +86,9 @@ def post_updates():
     user_id = session['user_id']
     user = User.query.get(user_id)
     update = Update.query.filter_by(user=user).all()
+    friendship = Friendship.query.get(user_id)
 
-    return render_template('updates.html', user=user, update=update)
+    return render_template('updates.html', user=user, update=update, friendship=friendship)
 
 
 @app.route('/update-zipcode', methods=["POST"])

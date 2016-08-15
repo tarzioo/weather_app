@@ -48,7 +48,7 @@ $("#button-update").on("click", postUpdate);
 
 function showSearchComplete(user) {
     alert("search completed");
-    $("#friend-search-results").html("We found " + user.first_name + " " + user.last_name + "<br>Did you want to add them to your friends?<br><form id='add-friend-'><input type='radio' name='add-friend' value='yes'>Yes</input><input type='radio' name='add-friend' value='no'>No</input><button id='add-friend> type='button'>Add To My Friends</button></form>"
+    $("#friend-search-results").html("We found " + user.first_name + " " + user.last_name + "<br>Did you want to add them to your friends?<br><form id='add-friend-'><input type='radio' name='add-friend' value='yes'>Yes</input><input type='radio' name='add-friend' value='no'>No</input><button id='add-friend> type='button'>Submit</button></form>"
             );
     console.log("finished finding friend");
 }
