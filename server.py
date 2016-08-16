@@ -147,7 +147,7 @@ def search_for_friend():
     user = User.get_user_by_email(email)
 
     user_json = {
-                'first_name': user.first_name, 'last_name': user.last_name
+                'first_name': user.first_name, 'last_name': user.last_name, "friend_id": user.user_id
 
     }
 
@@ -157,11 +157,12 @@ def search_for_friend():
 def add_friend():
     user_id = session['user_id']
     add_friend = request.form.get("add-friend")
+    friend_id = request.form.get("friend_id")
+    friendship = Friendship.add_friend(user_id, friend_id)
 
-    print request.form
-    print add_friend 
+    print "This is the friend id", friend_id
 
-    return "finished"   
+    return friendship   
 
 
 
