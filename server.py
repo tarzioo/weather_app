@@ -53,7 +53,9 @@ def register():
         first_name = request.form.get('firstname')
         last_name = request.form.get('lastname')
         zipcode = request.form.get('zipcode')
+        private = request.form.get('private')
         result = User.get_user_by_email(email)
+
         print result
 
         if result:
@@ -87,8 +89,16 @@ def post_updates():
     user = User.query.get(user_id)
     update = Update.query.filter_by(user=user).all()
     friendship = Friendship.query.get(user_id)
+    friendship_list = [user_id]
 
-    return render_template('updates.html', user=user, update=update, friendship=friendship)
+    #For loop to get friend_id and store in list to further query in result
+    for friend in user.friendships:
+        friendship_list.append(friend.friend_id)
+    print friendship_list
+
+    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time').all()
+
+    return render_template('updates.html', user=user, update=update, friendship=friendship, result=result)
 
 
 @app.route('/update-zipcode', methods=["POST"])
@@ -146,9 +156,9 @@ def search_for_friend():
 @app.route("/add-friend", methods=["POST"])
 def add_friend():
     user_id = session['user_id']
-    add_friend = request.get.form("add-friend")
+    add_friend = request.form.get("add-friend")
 
-
+    print request.form
     print add_friend 
 
     return "finished"   

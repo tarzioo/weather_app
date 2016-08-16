@@ -48,9 +48,14 @@ $("#button-update").on("click", postUpdate);
 
 function showSearchComplete(user) {
     alert("search completed");
-    $("#friend-search-results").html("We found " + user.first_name + " " + user.last_name + "<br>Did you want to add them to your friends?<br><form id='add-friend-'><input type='radio' name='add-friend' value='yes'>Yes</input><input type='radio' name='add-friend' value='no'>No</input><button id='add-friend> type='button'>Submit</button></form>"
+    $("#friend-search-results").html(
+        "We found " + user.first_name + " " + user.last_name + 
+        "<br>Did you want to add them to your friends?<br><form id='add-friend'><input type='hidden' name='friend' value='user'><input type='radio' name='addfriend' checked='checked' value='yes'>Yes</input><input type='radio' name='addfriend' value='no'>No</input><button id='adding-friend' type='button'>Submit</button></form>"
             );
     console.log("finished finding friend");
+    console.log(user);
+    $("#adding-friend").on("click", addFriend);
+
 }
    
 
@@ -60,10 +65,11 @@ function showFriendAdded(result) {
 
 
 function addFriend(evt) {
-    evt.preventDefault();
     console.log("entered addFriend function");
-    var value = $('input:radio[name=add-friend]:checked').val();
 
+    evt.preventDefault();
+    var value = $('input:radio[name=addfriend]:checked').val();
+    console.log(value);
 
     $.post("/add-friend", value, showFriendAdded);
     console.log(value);
@@ -71,7 +77,6 @@ function addFriend(evt) {
 }
 
 
-$("#add-friend").on("click", addFriend);
 
 
 function friendSearch(evt) {

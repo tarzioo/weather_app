@@ -5,6 +5,20 @@
 <h1>UPDATES</h1>
 
 <h3>Your Updates</h3>
+
+<ul>
+    {% for item in result|reverse %}  
+        <li>{{ item.user.first_name }} Wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}: <br>
+            {{ item.post}}</li><br>
+    {% endfor %}
+</ul>
+<p>-----------------------------</p>
+<ul>
+    {% for item in result %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
 <ul>
     {% for item in update|reverse %}
         <li>{{ user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}<br>{{ item.post }}"</li><br>
@@ -14,7 +28,7 @@
 <h3>Your friend's updates</h3>
 <ul>
     {% for person in user.friendships %}  
-            {% for item in person.friend.updates %}
+            {% for item in person.friend.updates|reverse %}
                <li>{{ person.friend.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}<br>
                 {{ item.post }}</li><br>
             {% endfor %}    
