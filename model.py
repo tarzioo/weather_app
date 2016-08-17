@@ -135,7 +135,7 @@ class Friendship(db.Model):
 
 
     def __repr__(self):
-        """provideo helpful representation when printed"""
+        """provide helpful representation when printed"""
 
         return "<Friendship friendship_id=%s user_id=%s friend_id=%s>" % (self.friendship_id, self.user_id, self.friend_id)
 
@@ -146,7 +146,19 @@ class Location(db.Model):
     __tablename__ = "locations"
 
     location_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-                  
+    zipcode = db.Column(db.Integer, db.ForeignKey("users.zipcode"))
+    city = db.Column(db.String(100), nullable=False)
+    county = db.Column(db.String(100), nullable=False)
+    lat = db.Column(db.Float, nullable=False)
+    lng = db.Column(db.Float, nullable=False)
+    
+    user = db.relationship("User", foreign_keys="Location.zipcode", backref=db.backref("locations"))
+
+    def __repr__(self):
+        """Provide helpful representation when printed"""
+
+        return "<Location location_id=%s zipcode=%d city=%s county=%s lat=%d lng=%d>" % (self.location_id, self.zipcode, self.city, self.county, self.lat, self.lng)
+
 
 
 ##############################################################################
