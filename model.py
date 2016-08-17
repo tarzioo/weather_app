@@ -134,13 +134,19 @@ class Friendship(db.Model):
         return friendship
 
 
-
-
-
     def __repr__(self):
         """provideo helpful representation when printed"""
 
-        return "<Friendship friendship_id=%s user_id=%s friend_id=%s>" % (self.friendship_id, self.user_id, self.friend_id)      
+        return "<Friendship friendship_id=%s user_id=%s friend_id=%s>" % (self.friendship_id, self.user_id, self.friend_id)
+
+
+class Location(db.Model):
+    """Table to store location data from locations.json"""
+
+    __tablename__ = "locations"
+
+    location_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+                  
 
 
 ##############################################################################

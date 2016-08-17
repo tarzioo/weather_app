@@ -4,7 +4,7 @@
     <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
 </head>
 <body>
-    <button><a href='/'>Main Page</a></button>
+    <button><a href='/updates'>Main Page</a></button>
     {% if session['user_id'] is defined %}
         <button><a href="/updates">Updates</a></button>
         <button><a href="/friends">Friends</a></button>

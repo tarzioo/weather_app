@@ -162,7 +162,7 @@ def add_friend():
 
     print "This is the friend id", friend_id
 
-    return friendship   
+    return 'friend added' 
 
 
 

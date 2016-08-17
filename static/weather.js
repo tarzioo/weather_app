@@ -48,9 +48,13 @@ $("#button-update").on("click", postUpdate);
 
 function showSearchComplete(user) {
     alert("search completed");
-    $("#friend-search-results").html(
+    // $("#friend-search-results").html(
+    //     $("#firend_id").val(user.friend_id);
+    //     $("#form2hide").hide();
+    //     $("#form2show").show();
+
         "We found " + user.first_name + " " + user.last_name + 
-        "<br>Did you want to add them to your friends?<br><form id='add-friend'><input id='hidden-friend' type='hidden' name='friend' value='"+user.friend_id+"'><input type='radio' name='addfriend' checked='checked' value='yes'>Yes</input><input type='radio' name='addfriend' value='no'>No</input><button id='adding-friend' type='button'>Submit</button></form>"
+        "<div id="somform" visibility=""><br>Did you want to add them to your friends?<br><form id='add-friend'><input id='hidden-friend' type='hidden' name='friend' value='"+user.friend_id+"'><input type='radio' name='addfriend' checked='checked' value='yes'>Yes</input><input type='radio' name='addfriend' value='no'>No</input><button id='adding-friend' type='button'>Submit</button></form></div>"
             );
     console.log("finished finding friend");
     console.log(user);
