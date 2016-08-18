@@ -4,6 +4,7 @@ import json
 
 from sqlalchemy import func
 from model import Location
+from model import User
 
 from model import connect_to_db, db
 from server import app
@@ -15,48 +16,34 @@ def load_location_data():
 
     #Delete all rows in table, so if we need to run this a second time, we
     #won't be trying to add duplicate users
-    Location.query.delete()
+    # Location.query.delete()
 
     #Read zipasaur.json file and insert data
 
     location_dict = json.load(open("seed_data/zipasaur.json"))
+    
 
-    location_json = json.dumps(location_dict)
-
-    #split into list with each '{'
-    location_lst = location_json.split('{')
-
-    #location_lst [0] is not usable data, it is  '[',   so it is spliced off so unpacking will not error
-    location_lst = location_lst[1:]
-
-    #unpack location_lst. The only data that is needed is city, zipcode, county, lat, lng. The rest will be unpacked but not added to the location table.  
-
-    for item in location_lst:
-        city_title, city, zipcode_title, zipcode, state_full_title, state_full, county_title, county, state_abbrev_title, state_abbrev, lat_title, lat, lng_title, lng, throwaway = item.split(" ")
-
-            #Remove unnecessary string and commas
-            city = city[1:-2]
-            zipcode = int(zipcode[1:-2])
-            county = county[1:-2]
-            lat = float(lat[1:-2])
-            lng = float(lng[1:-3])
-
-            #add to location table
-            location = Location(zipcode=zipcode,
+    for location in location_dict:
+        zipcode = int(location.get('code'))
+        city = location.get('city')
+        county = location.get('county')
+        lat = float(location.get('lat'))
+        lng = float(location.get('lng'))
+           
+        location = Location(zipcode=zipcode,
                         city=city,
                         county=county,
                         lat=lat,
                         lng=lng)
-
-            #Add to the session
+        
+        # Add to the session if not a duplicate
+        result = Location.query.get(zipcode)
+        if not result:
             db.session.add(location)
+            print location
 
-        #Commit to save adding it to the session
-        db.session.commit()    
-
-
-    return location_lst
-
+    #Commit to save adding it to the session
+    db.session.commit()
 
 
 if __name__ == "__main__":
@@ -69,4 +56,4 @@ if __name__ == "__main__":
     #create location table
     db.create_all()
 
-    import load_location_data()
+    load_location_data()

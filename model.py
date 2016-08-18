@@ -24,7 +24,9 @@ class User(db.Model):
     password = db.Column(db.String(50), nullable=False)
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(30), nullable=False)
-    zipcode = db.Column(db.String(15), nullable=False)
+    zipcode = db.Column(db.Integer, db.ForeignKey("locations.zipcode"))
+
+    location = db.relationship("Location", backref=db.backref("users"))
 
     @staticmethod
     def add_user(email, password, first_name, last_name, zipcode):
@@ -72,7 +74,7 @@ class User(db.Model):
     def __repr__(self):
         """Provide helpful representation when printed"""
 
-        return "<User user_id=%s email=%s first_name=%s last_name=%s zipcode=%s>" % (self.user_id, self.email, self.first_name, self.last_name, self.zipcode)
+        return "<User user_id=%s email=%s first_name=%s last_name=%s zipcode=%d>" % (self.user_id, self.email, self.first_name, self.last_name, self.zipcode)
 
 
 class Update(db.Model):
@@ -145,19 +147,19 @@ class Location(db.Model):
 
     __tablename__ = "locations"
 
-    location_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    zipcode = db.Column(db.Integer, db.ForeignKey("users.zipcode"))
+    zipcode = db.Column(db.Integer, primary_key=True)
     city = db.Column(db.String(100), nullable=False)
     county = db.Column(db.String(100), nullable=False)
     lat = db.Column(db.Float, nullable=False)
     lng = db.Column(db.Float, nullable=False)
     
-    user = db.relationship("User", foreign_keys="Location.zipcode", backref=db.backref("locations"))
+    #user = db.relationship("User", foreign_keys="Location.zipcode", backref=db.backref("locations"))
+    user = db.relationship("User", backref=db.backref("locations"))
 
     def __repr__(self):
         """Provide helpful representation when printed"""
 
-        return "<Location location_id=%s zipcode=%d city=%s county=%s lat=%d lng=%d>" % (self.location_id, self.zipcode, self.city, self.county, self.lat, self.lng)
+        return "<Location zipcode=%d city=%s county=%s lat=%f lng=%f>" % (self.zipcode, self.city, self.county, self.lat, self.lng)
 
 
 

@@ -5,7 +5,7 @@
 <h1>UPDATES</h1>
 
 <ul>
-    {% for item in result|reverse %}  
+    {% for item in result %}  
         <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}: <br>
             {{ item.post}}</li><br>
     {% endfor %}

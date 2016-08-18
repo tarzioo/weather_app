@@ -52,7 +52,7 @@ def register():
         password = request.form.get('password')
         first_name = request.form.get('firstname')
         last_name = request.form.get('lastname')
-        zipcode = request.form.get('zipcode')
+        zipcode = int(request.form.get('zipcode'))
         private = request.form.get('private')
         result = User.get_user_by_email(email)
 
@@ -96,7 +96,9 @@ def post_updates():
         friendship_list.append(friend.friend_id)
     print friendship_list
 
-    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time').all()
+    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
+
+    #print user.location
 
     return render_template('updates.html', user=user, update=update, friendship=friendship, result=result)
 
@@ -107,7 +109,7 @@ def zipcode_update():
 
 
     user_id = session['user_id']
-    zipcode = request.form.get('zipcode')
+    zipcode = int(request.form.get('zipcode'))
 
     User.update_zipcode(user_id, zipcode)
 
