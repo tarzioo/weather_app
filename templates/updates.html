@@ -4,12 +4,18 @@
 
 <h1>UPDATES</h1>
 
+{{ user.location.county }}
+
 <ul>
     {% for item in result %}  
         <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }}: <br>
-            {{ item.post}}</li><br>
+            {{ item.post}} <br><b>from {{item.user.location.county }} county</b></li><br>
     {% endfor %}
 </ul>
 
+<div id="map" style="height:500px; width:500px"></div>
+<script src="/static/updates.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcSXRrgHGCuYRYWOG6GoQEU-i6cbf8ds&callback=initMap"
+    async defer></script>
 {% endblock %}
 

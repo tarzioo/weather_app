@@ -52,12 +52,14 @@ function showSearchComplete(user) {
         "We found " + user.first_name + " " + user.last_name + 
         "<br>Did you want to add them to your friends?<br><form id='add-friend'><input id='hidden-friend' type='hidden' name='friend' value='"+user.friend_id+"'><input type='radio' name='addfriend' checked='checked' value='yes'>Yes</input><input type='radio' name='addfriend' value='no'>No</input><button id='adding-friend' type='button'>Submit</button></form>"
             );
+
     console.log("finished finding friend");
     console.log(user);
 
+
     $("#adding-friend").on("click", addFriend);
 
-  
+
 
 }
    
@@ -84,7 +86,8 @@ function addFriend(evt) {
     }
 
     $.post("/add-friend", friendInput, showFriendAdded);
-    
+    window.location.reload();
+
 
 }
 
