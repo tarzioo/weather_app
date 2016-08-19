@@ -1,13 +1,21 @@
+
+"use strict";
+
 var map;
+
 function initMap() {
+
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat, lng},
         zoom: 8
     });
 
     var marker = new google.maps.Marker({
-        position: {lat: -34.397, lng: 150.644},
+        position: {lat: 35.327, lng: -97.5556},
         map: map,
         title: "hello"
     });
 }
+
+
+
