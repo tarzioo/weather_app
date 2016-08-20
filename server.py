@@ -102,6 +102,52 @@ def post_updates():
 
     return render_template('updates.html', user=user, update=update, friendship=friendship, result=result)
 
+@app.route('/map')
+def show_location_info():
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    update = Update.query.filter_by(user=user).all()
+    friendship = Friendship.query.get(user_id)
+    friendship_list = [user_id]
+
+    #For loop to get friend_id and store in list to further query in result
+    for friend in user.friendships:
+        friendship_list.append(friend.friend_id)
+    print friendship_list
+
+    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
+
+
+
+    return render_template('map.html', user=user, update=update, result=result, friendship=friendship)
+
+
+@app.route('/map.json')
+def status_location_info():
+    """json info about each status location"""
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    update = Update.query.filter_by(user=user).all()
+    friendship = Friendship.query.get(user_id)
+    friendship_list = [user_id]
+
+    #For loop to get friend_id and store in list to further query in result
+    for friend in user.friendships:
+        friendship_list.append(friend.friend_id)
+    print friendship_list
+
+    updates = {
+        update.update_id: {
+            "UserName": update.user_id,
+            "post": update.post,
+            "userName": update.user.first_name,
+            "userLat": update.user.location.lat,
+            "userLng": update.user.location.lng
+        }
+        for update in Update.query}
+
+    return jsonify(updates)
 
 @app.route('/update-zipcode', methods=["POST"])
 def zipcode_update():

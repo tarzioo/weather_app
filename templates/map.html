@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Hello{% endblock %}
+{% block content %}
+
+{{ update }}
+
+<ul>
+    {% for item in result %}  
+        <li>{{ item.user.location.lat }}, {{item.user.location.lng }}</li><br>            
+    {% endfor %}
+</ul>
+
+<div id="map" style="height:500px; width:500px"></div>
+<script src="/static/map.js"></script>
+<script>var lat = {{ user.location.lat }};</script>
+<script>var lng = {{ user.location.lng }};</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcSXRrgHGCuYRYWOG6GoQEU-i6cbf8ds&callback=initMap"
+    async defer></script>
+
+   
+
+
+
+
+
+{% endblock %}

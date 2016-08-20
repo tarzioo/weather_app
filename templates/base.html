@@ -8,6 +8,7 @@
     {% if session['user_id'] is defined %}
         <button><a href="/updates">Updates</a></button>
         <button><a href="/friends">Friends</a></button>
+        <button><a href="/map">Map</a></button>
         <button><a href="/logout">Logout</a></button></br>
         <br>
         <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}<br>
