@@ -14,7 +14,7 @@ function initMap() {
 
 
     var infoWindow = new google.maps.InfoWindow({
-        width: 500
+        width: 1000
     });
 
     $.get('/map.json', function (updates) {
@@ -42,7 +42,7 @@ function initMap() {
 
             html = (
                 '<div class="window-content">' +
-                '<p>Userpost' + update.post + '</p>' +
+                '<br><p>' + update.userName + ": " + update.post + '</p>' +
             '</div>');
 
             bindInfoWindow(marker, map, infoWindow, html);
