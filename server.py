@@ -234,15 +234,16 @@ def alerts_info():
 
 
     request = Request('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/35.327,-97.5556')
+    response = urlopen(request)
+    alerts = response.read()
+    # try:
+    #     response = urlopen(request)
+    #     alerts = response.read()
+    #     print alerts
+    # except URLError, e:
+    #     print 'error:', e
 
-    try:
-        response = urlopen(request)
-        alerts = response.read()
-    except URLError, e:
-        print 'error:', e
-
-
-    return jsonify(alerts)
+    return alerts
 
 
 
