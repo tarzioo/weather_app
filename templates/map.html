@@ -2,13 +2,6 @@
 {% block title %}Hello{% endblock %}
 {% block content %}
 
-{{ update }}
-
-<ul>
-    {% for item in result %}  
-        <li>{{ item.user.location.lat }}, {{item.user.location.lng }}</li><br>            
-    {% endfor %}
-</ul>
 
 <div id="map" style="height:500px; width:500px"></div>
 <script src="/static/map.js"></script>

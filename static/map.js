@@ -9,7 +9,10 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat, lng},
         zoom: 8,
-        scrollable: false
+        scrollable: false,
+        scrollwheel: false,
+        zoomControl: false,
+
     });
 
 
@@ -38,6 +41,7 @@ function initMap() {
                 position: new google.maps.LatLng(update.userLat, update.userLng),
                 map: map,
                 title: "User Name: " + update.userName,
+                icon: '/static/img/tornado-icon.png'
             });
 
             html = (

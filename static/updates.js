@@ -45,13 +45,6 @@ function initMap() {
         }
     }
 
-var update;
- $.get('/map.json', function (updates) {
-     for(var key in updates){
-        update = updates[key]
-        console.log(update);
-        }
-    });
 
 
 

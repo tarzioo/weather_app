@@ -2,6 +2,7 @@ from jinja2 import StrictUndefined
 
 from flask import Flask, render_template, redirect, request, flash, session, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
+from urllib2 import Request, urlopen, URLError
 
 from model import *
 
@@ -102,52 +103,6 @@ def post_updates():
 
     return render_template('updates.html', user=user, update=update, friendship=friendship, result=result)
 
-@app.route('/map')
-def show_location_info():
-
-    user_id = session['user_id']
-    user = User.query.get(user_id)
-    update = Update.query.filter_by(user=user).all()
-    friendship = Friendship.query.get(user_id)
-    friendship_list = [user_id]
-
-    #For loop to get friend_id and store in list to further query in result
-    for friend in user.friendships:
-        friendship_list.append(friend.friend_id)
-    print friendship_list
-
-    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
-
-
-
-    return render_template('map.html', user=user, update=update, result=result, friendship=friendship)
-
-
-@app.route('/map.json')
-def status_location_info():
-    """json info about each status location"""
-    user_id = session['user_id']
-    user = User.query.get(user_id)
-    update = Update.query.filter_by(user=user).all()
-    friendship = Friendship.query.get(user_id)
-    friendship_list = [user_id]
-
-    #For loop to get friend_id and store in list to further query in result
-    for friend in user.friendships:
-        friendship_list.append(friend.friend_id)
-    print friendship_list
-
-    updates = {
-        update.update_id: {
-            "UserName": update.user_id,
-            "post": update.post,
-            "userName": update.user.first_name,
-            "userLat": update.user.location.lat,
-            "userLng": update.user.location.lng
-        }
-        for update in Update.query}
-
-    return jsonify(updates)
 
 @app.route('/update-zipcode', methods=["POST"])
 def zipcode_update():
@@ -210,7 +165,88 @@ def add_friend():
 
     print "This is the friend id", friend_id
 
-    return 'friend added' 
+    return 'friend added'
+
+@app.route('/map')
+def show_location_info():
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    update = Update.query.filter_by(user=user).all()
+    friendship = Friendship.query.get(user_id)
+    friendship_list = [user_id]
+
+    #For loop to get friend_id and store in list to further query in result
+    for friend in user.friendships:
+        friendship_list.append(friend.friend_id)
+    print friendship_list
+
+    result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
+
+
+
+    return render_template('map.html', user=user, update=update, result=result, friendship=friendship)
+
+
+@app.route('/map.json')
+def status_location_info():
+    """json info about each status location"""
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    update = Update.query.filter_by(user=user).all()
+    friendship = Friendship.query.get(user_id)
+    friendship_list = [user_id]
+
+    #For loop to get friend_id and store in list to further query in result
+    for friend in user.friendships:
+        friendship_list.append(friend.friend_id)
+    print friendship_list
+
+    updates = {
+        update.update_id: {
+            "UserName": update.user_id,
+            "post": update.post,
+            "userName": update.user.first_name,
+            "userLat": update.user.location.lat,
+            "userLng": update.user.location.lng
+        }
+        for update in Update.query}
+
+    return jsonify(updates)
+
+
+@app.route('/alerts')
+def show_alerts():
+    """use weather.io api to get alerts for each county"""
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+
+
+    return render_template("alerts.html", user=user)
+
+
+@app.route('/alerts.json')
+def alerts_info():
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+
+
+    request = Request('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/35.327,-97.5556')
+
+    try:
+        response = urlopen(request)
+        alerts = response.read()
+    except URLError, e:
+        print 'error:', e
+
+
+    return jsonify(alerts)
+
+
+
+
 
 
 
