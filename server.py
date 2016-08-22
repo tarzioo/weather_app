@@ -54,7 +54,7 @@ def register():
         first_name = request.form.get('firstname')
         last_name = request.form.get('lastname')
         zipcode = int(request.form.get('zipcode'))
-        private = request.form.get('private')
+        private = int(request.form.get('private'))
         result = User.get_user_by_email(email)
 
         print result
@@ -64,7 +64,7 @@ def register():
             #flash('That %s already exists. Please try login or try a different username and password') % email
             return redirect('/register')
         else:
-            User.add_user(email, password, first_name, last_name, zipcode)
+            User.add_user(email, password, first_name, last_name, zipcode, private)
             #flash('%s has been successfully registered and logged in') % email
             #session['user_id'] = result.user_id
             return redirect('/login')

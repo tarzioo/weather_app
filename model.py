@@ -25,16 +25,17 @@ class User(db.Model):
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(30), nullable=False)
     zipcode = db.Column(db.Integer, db.ForeignKey("locations.zipcode"))
+    private = db.Column(db.Integer, nullable=False)
 
     location = db.relationship("Location", backref=db.backref("users"))
 
     @staticmethod
-    def add_user(email, password, first_name, last_name, zipcode):
+    def add_user(email, password, first_name, last_name, zipcode, private):
         """Add new user"""
 
 
         user = User(email=email, password=password, first_name=first_name,
-                last_name=last_name, zipcode=zipcode)
+                last_name=last_name, zipcode=zipcode, private=private)
 
         db.session.add(user)
         db.session.commit()
@@ -74,7 +75,7 @@ class User(db.Model):
     def __repr__(self):
         """Provide helpful representation when printed"""
 
-        return "<User user_id=%s email=%s first_name=%s last_name=%s zipcode=%d>" % (self.user_id, self.email, self.first_name, self.last_name, self.zipcode)
+        return "<User user_id=%s email=%s first_name=%s last_name=%s zipcode=%d private=%d>" % (self.user_id, self.email, self.first_name, self.last_name, self.zipcode, self.private)
 
 
 class Update(db.Model):
@@ -165,6 +166,22 @@ class Location(db.Model):
 
 ##############################################################################
 # Add, update, delete functions
+
+# def updates_from_friends(user_id=user_id):
+#     """get updates from just friends"""
+
+#     friendship = Friendship.query.get(user_id)
+#     friendship_list = [user_id]
+
+#     #For loop to get friend_id and store in list to further query in result
+#     for friend in user.friendships:
+#         friendship_list.append(friend.friend_id)
+#     print friendship_list
+
+#     result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
+
+#     return result
+
 
 
 
