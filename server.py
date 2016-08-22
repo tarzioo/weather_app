@@ -233,23 +233,21 @@ def alerts_info():
 
     user_id = session['user_id']
     user = User.query.get(user_id)
+    lat = str(user.location.lat)
+    lng = str(user.location.lng)
 
 
-    r = requests.get('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/35.327,-97.5556')
+    r = requests.get('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/' + lat + "," + lng)
 
 
     data = r.json()
     pprint(data)
 
-    # try:
-    #     response = urlopen(request)
-    #     alerts = response.read()
-    #     print alerts
-    # except URLError, e:
-    #     print 'error:', e
+    alerts = {
+            'currently': data['currently']
+    }
 
-    return 'success'
-
+    return jsonify(alerts)
 
 
 
