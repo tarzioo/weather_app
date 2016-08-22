@@ -3,6 +3,8 @@ from jinja2 import StrictUndefined
 from flask import Flask, render_template, redirect, request, flash, session, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
 from urllib2 import Request, urlopen, URLError
+import requests
+from pprint import pprint
 
 from model import *
 
@@ -233,9 +235,12 @@ def alerts_info():
     user = User.query.get(user_id)
 
 
-    request = Request('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/35.327,-97.5556')
-    response = urlopen(request)
-    alerts = response.read()
+    r = requests.get('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/35.327,-97.5556')
+
+
+    data = r.json()
+    pprint(data)
+
     # try:
     #     response = urlopen(request)
     #     alerts = response.read()
@@ -243,7 +248,7 @@ def alerts_info():
     # except URLError, e:
     #     print 'error:', e
 
-    return alerts
+    return 'success'
 
 
 

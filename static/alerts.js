@@ -2,8 +2,8 @@
 
 function getAlerts() {
 
-$.get('/alerts.json', function (alerts) {
-    console.log(alerts);
+    $.get('/alerts.json', function (alerts) {
+        console.log(alerts);
     
-});
+    });
 }
