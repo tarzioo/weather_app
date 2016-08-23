@@ -244,7 +244,13 @@ def alerts_info():
     pprint(data)
 
     alerts = {
-            'currently': data['currently']
+            'apparentTemperature': data['currently']['apparentTemperature'],
+            'humidity': data['currently']['humidity'],
+            'nearestStormBearing': data['currently']['nearestStormBearing'],
+            "nearestStormDistance": data["currently"]["nearestStormDistance"],
+            "summary": data['currently']["summary"],
+            # "windBearing": data["daily"]["windBearing"],
+            # "windSpeed": data["daily"]["data"]["windSpeed"]
     }
 
     return jsonify(alerts)

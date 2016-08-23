@@ -5,7 +5,12 @@ function getAlerts() {
     $.get('/alerts.json', function (response) {
         
         console.log(response);
-        $('#alerts').html("humidity: " + response['currently']['humidity']);  
+        $('#alerts').html("Temperature: " + response['apparentTemperature'] + "<br>" +
+                            "Humidity: " + response['humidity'] + "<br>" +
+                            "Nearest Storm Bearing: " + response["nearestStormBearing"] + "<br>" +
+                            "Nearest Storm Distance: " + response["nearestStormDistance"] + "<br>" +
+                            "Summary: " + response["summary"] + "<br>" 
+                            );  
 
     });
 
