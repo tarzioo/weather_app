@@ -2,8 +2,16 @@
 
 function getAlerts() {
 
-    $.get('/alerts.json', function (alerts) {
-        console.log(alerts);
-    
+    $.get('/alerts.json', function (response) {
+        
+        console.log(response);
+        $('#alerts').html("humidity: " + response['currently']['humidity']);  
+
     });
+
+
+    
+    
+
 }
+
