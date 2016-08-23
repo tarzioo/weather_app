@@ -13,10 +13,16 @@ function getAlerts() {
                             );  
 
     });
+ 
 
+}
 
-    
-    
+function getExtraAlerts() {
 
+    $.get('/alerts-extra.json', function (response) {
+        console.log(response);
+        $('#alerts-extra').html("Alerts: " + response['alerts']);
+
+    });
 }
 

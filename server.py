@@ -253,7 +253,31 @@ def alerts_info():
             # "windSpeed": data["daily"]["data"]["windSpeed"]
     }
 
+
     return jsonify(alerts)
+
+
+@app.route('/alerts-extra.json')
+def show_additional_alerts():
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    city = user.location.city
+
+    x = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/' + city + '.json')
+
+    r = x.json()   
+    pprint(r)
+
+    alerts = {
+            "alerts": r['alerts']
+    }
+
+
+    return jsonify(alerts)  
+
+
+
 
 
 
