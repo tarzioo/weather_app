@@ -88,7 +88,9 @@ class Update(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     time = db.Column(db.DateTime, default=datetime.datetime.utcnow())
     post = db.Column(db.String(500), nullable=False)
-    posted_from = db.Column(db.String(500), nullable=False)
+    posted_county = db.Column(db.String(500), nullable=False)
+    posted_lat = db.Column(db.Integer, nullable=False)
+    posted_lng = db.Column(db.Integer, nullable=False)
 
     #define relationship
     user = db.relationship("User", backref=db.backref("updates"))
@@ -101,10 +103,12 @@ class Update(db.Model):
         time = datetime.datetime.utcnow()
         user = User.query.get(user_id)
 
-        posted_from = user.location.county
-        print posted_from
+        posted_county = user.location.county
+        posted_lat = user.location.lat
+        posted_lng = user.location.lng
+        print posted_county, posted_lat, posted_lng
 
-        update = Update(user_id=user_id, post=post, time=time, posted_from=posted_from)
+        update = Update(user_id=user_id, post=post, time=time, posted_county=posted_county, posted_lat=posted_lat, posted_lng=posted_lng)
 
         db.session.add(update)
         db.session.commit()
@@ -115,7 +119,7 @@ class Update(db.Model):
         """Provide helpful representation when printed"""
 
 
-        return "<Update update_id=%s user_id=%s time=%s post=%s posted_from=%s>" % (self.update_id, self.user_id, self.time, self.post, self.posted_from)
+        return "<Update update_id=%s user_id=%s time=%s post=%s posted_county=%s posted_lat=%d posted_lng=%d>" % (self.update_id, self.user_id, self.time, self.post, self.posted_county, self.posted_lat, self.posted_lng)
 
 
 class Friendship(db.Model):
