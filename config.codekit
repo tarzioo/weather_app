@@ -1924,6 +1924,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/static\/min\/alerts-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/min\/alerts-min.js",
+		"outputAbbreviatedPath": "\/static\/min\/min\/alerts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/static\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
