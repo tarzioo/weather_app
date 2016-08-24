@@ -3,6 +3,15 @@
 {% block content %}
 
 
+{{ all_updates }}
+
+{{ friend_list }}
+
+{% for x in all_updates %}
+    <li>{{{ x.user.first_name }}, {{ x.post }}, {{ x.posted_county }}</li>
+{% endfor %}
+
+
 <div id="map" style="height:500px; width:500px"></div>
 <script src="/static/map.js"></script>
 <script>

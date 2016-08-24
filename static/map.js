@@ -12,6 +12,7 @@ function initMap() {
         scrollable: false,
         scrollwheel: false,
         zoomControl: false,
+        
 
     });
 

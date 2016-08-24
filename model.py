@@ -102,7 +102,7 @@ class Update(db.Model):
 
         time = datetime.datetime.utcnow()
         user = User.query.get(user_id)
-        
+
         #When update is made, user's county,lat,lng are permanently stored so if their location changes in the future, this doesn't alter where the post was originally made from
         posted_county = user.location.county
         posted_lat = user.location.lat
@@ -115,6 +115,14 @@ class Update(db.Model):
         db.session.commit()
 
         return update
+
+    @staticmethod
+    def get_all_updates(user_id):
+        user = User.query.get(user_id)
+        friendship_list = Friendship.get_friendship_list(user_id)
+        result = Update.query.filter(Update.user_id.in_(friendship_list)).all()
+
+        return result
 
     def __repr__(self):
         """Provide helpful representation when printed"""
@@ -146,6 +154,23 @@ class Friendship(db.Model):
         db.session.commit()
 
         return friendship
+
+
+    @staticmethod
+    def get_friendship_list(user_id):
+        """get friend_list from user"""
+        user = User.query.get(user_id)
+        update = Update.query.filter_by(user=user).all()
+        friendship = Friendship.query.get(user_id)
+        friendship_list = [user_id]
+
+        #For loop to get friend_id and store in list to further query in result
+        for friend in user.friendships:
+            friendship_list.append(friend.friend_id)
+            print friendship_list
+
+        return friendship_list    
+
 
 
     def __repr__(self):

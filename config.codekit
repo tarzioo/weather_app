@@ -1935,6 +1935,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/static\/min\/weather-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/min\/weather-min.js",
+		"outputAbbreviatedPath": "\/static\/min\/min\/weather-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/static\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
