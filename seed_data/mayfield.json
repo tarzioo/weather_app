@@ -1,0 +1,121 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "AR",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "72701.6.99999",
+		"l": "/q/zmw:72701.6.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "GA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "31087.2.99999",
+		"l": "/q/zmw:31087.2.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "KS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "67103.1.99999",
+		"l": "/q/zmw:67103.1.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "42066.1.99999",
+		"l": "/q/zmw:42066.1.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "MI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "49666.1.99999",
+		"l": "/q/zmw:49666.1.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "NY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "12117.1.99999",
+		"l": "/q/zmw:12117.1.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "OH",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "44124.5.99999",
+		"l": "/q/zmw:44124.5.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "PA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "18433.2.99999",
+		"l": "/q/zmw:18433.2.99999"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "",
+		"country": "UK",
+		"country_iso3166":"GB",
+		"country_name":"United Kingdom",
+		"zmw": "00000.16.03338",
+		"l": "/q/zmw:00000.16.03338"
+		}
+		,
+		{
+		"name": "Mayfield",
+		"city": "Mayfield",
+		"state": "UT",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "84643.1.99999",
+		"l": "/q/zmw:84643.1.99999"
+		}
+		]
+	}
+}

@@ -1,0 +1,2863 @@
+{
+"CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+"creatorBuild": "19127",
+"files": {
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/static\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/static\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/_macro.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/_macro.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/context_template.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/context_template.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/escaping_template.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/escaping_template.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/simple_template.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/simple_template.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/template_filter.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/template_filter.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/template_test.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/templates\/template_test.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/admin\/static\/css\/test.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/admin\/static\/css\/test.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/admin\/templates\/admin\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/admin\/templates\/admin\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/frontend\/templates\/frontend\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/blueprintapp\/apps\/frontend\/templates\/frontend\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/admin\/static\/css\/test.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/admin\/static\/css\/test.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/admin\/templates\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/admin\/templates\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/frontend\/templates\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask\/testsuite\/test_apps\/moduleapp\/apps\/frontend\/templates\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/codemirror.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/codemirror.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/codemirror.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/codemirror.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/min\/codemirror-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clike\/clike.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clike\/clike.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clike\/min\/clike-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clike\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clike\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clojure\/clojure.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clojure\/clojure.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clojure\/min\/clojure-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clojure\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/clojure\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/coffeescript\/coffeescript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/coffeescript\/coffeescript.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/coffeescript\/min\/coffeescript-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/coffeescript\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/coffeescript\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/css\/css.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/css\/css.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/css\/min\/css-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/css\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/css\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/diff.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/diff.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/diff.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/diff.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/min\/diff-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/diff\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ecl\/ecl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ecl\/ecl.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ecl\/min\/ecl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ecl\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ecl\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/gfm\/gfm.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/gfm\/gfm.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/gfm\/min\/gfm-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/gfm\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/gfm\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/go\/go.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/go\/go.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/go\/min\/go-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/go\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/go\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/groovy\/groovy.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/groovy\/groovy.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/groovy\/min\/groovy-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/groovy\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/groovy\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/haskell\/haskell.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/haskell\/haskell.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/haskell\/min\/haskell-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/haskell\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/haskell\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlembedded\/htmlembedded.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlembedded\/htmlembedded.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlembedded\/min\/htmlembedded-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlembedded\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlembedded\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlmixed\/htmlmixed.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlmixed\/htmlmixed.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlmixed\/min\/htmlmixed-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlmixed\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/htmlmixed\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/javascript\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/javascript\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/javascript\/javascript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/javascript\/javascript.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/javascript\/min\/javascript-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/jinja2\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/jinja2\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/jinja2\/jinja2.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/jinja2\/jinja2.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/jinja2\/min\/jinja2-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/less\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/less\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/less\/less.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/less\/less.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/less\/min\/less-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/lua\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/lua\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/lua\/lua.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/lua\/lua.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/lua\/min\/lua-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/markdown\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/markdown\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/markdown\/markdown.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/markdown\/markdown.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/markdown\/min\/markdown-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/mysql\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/mysql\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/mysql\/mysql.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/mysql\/mysql.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/mysql\/min\/mysql-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ntriples\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ntriples\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ntriples\/ntriples.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ntriples\/ntriples.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ntriples\/min\/ntriples-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/pascal\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/pascal\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/pascal\/pascal.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/pascal\/pascal.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/pascal\/min\/pascal-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/perl\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/perl\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/perl\/perl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/perl\/perl.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/perl\/min\/perl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/php\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/php\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/php\/php.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/php\/php.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/php\/min\/php-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/plsql\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/plsql\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/plsql\/plsql.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/plsql\/plsql.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/plsql\/min\/plsql-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/properties\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/properties\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/properties\/properties.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/properties\/properties.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/properties\/min\/properties-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/python\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/python\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/python\/python.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/python\/python.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/python\/min\/python-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/r\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/r\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/r\/r.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/r\/r.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/r\/min\/r-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/changes\/changes.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/changes\/changes.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/changes\/min\/changes-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/changes\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/changes\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/spec.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/spec.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/spec.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/spec.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rpm\/spec\/min\/spec-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rst\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rst\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rst\/rst.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rst\/rst.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rst\/min\/rst-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ruby\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ruby\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ruby\/ruby.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ruby\/ruby.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/ruby\/min\/ruby-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rust\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rust\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rust\/rust.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rust\/rust.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/rust\/min\/rust-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/scheme\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/scheme\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/scheme\/scheme.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/scheme\/scheme.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/scheme\/min\/scheme-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smalltalk\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smalltalk\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smalltalk\/smalltalk.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smalltalk\/smalltalk.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smalltalk\/min\/smalltalk-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smarty\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smarty\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smarty\/smarty.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smarty\/smarty.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/smarty\/min\/smarty-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/sparql\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/sparql\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/sparql\/sparql.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/sparql\/sparql.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/sparql\/min\/sparql-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/stex.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/stex.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/min\/stex-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/test.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/stex\/test.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/tiddlywiki.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/tiddlywiki.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/tiddlywiki.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/tiddlywiki.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/tiddlywiki\/min\/tiddlywiki-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/vbscript\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/vbscript\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/vbscript\/vbscript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/vbscript\/vbscript.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/vbscript\/min\/vbscript-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/velocity\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/velocity\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/velocity\/velocity.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/velocity\/velocity.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/velocity\/min\/velocity-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/verilog\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/verilog\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/verilog\/verilog.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/verilog\/verilog.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/verilog\/min\/verilog-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xml\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xml\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xml\/xml.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xml\/xml.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xml\/min\/xml-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xmlpure\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xmlpure\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xmlpure\/xmlpure.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xmlpure\/xmlpure.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xmlpure\/min\/xmlpure-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testBase.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testBase.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testBase-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testEmptySequenceKeyword.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testEmptySequenceKeyword.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testEmptySequenceKeyword-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testMultiAttr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testMultiAttr.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testMultiAttr-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testNamespaces.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testNamespaces.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testNamespaces-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testProcessingInstructions.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testProcessingInstructions.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testProcessingInstructions-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testQuotes.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/testQuotes.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/test\/min\/testQuotes-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/xquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/xquery.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/xquery\/min\/xquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/yaml\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/yaml\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/yaml\/yaml.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/yaml\/yaml.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/mode\/yaml\/min\/yaml-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/cobalt.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/cobalt.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/eclipse.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/eclipse.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/elegant.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/elegant.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/lesser-dark.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/lesser-dark.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/monokai.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/monokai.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/neat.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/neat.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/night.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/night.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/rubyblue.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/rubyblue.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/xq-dark.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/theme\/xq-dark.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/closetag.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/closetag.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/closetag-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/dialog.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/dialog.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/dialog.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/dialog.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/dialog-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/foldcode.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/foldcode.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/foldcode-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/formatting.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/formatting.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/formatting-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/javascript-hint.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/javascript-hint.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/javascript-hint-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/match-highlighter.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/match-highlighter.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/match-highlighter-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/overlay.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/overlay.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/overlay-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/runmode.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/runmode.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/runmode-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/search.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/search.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/search-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/searchcursor.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/searchcursor.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/searchcursor-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/simple-hint.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/simple-hint.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/simple-hint.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/simple-hint.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/codemirror\/util\/min\/simple-hint-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/css\/toolbar.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/css\/toolbar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 575,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back_hover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 614,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back_hover.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/back_hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 604,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close_hover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 711,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close_hover.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/close_hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/djdt_vertical.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 404,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/djdt_vertical.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/djdt_vertical.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/indicator.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 444,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/indicator.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/indicator.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/panel_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/panel_bg.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/panel_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 538,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick-red.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 569,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/img\/tick.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/jquery.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/min\/jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/jquery.tablesorter.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/jquery.tablesorter.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/min\/jquery.tablesorter-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/toolbar.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/toolbar.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/static\/js\/min\/toolbar-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/base.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/base.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/config_vars.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/config_vars.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/headers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/headers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/logger.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/logger.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/profiler.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/profiler.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/request_vars.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/request_vars.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/route_list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/route_list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy_error.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy_error.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy_select.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/sqlalchemy_select.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/template.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/template.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/template_editor.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/template_editor.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/timer.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/timer.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/versions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/panels\/versions.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/redirect.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/flask_debugtoolbar\/templates\/redirect.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/broken.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/broken.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/foo\/test.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/foo\/test.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/syntaxerror.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/syntaxerror.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/test.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/jinja2\/testsuite\/res\/templates\/test.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/pip-1.5.4.dist-info\/pydist.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/pip-1.5.4.dist-info\/pydist.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/pip-1.5.4.dist-info\/pydist-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/env\/lib\/python2.7\/site-packages\/requests-2.11.1.dist-info\/metadata.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/requests-2.11.1.dist-info\/metadata.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/requests-2.11.1.dist-info\/metadata-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/env\/lib\/python2.7\/site-packages\/setuptools-2.2.dist-info\/pydist.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/setuptools-2.2.dist-info\/pydist.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/setuptools-2.2.dist-info\/pydist-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/env\/lib\/python2.7\/site-packages\/SQLAlchemy-1.0.3-py2.7.egg-info\/pbr.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/SQLAlchemy-1.0.3-py2.7.egg-info\/pbr.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/SQLAlchemy-1.0.3-py2.7.egg-info\/pbr-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/env\/lib\/python2.7\/site-packages\/Werkzeug-0.10.4.dist-info\/metadata.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/Werkzeug-0.10.4.dist-info\/metadata.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/Werkzeug-0.10.4.dist-info\/metadata-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/console.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 507,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/console.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/console.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/debugger.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/debugger.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/min\/debugger-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/jquery.js",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/min\/jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/less.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/less.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/less.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/more.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 200,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/more.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/more.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/source.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 818,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/source.png",
+		"outputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/source.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/env\/lib\/python2.7\/site-packages\/werkzeug\/debug\/shared\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/seed_data\/Alert for Beckham; Roger Mills (Oklahoma) Issued by the National Weather Service.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/Alert for Beckham; Roger Mills (Oklahoma) Issued by the National Weather Service.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/Alert for Beckham; Roger Mills (Oklahoma) Issued by the National Weather Service-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/arapaho.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/arapaho.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/arapaho-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/cheyenne.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/cheyenne.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/cheyenne-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/erick.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/erick.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/erick-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/json-test.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/json-test.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/json-test-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/mayfield.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/mayfield.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/mayfield-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/zipasaur.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/zipasaur.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/zipasaur-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/static\/alerts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/alerts.js",
+		"outputAbbreviatedPath": "\/static\/min\/alerts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/static\/img\/friends-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1434,
+		"inputAbbreviatedPath": "\/static\/img\/friends-icon.png",
+		"outputAbbreviatedPath": "\/static\/img\/friends-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/img\/tornado-icon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19196,
+		"inputAbbreviatedPath": "\/static\/img\/tornado-icon.jpg",
+		"outputAbbreviatedPath": "\/static\/img\/tornado-icon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/img\/tornado-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3241,
+		"inputAbbreviatedPath": "\/static\/img\/tornado-icon.png",
+		"outputAbbreviatedPath": "\/static\/img\/tornado-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/map.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/map.js",
+		"outputAbbreviatedPath": "\/static\/min\/map-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/static\/styles.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/styles.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/static\/styles.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/styles.scss",
+		"outputAbbreviatedPath": "\/static\/styles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"\/static\/updates.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/updates.js",
+		"outputAbbreviatedPath": "\/static\/min\/updates-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/static\/weather.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/weather.js",
+		"outputAbbreviatedPath": "\/static\/min\/weather-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/templates\/alerts.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/alerts.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/base.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/base.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/friends.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/friends.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/homepage.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/homepage.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/login.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/login.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/map.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/map.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/register.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/register.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/updates.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/updates.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		}
+	},
+"hooks": [
+	],
+"lastSavedByUser": "Taraneh Tayaran",
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"bowerAbbreviatedPath": "",
+	"displayValue": "project",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "compass_darkGray"
+	},
+"projectSettings": {
+	"alwaysUseExternalServer": 1,
+	"animateCSSInjections": 1,
+	"autoApplyPSLanguageSettingsStyle": 0,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoSyncProjectSettingsFile": 1,
+	"browserRefreshDelay": 0,
+	"coffeeAutoOutputPathEnabled": 1,
+	"coffeeAutoOutputPathFilenamePattern": "*.js",
+	"coffeeAutoOutputPathRelativePath": "",
+	"coffeeAutoOutputPathReplace1": "",
+	"coffeeAutoOutputPathReplace2": "",
+	"coffeeAutoOutputPathStyle": 0,
+	"coffeeCreateSourceMap": 0,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"coffeeMinifyOutput": 1,
+	"coffeeOutputStyle": 0,
+	"coffeeSyntaxCheckerStyle": 1,
+	"externalServerAddress": "http:\/\/localhost:5000",
+	"externalServerPreviewPathAddition": "",
+	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"hamlAutoOutputPathEnabled": 1,
+	"hamlAutoOutputPathFilenamePattern": "*.html",
+	"hamlAutoOutputPathRelativePath": "",
+	"hamlAutoOutputPathReplace1": "",
+	"hamlAutoOutputPathReplace2": "",
+	"hamlAutoOutputPathStyle": 0,
+	"hamlEscapeHTMLCharacters": 0,
+	"hamlNoEscapeInAttributes": 0,
+	"hamlOutputFormat": 2,
+	"hamlOutputStyle": 0,
+	"hamlUseCDATA": 0,
+	"hamlUseDoubleQuotes": 0,
+	"hamlUseUnixNewlines": 0,
+	"jadeAutoOutputPathEnabled": 1,
+	"jadeAutoOutputPathFilenamePattern": "*.html",
+	"jadeAutoOutputPathRelativePath": "",
+	"jadeAutoOutputPathReplace1": "",
+	"jadeAutoOutputPathReplace2": "",
+	"jadeAutoOutputPathStyle": 0,
+	"jadeCompileDebug": 1,
+	"jadeOutputStyle": 0,
+	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
+	"javascriptAutoOutputPathRelativePath": "\/min",
+	"javascriptAutoOutputPathReplace1": "",
+	"javascriptAutoOutputPathReplace2": "",
+	"javascriptAutoOutputPathStyle": 2,
+	"javascriptCreateSourceMap": 1,
+	"javascriptOutputStyle": 1,
+	"javascriptSyntaxCheckerStyle": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
+	"kitAutoOutputPathEnabled": 1,
+	"kitAutoOutputPathFilenamePattern": "*.html",
+	"kitAutoOutputPathRelativePath": "",
+	"kitAutoOutputPathReplace1": "",
+	"kitAutoOutputPathReplace2": "",
+	"kitAutoOutputPathStyle": 0,
+	"lessAllowInsecureImports": 0,
+	"lessAutoOutputPathEnabled": 1,
+	"lessAutoOutputPathFilenamePattern": "*.css",
+	"lessAutoOutputPathRelativePath": "..\/css",
+	"lessAutoOutputPathReplace1": "less",
+	"lessAutoOutputPathReplace2": "css",
+	"lessAutoOutputPathStyle": 2,
+	"lessCreateSourceMap": 0,
+	"lessDisableJavascript": 0,
+	"lessIeCompatibility": 1,
+	"lessOutputStyle": 0,
+	"lessRelativeURLS": 0,
+	"lessStrictImports": 0,
+	"lessStrictMath": 0,
+	"lessStrictUnits": 0,
+	"markdownAutoOutputPathEnabled": 1,
+	"markdownAutoOutputPathFilenamePattern": "*.html",
+	"markdownAutoOutputPathRelativePath": "",
+	"markdownAutoOutputPathReplace1": "",
+	"markdownAutoOutputPathReplace2": "",
+	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
+	"markdownEnableFootnotes": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
+	"reloadFileURLs": 0,
+	"sassAutoOutputPathEnabled": 1,
+	"sassAutoOutputPathFilenamePattern": "*.css",
+	"sassAutoOutputPathRelativePath": "..\/css",
+	"sassAutoOutputPathReplace1": "sass",
+	"sassAutoOutputPathReplace2": "css",
+	"sassAutoOutputPathStyle": 2,
+	"sassCreateSourceMap": 0,
+	"sassDebugStyle": 0,
+	"sassDecimalPrecision": 10,
+	"sassOutputStyle": 0,
+	"sassUseLibsass": 0,
+	"shouldRunAutoprefixer": 0,
+	"shouldRunBless": 0,
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
+	"slimAutoOutputPathEnabled": 1,
+	"slimAutoOutputPathFilenamePattern": "*.html",
+	"slimAutoOutputPathRelativePath": "",
+	"slimAutoOutputPathReplace1": "",
+	"slimAutoOutputPathReplace2": "",
+	"slimAutoOutputPathStyle": 0,
+	"slimCompileOnly": 0,
+	"slimLogicless": 0,
+	"slimOutputFormat": 0,
+	"slimOutputStyle": 1,
+	"slimRailsCompatible": 0,
+	"stylusAutoOutputPathEnabled": 1,
+	"stylusAutoOutputPathFilenamePattern": "*.css",
+	"stylusAutoOutputPathRelativePath": "..\/css",
+	"stylusAutoOutputPathReplace1": "stylus",
+	"stylusAutoOutputPathReplace2": "css",
+	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
+	"stylusDebugStyle": 0,
+	"stylusImportCSS": 0,
+	"stylusOutputStyle": 0,
+	"stylusResolveRelativeURLS": 0,
+	"typescriptAutoOutputPathEnabled": 1,
+	"typescriptAutoOutputPathFilenamePattern": "*.js",
+	"typescriptAutoOutputPathRelativePath": "\/js",
+	"typescriptAutoOutputPathReplace1": "",
+	"typescriptAutoOutputPathReplace2": "",
+	"typescriptAutoOutputPathStyle": 2,
+	"typescriptCreateDeclarationFile": 0,
+	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
+	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
+	"typescriptModuleType": 2,
+	"typescriptNoImplicitAny": 0,
+	"typescriptPreserveConstEnums": 0,
+	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
+	"typescriptTargetECMAVersion": 0,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "2"
+}

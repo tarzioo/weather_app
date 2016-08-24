@@ -5,8 +5,10 @@
 
 <div id="map" style="height:500px; width:500px"></div>
 <script src="/static/map.js"></script>
-<script>var lat = {{ user.location.lat }};</script>
-<script>var lng = {{ user.location.lng }};</script>
+<script>
+    var lat = {{ user.location.lat }};
+    var lng = {{ user.location.lng }};
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcSXRrgHGCuYRYWOG6GoQEU-i6cbf8ds&callback=initMap"
     async defer></script>
 

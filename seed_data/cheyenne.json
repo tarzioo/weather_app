@@ -1,0 +1,110 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "014",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "6:23 PM CDT on August 23, 2016",
+		"date_epoch": "1471994580",
+		"expires": "6:45 PM CDT on August 23, 2016",
+		"expires_epoch": "1471995900",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...A Severe Thunderstorm Warning remains in effect until 645 PM CDT\u000Afor western Roger Mills County...\u000A\u000AAt 622 PM CDT...severe thunderstorms were located along a line\u000Aextending from 7 miles northwest of Cheyenne to 7 miles southeast of\u000AAllison...moving northeast at 25 mph.\u000A\u000AHazard...60 mph wind gusts and nickel size hail. \u000A\u000ASource...radar indicated. \u000A\u000AImpact...expect damage to roofs...siding...and trees. \u000A\u000ALocations impacted include...\u000AReydon...roll...Crawford and Dempsey. \u000A\u000APrecautionary/preparedness actions...\u000A\u000AFor your protection move to an interior room on the lowest floor of a\u000Abuilding.\u000A\u000ATorrential rainfall is occurring with these storms...and may lead to\u000Aflash flooding. Do not drive your vehicle through flooded roadways.\u000A\u000A\u000ALat...Lon 3549 9978 3545 10000 3580 10000 3590 9979\u000A 3589 9978 3588 9975 3586 9972 3585 9967\u000A 3568 9966\u000Atime...Mot...loc 2322z 241deg 24kt 3568 9978 3552 10001 \u000A\u000AHail...0.88in\u000Awind...60mph\u000A \u000A\u000ABrb\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"35.49",
+		"lon":"-99.78"
+		}
+		,
+		{
+		"lat":"35.45",
+		"lon":"-100.00"
+		}
+		,
+		{
+		"lat":"35.80",
+		"lon":"-100.00"
+		}
+		,
+		{
+		"lat":"35.90",
+		"lon":"-99.79"
+		}
+		,
+		{
+		"lat":"35.89",
+		"lon":"-99.78"
+		}
+		,
+		{
+		"lat":"35.88",
+		"lon":"-99.75"
+		}
+		,
+		{
+		"lat":"35.86",
+		"lon":"-99.72"
+		}
+		,
+		{
+		"lat":"35.85",
+		"lon":"-99.67"
+		}
+		,
+		{
+		"lat":"35.68",
+		"lon":"-99.66"
+		}
+		],
+		"Vertex_count":9,
+		"stormInfo": {
+		"time_epoch": 1471994520,
+		"Motion_deg": 241,
+		"Motion_spd": 24,
+		"position_lat":35.68,
+		"position_lon":-99.78
+		}
+		}
+		}
+		,
+		{
+		"type": "WAT",
+		"description": "Areal Flood Advisory",
+		"date": "6:11 PM CDT on August 23, 2016",
+		"date_epoch": "1471993860",
+		"expires": "8:15 PM CDT on August 23, 2016",
+		"expires_epoch": "1472001300",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000AThe National Weather Service in Norman has issued a\u000A\u000A* Flood Advisory for...\u000A southern Roger Mills County in western Oklahoma...\u000A\u000A* until 815 PM CDT\u000A\u000A* at 608 PM CDT...Doppler radar indicated heavy rain due to\u000A thunderstorms. Radar estimates that one and a half inches of rain\u000A has fallen in less than an hour just south of Cheyenne and\u000A additional thunderstorms will move through southern Roger Mills\u000A County. This heavy rain will cause minor flooding in the advisory\u000A area.\u000A\u000A* Some locations that will experience flooding include...\u000A Cheyenne...Hammon...Reydon and Dempsey. \u000A\u000APrecautionary/preparedness actions...\u000A\u000AExcessive runoff from heavy rainfall will cause flooding of small\u000Acreeks and streams...low water crossings...highways...streets and as\u000Awell as other drainage areas and low lying spots. Turn\u000Aaround...don\u0027t drown.\u000A\u000ALat...Lon 3568 10000 3565 9938 3555 9938 3555 9937\u000A 3551 9937 3551 9958 3550 9958 3551 10000\u000A\u000A\u000A..speg.\u000A\u000A\u000A",
+		"phenomena": "FA",
+		"significance": "Y",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

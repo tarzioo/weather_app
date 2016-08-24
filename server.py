@@ -241,7 +241,7 @@ def alerts_info():
 
 
     data = r.json()
-    # pprint(data)
+    pprint(data)
 
     alerts = {
             'apparentTemperature': data['currently']['apparentTemperature'],
@@ -270,7 +270,7 @@ def show_additional_alerts():
     pprint(data)
 
     alerts = {
-            "message": data['alerts'][0]['message']
+            "message": data['alerts'].length if data['alerts'][0]['message'] else ''
     }
 
 

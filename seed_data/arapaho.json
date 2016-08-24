@@ -1,0 +1,63 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "016",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "6:28 PM CDT on August 23, 2016",
+		"date_epoch": "1471994880",
+		"expires": "7:15 PM CDT on August 23, 2016",
+		"expires_epoch": "1471997700",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000AThe National Weather Service in Norman has issued a\u000A\u000A* Severe Thunderstorm Warning for...\u000A western Custer County in western Oklahoma...\u000A\u000A* until 715 PM CDT\u000A\u000A* at 628 PM CDT...a severe thunderstorm was located near Foss\u000A Reservoir...moving east at 15 mph.\u000A\u000A Hazard...60 mph wind gusts and quarter size hail. \u000A\u000A Source...radar indicated. \u000A\u000A Impact...hail damage to vehicles is expected. Expect wind damage \u000A to roofs...siding...and trees. \u000A\u000A* Locations impacted include...\u000A Clinton...Arapaho...Butler...Foss Reservoir and Stafford. \u000A\u000AThis includes Interstate 40 between mile markers 63 and 65.\u000A \u000APrecautionary/preparedness actions...\u000A\u000AFor your protection move to an interior room on the lowest floor of a\u000Abuilding.\u000A\u000ATorrential rainfall is occurring with this storm...and may lead to\u000Aflash flooding. Do not drive your vehicle through flooded roadways.\u000A\u000A\u000ALat...Lon 3550 9935 3566 9937 3574 9893 3548 9899\u000Atime...Mot...loc 2328z 264deg 14kt 3559 9928 \u000A\u000AHail...1.00in\u000Awind...60mph\u000A \u000A\u000ABrb\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"35.50",
+		"lon":"-99.35"
+		}
+		,
+		{
+		"lat":"35.66",
+		"lon":"-99.37"
+		}
+		,
+		{
+		"lat":"35.74",
+		"lon":"-98.93"
+		}
+		,
+		{
+		"lat":"35.48",
+		"lon":"-98.99"
+		}
+		],
+		"Vertex_count":4,
+		"stormInfo": {
+		"time_epoch": 1471994880,
+		"Motion_deg": 264,
+		"Motion_spd": 14,
+		"position_lat":35.59,
+		"position_lon":-99.28
+		}
+		}
+		}
+	]
+}

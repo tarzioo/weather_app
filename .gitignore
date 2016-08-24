@@ -1,3 +1,6 @@
 env/
 *.pyc
 secrets.sh
+static/*.css
+static/*.css.map
+.sass-cache

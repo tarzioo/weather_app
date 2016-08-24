@@ -21,7 +21,10 @@ function getExtraAlerts() {
 
     $.get('/alerts-extra.json', function (response) {
         console.log(response);
-        $('#alerts-extra').html("Message: " + response['message']);
+        if(!response.message) {
+            return;
+        }
+        $('#alerts-extra').html("Message: " + response.message);
 
     });
 }

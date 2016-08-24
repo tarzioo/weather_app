@@ -1,0 +1,78 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "021",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "5:15 PM CDT on August 23, 2016",
+		"date_epoch": "1471990500",
+		"expires": "5:45 PM CDT on August 23, 2016",
+		"expires_epoch": "1471992300",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...A Severe Thunderstorm Warning remains in effect until 545 PM CDT\u000Afor southeastern Roger Mills and northeastern Beckham counties...\u000A\u000AAt 515 PM CDT...a severe thunderstorm was located near Cheyenne...\u000Amoving east at 25 mph.\u000A\u000AHazard...60 mph wind gusts and quarter size hail. \u000A\u000ASource...radar indicated. \u000A\u000AImpact...hail damage to vehicles is expected. Expect wind damage to \u000A roofs...siding...and trees. \u000A\u000ALocations impacted include...\u000ACheyenne and Hammon. \u000A\u000APrecautionary/preparedness actions...\u000A\u000AFor your protection move to an interior room on the lowest floor of a\u000Abuilding.\u000A\u000ATorrential rainfall is occurring with this storm...and may lead to\u000Aflash flooding. Do not drive your vehicle through flooded roadways.\u000A\u000A\u000ALat...Lon 3549 9975 3566 9973 3567 9938 3555 9938\u000A 3555 9936 3544 9937\u000Atime...Mot...loc 2215z 275deg 24kt 3557 9965 \u000A\u000AHail...1.00in\u000Awind...60mph\u000A \u000A\u000ABrb\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"35.49",
+		"lon":"-99.75"
+		}
+		,
+		{
+		"lat":"35.66",
+		"lon":"-99.73"
+		}
+		,
+		{
+		"lat":"35.67",
+		"lon":"-99.38"
+		}
+		,
+		{
+		"lat":"35.55",
+		"lon":"-99.38"
+		}
+		,
+		{
+		"lat":"35.55",
+		"lon":"-99.36"
+		}
+		,
+		{
+		"lat":"35.44",
+		"lon":"-99.37"
+		}
+		],
+		"Vertex_count":6,
+		"stormInfo": {
+		"time_epoch": 1471990500,
+		"Motion_deg": 275,
+		"Motion_spd": 24,
+		"position_lat":35.57,
+		"position_lon":-99.65
+		}
+		}
+		}
+	]
+}
