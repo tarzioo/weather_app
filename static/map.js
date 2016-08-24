@@ -12,7 +12,7 @@ function initMap() {
         scrollable: false,
         scrollwheel: false,
         zoomControl: false,
-        
+
 
     });
 
@@ -21,7 +21,7 @@ function initMap() {
         width: 1000
     });
 
-    $.get('/map.json', function (updates) {
+    $.get('/friends_map.json', function (updates) {
         //json looks like this
         // updates = {
         // update.update_id: {

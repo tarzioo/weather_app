@@ -167,44 +167,43 @@ def show_location_info():
     user_id = session['user_id']
     user = User.query.get(user_id)
     all_updates = Update.get_all_updates(user_id)
+    friendship_list = Friendship.get_friendship_list(user_id)
+    friends_updates = Update.get_friends_updates(user_id)
 
-    return render_template('map.html', all_updates=all_updates, user=user)
 
 
-@app.route('/map.json')
+    return render_template('map.html', all_updates=all_updates, user=user, friendship_list=friendship_list, friends_updates=friends_updates)
+
+
+@app.route('/friends_map.json')
 def status_location_info():
     """json info about each status location"""
     user_id = session['user_id']
     user = User.query.get(user_id)
-    update = Update.query.filter_by(user=user).all()
-    # friendship = Friendship.query.get(user_id)
-    friendship_list = [user_id]
+    friends_updates = Update.get_friends_updates(user_id)
 
-    #For loop to get friend_id and store in list to further query in result
-    for friend in user.friendships:
-        friendship_list.append(friend.friend_id)
-    print friendship_list
+    friends = {
+        friend: {
+            "UserName": update.user_id,
+            "post": update.post,
+            "userName": update.user.first_name,
+            "userLat": update.user.location.lat,
+            "userLng": update.user.location.lng
+        }
+        for update in Update.get_friends_updates}
 
-    # updates = {
-    #     update.update_id: {
-    #         "UserName": update.user_id,
-    #         "post": update.post,
-    #         "userName": update.user.first_name,
-    #         "userLat": update.user.location.lat,
-    #         "userLng": update.user.location.lng
-    #     }
-    #     for update in Update.query}
+    return jsonify(friends)
 
 
-    # updates = {
-    #     update.user_id: {
-    #     if user_id in friendship_list:
-    #         "userName": update.user_id
-    #     }
-    # }
-    # return jsonify(updates)
+@app.route('/strangers_map.json')  
+def status_location_info_nonfriends():
+
+    user_id = session["user_id"]
+    user = User.query.get(user_id)
+    all_updates = Update.get_all_updates(user_id)
 
     return "done"
+
 
 
 
@@ -258,7 +257,7 @@ def show_additional_alerts():
 
     r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
 
-    data = r.json() 
+    data = r.json()
     pprint(data)
 
     alerts = {

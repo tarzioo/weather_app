@@ -41,6 +41,7 @@ class User(db.Model):
         db.session.commit()
         return user
 
+
     @staticmethod
     def get_user_by_email_and_password(email, password):
         """Get existing user by email and password"""
@@ -75,6 +76,7 @@ class User(db.Model):
     def __repr__(self):
         """Provide helpful representation when printed"""
 
+
         return "<User user_id=%s email=%s first_name=%s last_name=%s zipcode=%d private=%d>" % (self.user_id, self.email, self.first_name, self.last_name, self.zipcode, self.private)
 
 
@@ -100,6 +102,7 @@ class Update(db.Model):
     def add_update(user_id, post):
         """Add update post"""
 
+
         time = datetime.datetime.utcnow()
         user = User.query.get(user_id)
 
@@ -116,13 +119,28 @@ class Update(db.Model):
 
         return update
 
+
     @staticmethod
-    def get_all_updates(user_id):
+    def get_friends_updates(user_id):
         user = User.query.get(user_id)
         friendship_list = Friendship.get_friendship_list(user_id)
         result = Update.query.filter(Update.user_id.in_(friendship_list)).all()
 
         return result
+
+    @staticmethod
+    def get_all_updates(user_id):
+        user = User.query.get(user_id)
+        friendship_list = Friendship.get_friendship_list(user_id)
+        strangers = Update.query.filter(~Update.user_id.in_(friendship_list)).all()
+
+        for person in strangers:
+            if person.user.private == 1:
+                person.user.first_name = "private"
+                print person.user.first_name
+
+            return strangers            
+
 
     def __repr__(self):
         """Provide helpful representation when printed"""
@@ -144,9 +162,11 @@ class Friendship(db.Model):
         backref=db.backref("friendships"))
     friend = db.relationship("User", foreign_keys="Friendship.friend_id")
 
+
     @staticmethod
     def add_friend(user_id, friend_id):
         """add friend"""
+
 
         friendship = Friendship(user_id=user_id, friend_id=friend_id)
 
@@ -159,6 +179,8 @@ class Friendship(db.Model):
     @staticmethod
     def get_friendship_list(user_id):
         """get friend_list from user"""
+
+
         user = User.query.get(user_id)
         update = Update.query.filter_by(user=user).all()
         friendship = Friendship.query.get(user_id)
@@ -193,6 +215,7 @@ class Location(db.Model):
     #user = db.relationship("User", foreign_keys="Location.zipcode", backref=db.backref("locations"))
     user = db.relationship("User", backref=db.backref("locations"))
 
+
     def __repr__(self):
         """Provide helpful representation when printed"""
 
@@ -203,32 +226,12 @@ class Location(db.Model):
 ##############################################################################
 # Add, update, delete functions
 
-# def updates_from_friends(user_id=user_id):
-#     """get updates from just friends"""
-
-#     friendship = Friendship.query.get(user_id)
-#     friendship_list = [user_id]
-
-#     #For loop to get friend_id and store in list to further query in result
-#     for friend in user.friendships:
-#         friendship_list.append(friend.friend_id)
-#     print friendship_list
-
-#     result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
-
-#     return result
-
-
 
 
 
 ##############################################################################
 # Query functions
 
-def set_post(user_id):
-    user = User.query.get(user_id)
-    posted_at = user
-    return user
 
 
 
