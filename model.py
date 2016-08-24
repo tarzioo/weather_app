@@ -88,6 +88,7 @@ class Update(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     time = db.Column(db.DateTime, default=datetime.datetime.utcnow())
     post = db.Column(db.String(500), nullable=False)
+    posted_from = db.Column(db.String(500), nullable=False)
 
     #define relationship
     user = db.relationship("User", backref=db.backref("updates"))
@@ -98,7 +99,12 @@ class Update(db.Model):
         """Add update post"""
 
         time = datetime.datetime.utcnow()
-        update = Update(user_id=user_id, post=post, time=time)
+        user = User.query.get(user_id)
+
+        posted_from = user.location.county
+        print posted_from
+
+        update = Update(user_id=user_id, post=post, time=time, posted_from=posted_from)
 
         db.session.add(update)
         db.session.commit()
@@ -109,7 +115,7 @@ class Update(db.Model):
         """Provide helpful representation when printed"""
 
 
-        return "<Update update_id=%s user_id=%s time=%s post=%s>" % (self.update_id, self.user_id, self.time, self.post)
+        return "<Update update_id=%s user_id=%s time=%s post=%s posted_from=%s>" % (self.update_id, self.user_id, self.time, self.post, self.posted_from)
 
 
 class Friendship(db.Model):
@@ -189,6 +195,10 @@ class Location(db.Model):
 ##############################################################################
 # Query functions
 
+def set_post(user_id):
+    user = User.query.get(user_id)
+    posted_at = user
+    return user
 
 
 
