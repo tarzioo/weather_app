@@ -102,7 +102,8 @@ class Update(db.Model):
 
         time = datetime.datetime.utcnow()
         user = User.query.get(user_id)
-
+        
+        #When update is made, user's county,lat,lng are permanently stored so if their location changes in the future, this doesn't alter where the post was originally made from
         posted_county = user.location.county
         posted_lat = user.location.lat
         posted_lng = user.location.lng

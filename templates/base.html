@@ -13,7 +13,7 @@
         <button><a href="/alerts">Alerts</a></button>
         <button><a href="/logout">Logout</a></button></br>
         <br>
-        <p>Welcome {{ user.first_name }}, your current location is {{ user.zipcode }}<br>
+        <p>Welcome {{ user.first_name }}, your current location is {{ user.location.city}}, {{ user.zipcode }}<br>
         <label>Change Location to:
             <input id="change-zipcode-field" type="text" name="zipcode">
             <button id="button-zipcode" type="button">Update Zipcode</button>
