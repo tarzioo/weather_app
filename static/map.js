@@ -22,6 +22,43 @@ function initialize() {
         width: 500
     });
 
+    $.get('/friends_map.json', function (friends) {
+        //json looks like this
+        // friends = {
+        // status.update_id: {
+        //     "UserName": status.user.first_name,
+        //     "post": status.post,
+        //     "postedAt": status.time,
+        //     "postedCounty": status.posted_county,
+        //     "postedLat": status.posted_lat,
+        //     "postedLng": status.posted_lng
+        // }
+        var update, marker, html;
+
+        for (var key in friends) {
+            update = friends[key];
+
+            console.log(update);
+
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(update.postedLat, update.postedLng),
+                map: map,
+                title: "Posted from: " + update.userName,
+                icon: '/static/img/friends-icon.png'
+            });
+
+            html = (
+                '<div class="window-content">' +
+                '<p>' + update.userName + ": " + update.post + '</p>' +
+                '<p>written at: ' + update.postedAt + '</p>' +
+                '<p>from: ' + update.postedCounty + ' county</p></div>');
+
+            bindInfoWindow(marker, map, infoWindow, html);
+
+        }
+    });
+
+
    $.get('/strangers_map.json', function (strangers) {
         //json looks like this
         // strangers = {
@@ -69,5 +106,7 @@ function initialize() {
     }
 
 }
+
+
 
 google.maps.event.addDomListener(window, 'load', initialize);

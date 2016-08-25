@@ -33,10 +33,10 @@
     {% for message in get_flashed_messages() %}
         <p>{{ message }}</p>
     {% endfor %}
-
+    <script src="http://code.jquery.com/jquery.js"></script>
 
     {% block content %}BLOCK CONTENT HERE{% endblock %}
-<script src="http://code.jquery.com/jquery.js"></script>
+
 <script src="/static/weather.js"></script>
 </body>
 </html>

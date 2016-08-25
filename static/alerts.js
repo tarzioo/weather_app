@@ -2,6 +2,7 @@
 
 function getAlerts() {
 
+
     $.get('/alerts.json', function (response) {
         
         console.log(response);
@@ -13,7 +14,7 @@ function getAlerts() {
                             );  
 
     });
- 
+
 
 }
 
@@ -28,4 +29,9 @@ function getExtraAlerts() {
 
     });
 }
+
+$(document).on('ready', getAlerts);
+// });
+
+
 

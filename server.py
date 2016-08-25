@@ -173,26 +173,26 @@ def show_location_info():
     # return render_template('map.html', user=user)
 
 
-# @app.route('/friends_map.json')
-# def status_location_info():
-#     """json info about each status location"""
-#     user_id = session['user_id']
-#     # user = User.query.get(user_id)
-#     # friends_updates = Update.get_friends_updates(user_id)
+@app.route('/friends_map.json')
+def status_location_info():
+    """json info about each status location"""
+    user_id = session['user_id']
+    # user = User.query.get(user_id)
+    # friends_updates = Update.get_friends_updates(user_id)
 
-#     friends = {
-#         status.update_id: {
-#             "userName": status.user.first_name,
-#             "post": status.post,
-#             "postedAt": status.time,
-#             "postedCounty": status.posted_county,
-#             "postedLat": status.posted_lat,
-#             "postedLng": status.posted_lng
-#         }
-#         for status in Update.get_friends_updates(user_id)}
-#     pprint(friends)
+    friends = {
+        status.update_id: {
+            "userName": status.user.first_name,
+            "post": status.post,
+            "postedAt": status.time,
+            "postedCounty": status.posted_county,
+            "postedLat": status.posted_lat,
+            "postedLng": status.posted_lng
+        }
+        for status in Update.get_friends_updates(user_id)}
+    pprint(friends)
 
-#     return jsonify(friends)
+    return jsonify(friends)
 
 
 @app.route('/strangers_map.json')
