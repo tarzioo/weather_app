@@ -1814,6 +1814,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/seed_data\/blaine.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/blaine.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/blaine-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/seed_data\/cheyenne.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -1836,6 +1847,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/seed_data\/garfield.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/garfield.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/garfield-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/jackson.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/jackson.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/jackson-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/seed_data\/json-test.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -1843,6 +1876,17 @@
 		"inputAbbreviatedPath": "\/seed_data\/json-test.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/seed_data\/json-test-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/seed_data\/kingfisher.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seed_data\/kingfisher.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/seed_data\/kingfisher-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -1930,6 +1974,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/static\/min\/alerts-min.js",
 		"outputAbbreviatedPath": "\/static\/min\/min\/alerts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/static\/min\/map-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/min\/map-min.js",
+		"outputAbbreviatedPath": "\/static\/min\/min\/map-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

@@ -1,5 +1,3 @@
-
-
 "use strict";
 
 var map;
@@ -21,34 +19,36 @@ function initMap() {
         width: 1000
     });
 
-    $.get('/friends_map.json', function (updates) {
+    $.get('/friends_map.json', function (friends) {
         //json looks like this
-        // updates = {
-        // update.update_id: {
-        //     "UserName": update.user_id,
-        //     "post": update.post,
-        //     "userName": update.user.first_name,
-        //     "userLat": update.user.location.lat,
-        //     "userLng": update.user.location.lng
+        // friends = {
+        // status: {
+        //     "UserName": status.user.first_name,
+        //     "post": status.post,
+        //     "postedAt": status.time,
+        //     "postedCounty": status.posted_county,
+        //     "postedLat": status.posted_lat,
+        //     "postedLng": status.posted_lng
         // }
         var update, marker, html;
 
-        for (var key in updates) {
-            update = updates[key];
+        for (var key in friends) {
+            update = friends[key];
 
             console.log(update);
 
             marker = new google.maps.Marker({
-                position: new google.maps.LatLng(update.userLat, update.userLng),
+                position: new google.maps.LatLng(update.postedLat, update.postedLng),
                 map: map,
-                title: "User Name: " + update.userName,
+                title: "Posted at: " ,
                 icon: '/static/img/tornado-icon.png'
             });
 
             html = (
                 '<div class="window-content">' +
-                '<br><p>' + update.userName + ": " + update.post + '</p>' +
-            '</div>');
+                '<p>' + update.userName + ": " + update.post + '</p>' +
+                '<p>written at: ' + update.postedAt + '</p>' +
+                '<p>from: ' + update.postedCounty + '</p></div>');
 
             bindInfoWindow(marker, map, infoWindow, html);
 

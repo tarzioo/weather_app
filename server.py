@@ -179,23 +179,24 @@ def show_location_info():
 def status_location_info():
     """json info about each status location"""
     user_id = session['user_id']
-    user = User.query.get(user_id)
-    friends_updates = Update.get_friends_updates(user_id)
+    # user = User.query.get(user_id)
+    # friends_updates = Update.get_friends_updates(user_id)
 
     friends = {
-        friend: {
-            "UserName": update.user_id,
-            "post": update.post,
-            "userName": update.user.first_name,
-            "userLat": update.user.location.lat,
-            "userLng": update.user.location.lng
+        status.update_id: {
+            "userName": status.user.first_name,
+            "post": status.post,
+            "postedAt": status.time,
+            "postedCounty": status.posted_county,
+            "postedLat": status.posted_lat,
+            "postedLng": status.posted_lng
         }
-        for update in Update.get_friends_updates}
-
+        for status in Update.get_friends_updates(user_id)}
+    pprint(friends)
     return jsonify(friends)
 
 
-@app.route('/strangers_map.json')  
+@app.route('/strangers_map.json') 
 def status_location_info_nonfriends():
 
     user_id = session["user_id"]

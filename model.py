@@ -139,7 +139,7 @@ class Update(db.Model):
                 person.user.first_name = "private"
                 print person.user.first_name
 
-            return strangers            
+            return strangers           
 
 
     def __repr__(self):
