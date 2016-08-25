@@ -4,42 +4,17 @@
 
 
 
-{{ all_updates }}
-<br><br>
-{% for x in all_updates %}
-    <li>{{ x.user.first_name }}, {{ x.post }}</li>
-{% endfor %}
-<p>-----------------</p>
-
-
-{{ friends_updates }}
-<br><br>
-{% for x in friends_updates %}
-    <li>{{ x.user.first_name }}, {{ x.post }}, {{ x.posted_county }}</li>
-{% endfor %}
-<p>------------------------------------------</p>
-
-{{ friendship_list }}
-<br><br>
-{% for x in friendship_list %}
-    <li>{{ x }}</li>
-{% endfor %}
-
-
-
 <div id="map" style="height:700px; width:700px"></div>
-<script src="/static/map.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcSXRrgHGCuYRYWOG6GoQEU-i6cbf8ds&sensor=true">
+</script>
+
 <script>
     var lat = {{ user.location.lat }};
     var lng = {{ user.location.lng }};
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcSXRrgHGCuYRYWOG6GoQEU-i6cbf8ds&callback=initMap"
-    async defer></script>
 
-   
-
-
-
+<script src="/static/map.js"></script>
 
 
 {% endblock %}

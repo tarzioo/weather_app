@@ -1,6 +1,7 @@
 """Models and database functions for project"""
 
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import joinedload
 import datetime
 
 # This is the connection to the PostgreSQL database; we're getting this through
@@ -132,14 +133,18 @@ class Update(db.Model):
     def get_all_updates(user_id):
         user = User.query.get(user_id)
         friendship_list = Friendship.get_friendship_list(user_id)
-        strangers = Update.query.filter(~Update.user_id.in_(friendship_list)).all()
-
+        strangers = Update.query.filter(~Update.user_id.in_(friendship_list)).options(joinedload('user')).all()
+        print strangers
         for person in strangers:
+            print "looking at person", person
+            print "person stuff", dir(person)
+            # import pdb; pdb.set_trace()
+            print "this person's user", person.user
             if person.user.private == 1:
                 person.user.first_name = "private"
                 print person.user.first_name
-
-            return strangers           
+        print "done"
+        return strangers
 
 
     def __repr__(self):

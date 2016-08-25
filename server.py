@@ -166,23 +166,44 @@ def show_location_info():
 
     user_id = session['user_id']
     user = User.query.get(user_id)
-    all_updates = Update.get_all_updates(user_id)
-    friendship_list = Friendship.get_friendship_list(user_id)
-    friends_updates = Update.get_friends_updates(user_id)
 
 
+    return render_template('map.html', user=user)
 
-    return render_template('map.html', all_updates=all_updates, user=user, friendship_list=friendship_list, friends_updates=friends_updates)
+    # return render_template('map.html', user=user)
 
 
-@app.route('/friends_map.json')
-def status_location_info():
-    """json info about each status location"""
-    user_id = session['user_id']
+# @app.route('/friends_map.json')
+# def status_location_info():
+#     """json info about each status location"""
+#     user_id = session['user_id']
+#     # user = User.query.get(user_id)
+#     # friends_updates = Update.get_friends_updates(user_id)
+
+#     friends = {
+#         status.update_id: {
+#             "userName": status.user.first_name,
+#             "post": status.post,
+#             "postedAt": status.time,
+#             "postedCounty": status.posted_county,
+#             "postedLat": status.posted_lat,
+#             "postedLng": status.posted_lng
+#         }
+#         for status in Update.get_friends_updates(user_id)}
+#     pprint(friends)
+
+#     return jsonify(friends)
+
+
+@app.route('/strangers_map.json')
+def status_location_info_nonfriends():
+
+    user_id = session["user_id"]
+    print "user id", session["user_id"]
     # user = User.query.get(user_id)
-    # friends_updates = Update.get_friends_updates(user_id)
-
-    friends = {
+    result = Update.get_all_updates(user_id)
+    print "result:",  result
+    strangers = {
         status.update_id: {
             "userName": status.user.first_name,
             "post": status.post,
@@ -191,21 +212,10 @@ def status_location_info():
             "postedLat": status.posted_lat,
             "postedLng": status.posted_lng
         }
-        for status in Update.get_friends_updates(user_id)}
-    pprint(friends)
-    return jsonify(friends)
+        for status in Update.get_all_updates(user_id)}
+    pprint(strangers)
 
-
-@app.route('/strangers_map.json') 
-def status_location_info_nonfriends():
-
-    user_id = session["user_id"]
-    user = User.query.get(user_id)
-    all_updates = Update.get_all_updates(user_id)
-
-    return "done"
-
-
+    return jsonify(strangers)
 
 
 
