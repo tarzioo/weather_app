@@ -267,18 +267,25 @@ def show_additional_alerts():
     user = User.query.get(user_id)
     city = user.location.city
 
-    data = get_alerts()
+    data = get_alerts(city)
 
     print "print data", data
+    print "this is the length of data", len(data["alerts"])
 
-    alerts = {
-        "description": data["alerts"][0]["description"],
-        "date": data["alerts"][0]["date"],
-        "message": data["alerts"][0]["message"]
-    }
+    if len(data["alerts"]) > 0:
 
+        alerts = {
+            "description": data["alerts"][0]["description"],
+            "date": data["alerts"][0]["date"],
+            "expires": data["alerts"][0]["expires"],
+            "message": data["alerts"][0]["message"]
+        }
 
+    else:
 
+        alerts = {
+            "message": "No active Alert"
+        }
 
     # alerts = {
     #         "message": data['alerts'].length if data['alerts'][0]['message'] else ''
@@ -289,30 +296,34 @@ def show_additional_alerts():
 
 
 #Comment this out to use demo api call
-def get_alerts():
+
+#####################################################################
+def get_alerts(city):
     """function loads demo api call"""
 
-    # r = requests.get('/seed_data/helena.json')
-    # r = requests.get("http://seed_data/helena.json")
-    # r = json.load(open("seed_data/helena.json"))
-    # r = request.get('seed_data/helena.json')
     with open('seed_data/helena.json', 'r') as f:
         data = json.load(f)
-
     
     # data = r.json()
     pprint(data)
 
     return data
 
+
+################################################################################
+
 #Comment this out to switch from live api call to demo
-# def get_alerts(user_id):
+
+################################################################################
+# def get_alerts(city):
 #     """live api call for alerts"""
 
 #     r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
 
 #     data = r.json()
 #     pprint(data)
+
+#     return data
 
 
 

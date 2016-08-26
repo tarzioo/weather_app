@@ -1,0 +1,267 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "011",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "7:37 PM CDT on August 25, 2016",
+		"date_epoch": "1472171820",
+		"expires": "8:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472173200",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...The Severe Thunderstorm Warning for southeastern Woods and north\u000Acentral major counties is cancelled...\u000A \u000Athe severe thunderstorm which prompted the warning has moved out of \u000Athe warned area. Therefore the warning has been cancelled.\u000A\u000ALat...Lon 3675 9818 3646 9835 3646 9848 3647 9853\u000A 3660 9854 3685 9853\u000Atime...Mot...loc 0036z 202deg 22kt 3651 9847 \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"36.75",
+		"lon":"-98.18"
+		}
+		,
+		{
+		"lat":"36.46",
+		"lon":"-98.35"
+		}
+		,
+		{
+		"lat":"36.46",
+		"lon":"-98.48"
+		}
+		,
+		{
+		"lat":"36.47",
+		"lon":"-98.53"
+		}
+		,
+		{
+		"lat":"36.60",
+		"lon":"-98.54"
+		}
+		,
+		{
+		"lat":"36.85",
+		"lon":"-98.53"
+		}
+		],
+		"Vertex_count":6,
+		"stormInfo": {
+		"time_epoch": 1472085360,
+		"Motion_deg": 202,
+		"Motion_spd": 22,
+		"position_lat":36.51,
+		"position_lon":-98.47
+		}
+		}
+		}
+		,
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "7:24 PM CDT on August 25, 2016",
+		"date_epoch": "1472171040",
+		"expires": "10:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472180400",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 457 remains in effect until 1000 PM CDT\u000Afor the following locations\u000A\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000AAlfalfa Beckham Blaine \u000ACuster Dewey Ellis \u000AGarfield Grant Greer \u000AHarmon Jackson Kay \u000AKingfisher Kiowa Logan \u000Amajor Noble Payne \u000ARoger Mills Washita Woods \u000AWoodward \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"009"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"034"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"033"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"036"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"035"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"020"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"010"
+		}
+		],
+		"StormBased": {
+		}
+		}
+		,
+		{
+		"type": "WAT",
+		"description": "Areal Flood Watch",
+		"date": "2:50 PM CDT on August 25, 2016",
+		"date_epoch": "1472154600",
+		"expires": "7:00 AM CDT on August 26, 2016",
+		"expires_epoch": "1472212800",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...Flood Watch remains in effect through Friday morning...\u000A\u000AThe Flood Watch for flash flooding...flooding of creeks and\u000Arivers...and flooding of low lying areas continues for\u000A\u000A* portions of northern Oklahoma...northwest Oklahoma and western \u000A Oklahoma...including the following areas...in northern \u000A Oklahoma...Garfield...Grant and Kay. In northwest Oklahoma... \u000A Alfalfa...Blaine...Dewey and major. In western Oklahoma... \u000A Custer and Roger Mills. \u000A\u000A* Through Friday morning\u000A\u000A* locally heavy rainfall will be possible this evening and \u000A overnight. \u000A\u000A* Localized areas of 1 to 3 inches of rainfall will be possible.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AMonitor weather forecasts and information. Make plans to get to\u000Ahigher ground if flooding happens.\u000A\u000A\u000A\u000ACms/Kurtz\u000A\u000A\u000A\u000A",
+		"phenomena": "FA",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

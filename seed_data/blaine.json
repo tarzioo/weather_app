@@ -1,0 +1,99 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "IN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "47371.3.99999",
+		"l": "/q/zmw:47371.3.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "KS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "66549.2.99999",
+		"l": "/q/zmw:66549.2.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "41124.1.99999",
+		"l": "/q/zmw:41124.1.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "ME",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "04734.1.99999",
+		"l": "/q/zmw:04734.1.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "MN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "55014.2.99999",
+		"l": "/q/zmw:55014.2.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "OH",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "43909.1.99999",
+		"l": "/q/zmw:43909.1.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "TN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "37709.1.99999",
+		"l": "/q/zmw:37709.1.99999"
+		}
+		,
+		{
+		"name": "Blaine",
+		"city": "Blaine",
+		"state": "WA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "98230.1.99999",
+		"l": "/q/zmw:98230.1.99999"
+		}
+		]
+	}
+}

@@ -1,0 +1,201 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "015",
+	"alerts": [
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "7:43 PM CDT on August 25, 2016",
+		"date_epoch": "1472172180",
+		"expires": "10:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472180400",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 457 remains in effect until 1000 PM CDT\u000Afor the following locations\u000A\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000AAlfalfa Beckham Blaine \u000ACuster Dewey Ellis \u000AGarfield Grant Greer \u000AHarmon Jackson Kay \u000AKingfisher Kiowa Logan \u000Amajor Noble Payne \u000ARoger Mills Washita Woods \u000AWoodward \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"009"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"034"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"033"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"036"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"035"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"020"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"010"
+		}
+		],
+		"StormBased": {
+		}
+		}
+		,
+		{
+		"type": "WAT",
+		"description": "Areal Flood Watch",
+		"date": "4:50 PM CDT on August 25, 2016",
+		"date_epoch": "1472161800",
+		"expires": "7:00 AM CDT on August 26, 2016",
+		"expires_epoch": "1472212800",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000AThe National Weather Service in Norman has issued a\u000A\u000A* Flood Advisory for...\u000A southern Roger Mills County in western Oklahoma...\u000A northwestern Custer County in western Oklahoma...\u000A southwestern Dewey County in northwestern Oklahoma...\u000A\u000A* until 745 PM CDT\u000A\u000A* at 449 PM CDT...Doppler radar indicated heavy rain due to\u000A thunderstorms. This will cause minor flooding in the advisory area.\u000A Up to one inch of rain has already fallen.\u000A\u000A* Some locations that will experience flooding include...\u000A Cheyenne...Hammon...Strong City...Moorewood and Dempsey. \u000A\u000AAdditional rainfall of one to two inches is expected over the area.\u000AThis additional rain will cause minor flooding.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AExcessive runoff from heavy rainfall will cause flooding of small\u000Acreeks and streams...urban areas...highways...streets and\u000Aunderpasses as well as other drainage areas and low lying spots.\u000ATurn around...don\u0027t drown.\u000A\u000A\u000ALat...Lon 3560 10000 3589 9918 3560 9926 3543 10000\u000A\u000A\u000AKurtz\u000A\u000A\u000A\u000A250 PM CDT Thu Aug 25 2016\u000A\u000A...Flood Watch remains in effect through Friday morning...\u000A\u000AThe Flood Watch for flash flooding...flooding of creeks and\u000Arivers...and flooding of low lying areas continues for\u000A\u000A* portions of northern Oklahoma...northwest Oklahoma and western \u000A Oklahoma...including the following areas...in northern \u000A Oklahoma...Garfield...Grant and Kay. In northwest Oklahoma... \u000A Alfalfa...Blaine...Dewey and major. In western Oklahoma... \u000A Custer and Roger Mills. \u000A\u000A* Through Friday morning\u000A\u000A* locally heavy rainfall will be possible this evening and \u000A overnight. \u000A\u000A* Localized areas of 1 to 3 inches of rainfall will be possible.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AMonitor weather forecasts and information. Make plans to get to\u000Ahigher ground if flooding happens.\u000A\u000A\u000A\u000ACms/Kurtz\u000A\u000A\u000A\u000A",
+		"phenomena": "FA",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

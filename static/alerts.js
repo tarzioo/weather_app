@@ -22,13 +22,20 @@ function getExtraAlerts() {
 
     $.get('/alerts-extra.json', function (response) {
         console.log(response);
-        
-        
-        $('#alerts-extra').html("Description: " + response.description + "<br><br><br>" +
-                                "Date: " + response.date + "<br><br>" + 
+        if (response.message !== -1) {
+            console.log("true");
+            $('#alerts-extra').html("Description: " + response.description + "<br><br><br>" +
+                                "Date: " + response.date + "<br><br>" +
+                                "Expires: " + response.expires + "<br><br>" + 
                                 "message: " + response.message);
+        }
 
+        else {
+            $('alerts-extra').html("No Active Alerts");
+        }
     });
+        
+        
 }
 
 $(document).on('ready', getAlerts);

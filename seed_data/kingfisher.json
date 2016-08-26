@@ -1,0 +1,69 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "018",
+	"alerts": [
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "7:03 PM CDT on August 24, 2016",
+		"date_epoch": "1472083380",
+		"expires": "11:00 PM CDT on August 24, 2016",
+		"expires_epoch": "1472097600",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 455 remains in effect until 1100 PM CDT\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000AAlfalfa Blaine Garfield \u000AGrant Kay Kingfisher \u000Amajor Noble \u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

@@ -1,0 +1,242 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "016",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "9:36 PM CDT on August 25, 2016",
+		"date_epoch": "1472178960",
+		"expires": "10:45 PM CDT on August 25, 2016",
+		"expires_epoch": "1472183100",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000AThe National Weather Service in Norman has issued a\u000A\u000A* Severe Thunderstorm Warning for...\u000A southeastern Roger Mills County in western Oklahoma...\u000A western Custer County in western Oklahoma...\u000A northwestern Washita County in western Oklahoma...\u000A northeastern Beckham County in western Oklahoma...\u000A southwestern Dewey County in northwestern Oklahoma...\u000A\u000A* until 1045 PM CDT\u000A\u000A* at 936 PM CDT...severe thunderstorms were located along a line\u000A extending from 7 miles north of Elk City to 5 miles north of\u000A Sayre... moving northeast at 25 mph.\u000A\u000A Hazard...70 mph wind gusts and quarter size hail. \u000A\u000A Source...radar indicated. \u000A\u000A Impact...hail damage to vehicles is expected. Expect considerable \u000A tree damage. Wind damage is also likely to Mobile homes...\u000A roofs...and outbuildings. \u000A\u000A* Locations impacted include...\u000A Elk City...Hammon...Leedey...Butler...Angora...Foss Reservoir...\u000A Moorewood and Berlin.\u000A\u000AThis includes Interstate 40 between mile markers 25 and 44.\u000A \u000APrecautionary/preparedness actions...\u000A\u000AFor your protection move to an interior room on the lowest floor of a\u000Abuilding.\u000A\u000A\u000ALat...Lon 3591 9940 3582 9895 3526 9946 3537 9980\u000Atime...Mot...loc 0236z 211deg 22kt 3552 9943 3538 9961 \u000A\u000AHail...1.00in\u000Awind...70mph\u000A \u000A\u000AWr\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"35.91",
+		"lon":"-99.40"
+		}
+		,
+		{
+		"lat":"35.82",
+		"lon":"-98.95"
+		}
+		,
+		{
+		"lat":"35.26",
+		"lon":"-99.46"
+		}
+		,
+		{
+		"lat":"35.37",
+		"lon":"-99.80"
+		}
+		],
+		"Vertex_count":4,
+		"stormInfo": {
+		"time_epoch": 1472092560,
+		"Motion_deg": 211,
+		"Motion_spd": 22,
+		"position_lat":35.52,
+		"position_lon":-99.43
+		}
+		}
+		}
+		,
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "9:43 PM CDT on August 25, 2016",
+		"date_epoch": "1472179380",
+		"expires": "10:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472180400",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 457 remains in effect until 1000 PM CDT\u000Afor the following locations\u000A\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000ABeckham Blaine Custer \u000ADewey Garfield Greer \u000AHarmon Jackson Kay \u000AKingfisher Kiowa Logan \u000ANoble Payne Roger Mills \u000AWashita \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"034"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"033"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"036"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"035"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"020"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		],
+		"StormBased": {
+		}
+		}
+		,
+		{
+		"type": "WAT",
+		"description": "Areal Flood Watch",
+		"date": "2:50 PM CDT on August 25, 2016",
+		"date_epoch": "1472154600",
+		"expires": "7:00 AM CDT on August 26, 2016",
+		"expires_epoch": "1472212800",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...Flood Watch remains in effect through Friday morning...\u000A\u000AThe Flood Watch for flash flooding...flooding of creeks and\u000Arivers...and flooding of low lying areas continues for\u000A\u000A* portions of northern Oklahoma...northwest Oklahoma and western \u000A Oklahoma...including the following areas...in northern \u000A Oklahoma...Garfield...Grant and Kay. In northwest Oklahoma... \u000A Alfalfa...Blaine...Dewey and major. In western Oklahoma... \u000A Custer and Roger Mills. \u000A\u000A* Through Friday morning\u000A\u000A* locally heavy rainfall will be possible this evening and \u000A overnight. \u000A\u000A* Localized areas of 1 to 3 inches of rainfall will be possible.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AMonitor weather forecasts and information. Make plans to get to\u000Ahigher ground if flooding happens.\u000A\u000A\u000A\u000ACms/Kurtz\u000A\u000A\u000A\u000A",
+		"phenomena": "FA",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

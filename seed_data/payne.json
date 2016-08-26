@@ -1,0 +1,44 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Payne",
+		"city": "Payne",
+		"state": "MS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "39145.3.99999",
+		"l": "/q/zmw:39145.3.99999"
+		}
+		,
+		{
+		"name": "Payne",
+		"city": "Payne",
+		"state": "OH",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "45880.1.99999",
+		"l": "/q/zmw:45880.1.99999"
+		}
+		,
+		{
+		"name": "Payne",
+		"city": "Payne",
+		"state": "VA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "23084.3.99999",
+		"l": "/q/zmw:23084.3.99999"
+		}
+		]
+	}
+}

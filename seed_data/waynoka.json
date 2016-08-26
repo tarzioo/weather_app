@@ -1,0 +1,200 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "005",
+	"alerts": [
+		{
+		"type": "WRN",
+		"description": "Severe Thunderstorm Warning",
+		"date": "7:21 PM CDT on August 25, 2016",
+		"date_epoch": "1472170860",
+		"expires": "8:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472173200",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000AThe National Weather Service in Norman has issued a\u000A\u000A* Severe Thunderstorm Warning for...\u000A southern Alfalfa County in northwestern Oklahoma...\u000A southeastern Woods County in northwestern Oklahoma...\u000A north central Major County in northwestern Oklahoma...\u000A\u000A* until 800 PM CDT\u000A\u000A* at 721 PM CDT...a severe thunderstorm was located 4 miles west of\u000A Cleo Springs...moving north at 30 mph.\u000A\u000A Hazard...60 mph wind gusts and half dollar size hail. \u000A\u000A Source...radar indicated. \u000A\u000A Impact...hail damage to vehicles is expected. Expect wind damage \u000A to roofs...siding...and trees. \u000A\u000A* Locations impacted include...\u000A Cherokee...Carmen...Cleo Springs...Aline...Dacoma...Lambert...Great Salt\u000A Plains Lake...Orienta and Ingersoll.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AFor your protection move to an interior room on the lowest floor of a\u000Abuilding.\u000A\u000A\u000ALat...Lon 3675 9818 3632 9843 3637 9865 3685 9853\u000Atime...Mot...loc 0021z 196deg 25kt 3642 9852 \u000A\u000AHail...1.25in\u000Awind...60mph\u000A \u000A\u000A11\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "W",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"36.75",
+		"lon":"-98.18"
+		}
+		,
+		{
+		"lat":"36.32",
+		"lon":"-98.43"
+		}
+		,
+		{
+		"lat":"36.37",
+		"lon":"-98.65"
+		}
+		,
+		{
+		"lat":"36.85",
+		"lon":"-98.53"
+		}
+		],
+		"Vertex_count":4,
+		"stormInfo": {
+		"time_epoch": 1472084460,
+		"Motion_deg": 196,
+		"Motion_spd": 25,
+		"position_lat":36.42,
+		"position_lon":-98.52
+		}
+		}
+		}
+		,
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "7:24 PM CDT on August 25, 2016",
+		"date_epoch": "1472171040",
+		"expires": "10:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472180400",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 457 remains in effect until 1000 PM CDT\u000Afor the following locations\u000A\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000AAlfalfa Beckham Blaine \u000ACuster Dewey Ellis \u000AGarfield Grant Greer \u000AHarmon Jackson Kay \u000AKingfisher Kiowa Logan \u000Amajor Noble Payne \u000ARoger Mills Washita Woods \u000AWoodward \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"009"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"034"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"033"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"036"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"035"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"020"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"010"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}

@@ -1,0 +1,297 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "AL",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "36501.2.99999",
+		"l": "/q/zmw:36501.2.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "QL",
+		"country": "AU",
+		"country_iso3166":"AU",
+		"country_name":"Australia",
+		"zmw": "00000.11.95487",
+		"l": "/q/zmw:00000.11.95487"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "CA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "95642.1.99999",
+		"l": "/q/zmw:95642.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "FL",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "32420.3.99999",
+		"l": "/q/zmw:32420.3.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "GA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "30233.1.99999",
+		"l": "/q/zmw:30233.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "ID",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "83350.3.99999",
+		"l": "/q/zmw:83350.3.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "IL",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "62401.4.99999",
+		"l": "/q/zmw:62401.4.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "41307.1.99999",
+		"l": "/q/zmw:41307.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "LA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "70748.1.99999",
+		"l": "/q/zmw:70748.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "ME",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "04921.2.99999",
+		"l": "/q/zmw:04921.2.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "MI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "49201.1.99999",
+		"l": "/q/zmw:49201.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "MN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "56143.1.99999",
+		"l": "/q/zmw:56143.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "MS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "39201.1.99999",
+		"l": "/q/zmw:39201.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "MO",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "63755.1.99999",
+		"l": "/q/zmw:63755.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "MT",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "59736.1.99999",
+		"l": "/q/zmw:59736.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "NE",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "68743.1.99999",
+		"l": "/q/zmw:68743.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "NH",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "03846.1.99999",
+		"l": "/q/zmw:03846.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "NJ",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "08527.1.99999",
+		"l": "/q/zmw:08527.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "NC",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "27845.1.99999",
+		"l": "/q/zmw:27845.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "OH",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "45640.1.99999",
+		"l": "/q/zmw:45640.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "PA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "18825.1.99999",
+		"l": "/q/zmw:18825.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "SC",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "29831.1.99999",
+		"l": "/q/zmw:29831.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "TN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "38301.1.99999",
+		"l": "/q/zmw:38301.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "TX",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "75954.2.99999",
+		"l": "/q/zmw:75954.2.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "WI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "53037.1.99999",
+		"l": "/q/zmw:53037.1.99999"
+		}
+		,
+		{
+		"name": "Jackson",
+		"city": "Jackson",
+		"state": "WY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "83001.1.99999",
+		"l": "/q/zmw:83001.1.99999"
+		}
+		]
+	}
+}

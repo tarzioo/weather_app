@@ -1,0 +1,190 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "019",
+	"alerts": [
+		{
+		"type": "SEW",
+		"description": "Severe Thunderstorm Watch",
+		"date": "7:24 PM CDT on August 25, 2016",
+		"date_epoch": "1472171040",
+		"expires": "10:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472180400",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000ASevere Thunderstorm Watch 457 remains in effect until 1000 PM CDT\u000Afor the following locations\u000A\u000A\u000AOK \u000A. Oklahoma counties included are\u000A\u000AAlfalfa Beckham Blaine \u000ACuster Dewey Ellis \u000AGarfield Grant Greer \u000AHarmon Jackson Kay \u000AKingfisher Kiowa Logan \u000Amajor Noble Payne \u000ARoger Mills Washita Woods \u000AWoodward \u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "SV",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"006"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"021"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"017"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"016"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"015"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"009"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"012"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"007"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"034"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"033"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"036"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"008"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"018"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"035"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"011"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"013"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"020"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"014"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"022"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"005"
+		}
+		,
+		{
+		"state":"OK",
+		"ZONE":"010"
+		}
+		],
+		"StormBased": {
+		}
+		}
+		,
+		{
+		"type": "SPE",
+		"description": "Special Statement",
+		"date": "7:28 PM CDT on August 25, 2016",
+		"date_epoch": "1472171280",
+		"expires": "8:00 PM CDT on August 25, 2016",
+		"expires_epoch": "1472173200",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...Significant weather advisory for southwestern Logan County until\u000A800 PM CDT...\u000A\u000AAt 726 PM CDT...a strong thunderstorm was located 4 miles east of\u000ACashion...moving northeast at 15 mph.\u000A\u000AHazards include...\u000Ahail up to one-half inch diameter... \u000Awind gusts to 40 mph...\u000A\u000ALocations impacted include...\u000AGuthrie...Cashion...Cedar Valley...Seward and Navina. \u000A\u000APrecautionary/preparedness actions...\u000A\u000AMonitor the weather situation closely and be alert for threatening\u000Aweather conditions.\u000A\u000A\u000ALat...Lon 3595 9745 3573 9734 3573 9765 3581 9767\u000Atime...Mot...loc 0026z 232deg 12kt 3579 9761 \u000A\u000A\u000A11\u000A\u000A\u000A728 PM CDT Thu Aug 25 2016\u000A\u000A...Significant weather advisory for southwestern Logan County until\u000A800 PM CDT...\u000A\u000AAt 726 PM CDT...a strong thunderstorm was located 4 miles east of\u000ACashion...moving northeast at 15 mph.\u000A\u000AHazards include...\u000Ahail up to one-half inch diameter... \u000Awind gusts to 40 mph...\u000A\u000ALocations impacted include...\u000AGuthrie...Cashion...Cedar Valley...Seward and Navina. \u000A\u000APrecautionary/preparedness actions...\u000A\u000AMonitor the weather situation closely and be alert for threatening\u000Aweather conditions.\u000A\u000A\u000ALat...Lon 3595 9745 3573 9734 3573 9765 3581 9767\u000Atime...Mot...loc 0026z 232deg 12kt 3579 9761 \u000A\u000A\u000A11\u000A\u000A",
+		"phenomena": "SP",
+		"significance": "S",
+		"ZONES": [
+		{
+		"state":"OK",
+		"ZONE":"019"
+		}
+		],
+		"StormBased": {
+		"vertices":[
+		{
+		"lat":"35.95",
+		"lon":"-97.45"
+		}
+		,
+		{
+		"lat":"35.73",
+		"lon":"-97.34"
+		}
+		,
+		{
+		"lat":"35.73",
+		"lon":"-97.65"
+		}
+		,
+		{
+		"lat":"35.81",
+		"lon":"-97.67"
+		}
+		],
+		"Vertex_count":4,
+		"stormInfo": {
+		"time_epoch": 1472084760,
+		"Motion_deg": 232,
+		"Motion_spd": 12,
+		"position_lat":35.79,
+		"position_lon":-97.61
+		}
+		}
+		}
+	]
+}

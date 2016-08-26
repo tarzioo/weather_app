@@ -82,7 +82,7 @@ function initialize() {
                 position: new google.maps.LatLng(update.postedLat, update.postedLng),
                 map: map,
                 title: "Posted at: ",
-                icon: '/static/img/tornado-icon.png'
+                icon: '/static/img/strangers-icon.png'
             });
 
             html = (

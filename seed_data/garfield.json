@@ -1,0 +1,143 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "AR",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "72732.1.99999",
+		"l": "/q/zmw:72732.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "GA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "30425.1.99999",
+		"l": "/q/zmw:30425.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "ID",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "83401.3.99999",
+		"l": "/q/zmw:83401.3.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "KS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "67529.1.99999",
+		"l": "/q/zmw:67529.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "40115.2.99999",
+		"l": "/q/zmw:40115.2.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "MN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "56332.1.99999",
+		"l": "/q/zmw:56332.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "NJ",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "07026.1.99999",
+		"l": "/q/zmw:07026.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "NM",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "87936.1.99999",
+		"l": "/q/zmw:87936.1.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "OR",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "97023.6.99999",
+		"l": "/q/zmw:97023.6.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "PA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "19506.2.99999",
+		"l": "/q/zmw:19506.2.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "TX",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "78617.2.99999",
+		"l": "/q/zmw:78617.2.99999"
+		}
+		,
+		{
+		"name": "Garfield",
+		"city": "Garfield",
+		"state": "WA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "99130.1.99999",
+		"l": "/q/zmw:99130.1.99999"
+		}
+		]
+	}
+}

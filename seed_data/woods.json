@@ -1,0 +1,44 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+		, "results": [
+		{
+		"name": "Woods",
+		"city": "Woods",
+		"state": "CO",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "81401.7.99999",
+		"l": "/q/zmw:81401.7.99999"
+		}
+		,
+		{
+		"name": "Woods",
+		"city": "Woods",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "40828.6.99999",
+		"l": "/q/zmw:40828.6.99999"
+		}
+		,
+		{
+		"name": "Woods",
+		"city": "Woods",
+		"state": "TX",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "75974.2.99999",
+		"l": "/q/zmw:75974.2.99999"
+		}
+		]
+	}
+}
