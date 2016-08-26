@@ -5,6 +5,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 from urllib2 import Request, urlopen, URLError
 import requests
 from pprint import pprint
+import json
 
 from model import *
 
@@ -243,12 +244,12 @@ def alerts_info():
 
 
     data = r.json()
-    pprint(data)
+    # pprint(data)
 
     alerts = {
             'apparentTemperature': data['currently']['apparentTemperature'],
             'humidity': data['currently']['humidity'],
-            'nearestStormBearing': data['currently']['nearestStormBearing'],
+            # 'nearestStormBearing': data['currently']['nearestStormBearing'],
             "nearestStormDistance": data["currently"]["nearestStormDistance"],
             "summary": data['currently']["summary"],
             # "windBearing": data["daily"]["windBearing"],
@@ -266,17 +267,52 @@ def show_additional_alerts():
     user = User.query.get(user_id)
     city = user.location.city
 
-    r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
+    data = get_alerts()
 
-    data = r.json()
-    pprint(data)
+    print "print data", data
 
     alerts = {
-            "message": data['alerts'].length if data['alerts'][0]['message'] else ''
+        "description": data["alerts"][0]["description"],
+        "date": data["alerts"][0]["date"],
+        "message": data["alerts"][0]["message"]
     }
 
 
+
+
+    # alerts = {
+    #         "message": data['alerts'].length if data['alerts'][0]['message'] else ''
+    # }
+
+
     return jsonify(alerts)
+
+
+#Comment this out to use demo api call
+def get_alerts():
+    """function loads demo api call"""
+
+    # r = requests.get('/seed_data/helena.json')
+    # r = requests.get("http://seed_data/helena.json")
+    # r = json.load(open("seed_data/helena.json"))
+    # r = request.get('seed_data/helena.json')
+    with open('seed_data/helena.json', 'r') as f:
+        data = json.load(f)
+
+    
+    # data = r.json()
+    pprint(data)
+
+    return data
+
+#Comment this out to switch from live api call to demo
+# def get_alerts(user_id):
+#     """live api call for alerts"""
+
+#     r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
+
+#     data = r.json()
+#     pprint(data)
 
 
 
