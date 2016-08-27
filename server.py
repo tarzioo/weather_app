@@ -171,8 +171,6 @@ def show_location_info():
 
     return render_template('map.html', user=user)
 
-    # return render_template('map.html', user=user)
-
 
 @app.route('/friends_map.json')
 def status_location_info():
@@ -287,26 +285,62 @@ def show_additional_alerts():
             "message": "No active Alert"
         }
 
-    # alerts = {
-    #         "message": data['alerts'].length if data['alerts'][0]['message'] else ''
-    # }
-
 
     return jsonify(alerts)
 
 
+@app.route('/alert-details.json')
+def show_type_of_alert():
+
+    user_id = session['user_id']
+    user = User.query.get(user_id)
+    city = user.location.city
+    data = get_alerts(city)
+
+    alert_details = get_alert_type_and_level(data)
+
+    alert = {
+            "alertLevel": alert_details[0],
+            "alertType": alert_details[1]
+    }
+
+    return jsonify(alert)
+
+
+
+def get_alert_type_and_level(data):
+
+    if len(data['alerts']) > 0:
+
+        alert_level_list = ["warning", "Warning", "Watch", "watch"]
+        alert_type_list = ["Thunderstorm", "thunderstorm", "Flood", "flood", "Tornado", "tornado"]
+        message = data["alerts"][0]["message"]
+        message_list = message.split(" ")
+
+        for word in message_list:
+            if word in alert_level_list:
+                alert_level = word
+            if word in alert_type_list:
+                alert_type = word
+
+
+    else:
+        message = "No Active Alerts"
+
+    return alert_level, alert_type
+
 #Comment this out to use demo api call
 
 #####################################################################
-# def get_alerts(city):
-#     """function loads demo api call"""
+def get_alerts(city):
+    """function loads demo api call"""
 
-#     with open('seed_data/helena.json', 'r') as f:
-#         data = json.load(f)
+    with open('seed_data/helena.json', 'r') as f:
+        data = json.load(f)
     
-#     pprint(data)
+    pprint(data)
 
-#     return data
+    return data
 
 
 ################################################################################
@@ -314,15 +348,16 @@ def show_additional_alerts():
 #Comment this out to switch from live api call to demo
 
 ################################################################################
-def get_alerts(city):
-    """live api call for alerts"""
+# def get_alerts(city):
+#     """live api call for alerts"""
 
-    r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
+#     r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
 
-    data = r.json()
-    pprint(data)
+#     data = r.json()
+#     pprint(data)
 
-    return data
+#     return data
+
 
 
 

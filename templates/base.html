@@ -19,6 +19,7 @@
             <button id="button-zipcode" type="button">Update Zipcode</button>
         </label>
         </p>
+        <div id="alert-details"></div>
         <br>
         <label>Post and update:
             <textarea id="post-update-field" type="text" name="update"></textarea>
@@ -34,7 +35,7 @@
         <p>{{ message }}</p>
     {% endfor %}
     <script src="http://code.jquery.com/jquery.js"></script>
-
+    <script src="/static/alertDetails.js"></script>
     {% block content %}BLOCK CONTENT HERE{% endblock %}
 
 <script src="/static/weather.js"></script>

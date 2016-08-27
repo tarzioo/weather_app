@@ -31,7 +31,7 @@ function getExtraAlerts() {
         }
 
         else {
-            $('alerts-extra').html("No Active Alerts");
+            $('#alerts-extra').html("No Active Alerts");
         }
     });
         

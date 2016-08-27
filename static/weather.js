@@ -47,7 +47,6 @@ $("#button-update").on("click", postUpdate);
 
 
 function showSearchComplete(user) {
-    alert("search completed");
     $("#friend-search").hide();
 
     $("#friend-search-results").html(
