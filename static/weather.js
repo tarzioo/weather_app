@@ -52,7 +52,7 @@ function showSearchComplete(user) {
 
     $("#friend-search-results").html(
         "We found " + user.first_name + " " + user.last_name + 
-        "<br>Did you want to add them to your friends?<br><form id='add-friend'><input id='hidden-friend' type='hidden' name='friend' value='"+user.friend_id+"'><input type='radio' name='addfriend' checked='checked' value='yes'>Yes</input><input type='radio' name='addfriend' value='no'>No</input><button id='adding-friend' type='button'>Submit</button></form>"
+        "<form id='add-friend'><input id='hidden-friend' type='hidden' name='friend' value='"+user.friend_id+"'><button id='adding-friend' type='button'>Add "+user.first_name+" to friends</button></form>"
             );
 
     console.log("finished finding friend");
