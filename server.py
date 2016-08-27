@@ -298,16 +298,15 @@ def show_additional_alerts():
 #Comment this out to use demo api call
 
 #####################################################################
-def get_alerts(city):
-    """function loads demo api call"""
+# def get_alerts(city):
+#     """function loads demo api call"""
 
-    with open('seed_data/helena.json', 'r') as f:
-        data = json.load(f)
+#     with open('seed_data/helena.json', 'r') as f:
+#         data = json.load(f)
     
-    # data = r.json()
-    pprint(data)
+#     pprint(data)
 
-    return data
+#     return data
 
 
 ################################################################################
@@ -315,15 +314,15 @@ def get_alerts(city):
 #Comment this out to switch from live api call to demo
 
 ################################################################################
-# def get_alerts(city):
-#     """live api call for alerts"""
+def get_alerts(city):
+    """live api call for alerts"""
 
-#     r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
+    r = requests.get('http://api.wunderground.com/api/3259782d34d8b902/alerts/q/OK/'+city + '.json')
 
-#     data = r.json()
-#     pprint(data)
+    data = r.json()
+    pprint(data)
 
-#     return data
+    return data
 
 
 
