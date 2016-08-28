@@ -17,6 +17,43 @@ function initialize() {
 
     });
 
+    $.get('/alert-details.json', function (alerts) {
+        //json looks like this
+        // if len(alert_details) > 1:
+        // alert = {
+        //         "alertLevel": alert_details[0],
+        //         "alertType": alert_details[1]
+        // }
+
+        // else:
+
+        //     alert = {
+        //     "message": alert_details
+        // }
+
+        var alertIcon;
+
+        if(alerts.alertType === "tornado"){
+            alertIcon = '/static/img/tornado-icon.png';
+        }
+        else if(alerts.alertType === "flood"){
+            alertIcon = '/static/img/flood-icon.png';
+        }
+        else if(alerts.alertType === "thunderstorm"){
+            alertIcon = '/static/img/thunderstorm-icon.png';
+        }
+
+        var marker;
+
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(lat, lng),
+                map: map,
+                title: alerts.alertLevel,
+                icon: alertIcon
+            });
+
+    });
+
 
     var infoWindow = new google.maps.InfoWindow({
         width: 500
@@ -95,6 +132,8 @@ function initialize() {
 
         }
     });
+
+    
     
 
     function bindInfoWindow(marker, map, infoWindow, html) {

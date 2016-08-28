@@ -299,10 +299,17 @@ def show_type_of_alert():
 
     alert_details = get_alert_type_and_level(data)
 
-    alert = {
-            "alertLevel": alert_details[0],
-            "alertType": alert_details[1]
-    }
+    if len(alert_details) > 1:
+        alert = {
+                "alertLevel": alert_details[0],
+                "alertType": alert_details[1]
+        }
+
+    else:
+
+        alert = {
+            "message": alert_details
+        }
 
     return jsonify(alert)
 
@@ -319,9 +326,9 @@ def get_alert_type_and_level(data):
 
         for word in message_list:
             if word in alert_level_list:
-                alert_level = word
+                alert_level = word.lower()
             if word in alert_type_list:
-                alert_type = word
+                alert_type = word.lower()
 
 
     else:
