@@ -298,8 +298,10 @@ def show_type_of_alert():
     data = get_alerts(city)
 
     alert_details = get_alert_type_and_level(data)
+    print "*****************************************************"
+    print "This is the length of the alert_details", alert_details
 
-    if len(alert_details) > 1:
+    if len(alert_details) > 0:
         alert = {
                 "alertLevel": alert_details[0],
                 "alertType": alert_details[1]
@@ -308,7 +310,7 @@ def show_type_of_alert():
     else:
 
         alert = {
-            "message": alert_details
+            "message": "No active alerts in your area"
         }
 
     return jsonify(alert)
@@ -330,15 +332,19 @@ def get_alert_type_and_level(data):
             if word in alert_type_list:
                 alert_type = word.lower()
 
+        print "------alert type and alert level" + alert_type +  alert_level + "-------"
+
+        return (alert_level, alert_type)
 
     else:
-        message = "No Active Alerts"
+        message = ""
 
-    return alert_level, alert_type
+    return message
+
 
 #Comment this out to use demo api call
 
-#####################################################################
+####################################################################
 def get_alerts(city):
     """function loads demo api call"""
 

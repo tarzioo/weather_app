@@ -22,8 +22,7 @@ function getExtraAlerts() {
 
     $.get('/alerts-extra.json', function (response) {
         console.log(response);
-        if (response.message !== -1) {
-            console.log("true");
+        if (response.date !== undefined) {
             $('#alerts-extra').html("Description: " + response.description + "<br><br><br>" +
                                 "Date: " + response.date + "<br><br>" +
                                 "Expires: " + response.expires + "<br><br>" + 

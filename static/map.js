@@ -30,25 +30,39 @@ function initialize() {
         //     alert = {
         //     "message": alert_details
         // }
-
         var alertIcon;
+        var titleInfo;
 
-        if(alerts.alertType === "tornado"){
-            alertIcon = '/static/img/tornado-icon.png';
+        if(alerts.alertType !== undefined){
+            console.log("it is not undefined");
+
+            if(alerts.alertType === "tornado"){
+                alertIcon = '/static/img/tornado-icon.png';
+                titleInfo = "You are here in a status of " + alerts.alertLevel;
+            }
+            else if(alerts.alertType === "flood"){
+                alertIcon = '/static/img/flood-icon.png';
+                titleInfo = "You are here in a status of " + alerts.alertLevel;
+            }
+            else if(alerts.alertType === "thunderstorm"){
+                alertIcon = '/static/img/thunderstorm-icon.png';
+                titleInfo = "You are here in a status of " + alerts.alertLevel;
+            }
         }
-        else if(alerts.alertType === "flood"){
-            alertIcon = '/static/img/flood-icon.png';
-        }
-        else if(alerts.alertType === "thunderstorm"){
-            alertIcon = '/static/img/thunderstorm-icon.png';
-        }
+
+        else {
+            console.log("it is undefined");
+            alertIcon = '/static/img/noAlert-icon.jpeg';
+            titleInfo = "You are here";
+            }
+        
 
         var marker;
 
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(lat, lng),
                 map: map,
-                title: alerts.alertLevel,
+                title: titleInfo,
                 icon: alertIcon
             });
 
