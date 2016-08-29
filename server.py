@@ -30,6 +30,7 @@ def index():
 def login():
     """Login page"""
 
+
     if request.method == "POST":
         email = request.form.get('email')
         password = request.form.get('password')
@@ -50,6 +51,7 @@ def login():
 @app.route('/register', methods=["GET", "POST"])
 def register():
     """Register new user"""
+
 
     if request.method == 'POST':
         email = request.form.get('email')
@@ -80,6 +82,7 @@ def register():
 def logout_user():
     """logout user"""
 
+
     # flash('Logged out')
     del session['user_id']
 
@@ -88,6 +91,8 @@ def logout_user():
 
 @app.route('/updates')
 def post_updates():
+    """Query the database for friends status updates and render the updates.html"""
+
 
     user_id = session['user_id']
     user = User.query.get(user_id)
@@ -114,6 +119,7 @@ def zipcode_update():
 def post_update():
     """add post to updates table"""
 
+
     user_id = session['user_id']
     post = request.form.get('post')
 
@@ -126,6 +132,7 @@ def post_update():
 def show_friends():
     """show and add friends"""
 
+
     user_id = session['user_id']
     user = User.query.get(user_id)
     friendship = Friendship.query.get(user_id)
@@ -137,6 +144,7 @@ def show_friends():
 def search_for_friend():
     """Search for a friend"""
 
+
     user_id = session['user_id']
     email = request.form.get('email')
 
@@ -144,13 +152,16 @@ def search_for_friend():
 
     user_json = {
                 'first_name': user.first_name, 'last_name': user.last_name, "friend_id": user.user_id
-
     }
 
     return jsonify(user_json)
 
+
 @app.route("/add-friend", methods=["POST"])
 def add_friend():
+    """add friendship relationship between user and friend_id from the form"""
+
+
     user_id = session['user_id']
     add_friend = request.form.get("add-friend")
     friend_id = request.form.get("friend_id")
@@ -160,8 +171,11 @@ def add_friend():
 
     return 'friend added'
 
+
 @app.route('/map')
 def show_location_info():
+    """Render the map.html"""
+
 
     user_id = session['user_id']
     user = User.query.get(user_id)
@@ -173,10 +187,9 @@ def show_location_info():
 @app.route('/friends_map.json')
 def status_location_info():
     """json info about each status location"""
-    user_id = session['user_id']
-    # user = User.query.get(user_id)
-    # friends_updates = Update.get_friends_updates(user_id)
 
+
+    user_id = session['user_id']
     friends = {
         status.update_id: {
             "userName": status.user.first_name,
@@ -187,6 +200,7 @@ def status_location_info():
             "postedLng": status.posted_lng
         }
         for status in Update.get_friends_updates(user_id)}
+
     pprint(friends)
 
     return jsonify(friends)
@@ -194,10 +208,11 @@ def status_location_info():
 
 @app.route('/strangers_map.json')
 def status_location_info_nonfriends():
+    """Query and get format json on user's friends status updates"""
+
 
     user_id = session["user_id"]
     print "user id", session["user_id"]
-    # user = User.query.get(user_id)
     result = Update.get_all_updates(user_id)
     print "result:",  result
     strangers = {
@@ -220,6 +235,7 @@ def status_location_info_nonfriends():
 def show_alerts():
     """use weather.io api to get alerts for each county"""
 
+
     user_id = session['user_id']
     user = User.query.get(user_id)
 
@@ -229,44 +245,37 @@ def show_alerts():
 
 @app.route('/alerts.json')
 def alerts_info():
+    """Use api call to get currrent weather status and format and jsonify""" 
+
 
     user_id = session['user_id']
     user = User.query.get(user_id)
     lat = str(user.location.lat)
     lng = str(user.location.lng)
 
-
     r = requests.get('https://api.forecast.io/forecast/45713f3bbbe3402dbe4aff89c61caccd/' + lat + "," + lng)
 
-
     data = r.json()
-    # pprint(data)
 
     alerts = {
             'apparentTemperature': data['currently']['apparentTemperature'],
             'humidity': data['currently']['humidity'],
-            # 'nearestStormBearing': data['currently']['nearestStormBearing'],
             "nearestStormDistance": data["currently"]["nearestStormDistance"],
-            "summary": data['currently']["summary"],
-            # "windBearing": data["daily"]["windBearing"],
-            # "windSpeed": data["daily"]["data"]["windSpeed"]
+            "summary": data['currently']["summary"],  
     }
-
 
     return jsonify(alerts)
 
 
 @app.route('/alerts-extra.json')
 def show_additional_alerts():
+    """Jsonify and return the alerts from the api call"""
+
 
     user_id = session['user_id']
     user = User.query.get(user_id)
     city = user.location.city
-
     data = get_alerts(city)
-
-    print "print data", data
-    print "this is the length of data", len(data["alerts"])
 
     if len(data["alerts"]) > 0:
 
@@ -276,9 +285,7 @@ def show_additional_alerts():
             "expires": data["alerts"][0]["expires"],
             "message": data["alerts"][0]["message"]
         }
-
     else:
-
         alerts = {
             "message": "No active Alert"
         }
@@ -289,6 +296,8 @@ def show_additional_alerts():
 
 @app.route('/alert-details.json')
 def show_type_of_alert():
+    """Jsonify and return the alertType and alertLevel"""
+
 
     user_id = session['user_id']
     user = User.query.get(user_id)
@@ -296,17 +305,13 @@ def show_type_of_alert():
     data = get_alerts(city)
 
     alert_details = get_alert_type_and_level(data)
-    print "*****************************************************"
-    print "This is the length of the alert_details", alert_details
 
     if len(alert_details) > 0:
         alert = {
                 "alertLevel": alert_details[0],
                 "alertType": alert_details[1]
         }
-
     else:
-
         alert = {
             "message": "No active alerts in your area"
         }
@@ -316,9 +321,10 @@ def show_type_of_alert():
 
 
 def get_alert_type_and_level(data):
+    """Loop through the alerts message and get the alertType and alertLevel"""
+
 
     if len(data['alerts']) > 0:
-
         alert_level_list = ["warning", "Warning", "Watch", "watch", "advisory", "Advisory"]
         alert_type_list = ["Thunderstorm", "thunderstorm", "Flood", "flood", "Tornado", "tornado"]
         message = data["alerts"][0]["message"]
@@ -330,12 +336,12 @@ def get_alert_type_and_level(data):
             if word in alert_type_list:
                 alert_type = word.lower()
 
-        print "------alert type and alert level" + alert_type +  alert_level + "-------"
 
         return (alert_level, alert_type)
 
     else:
         message = ""
+
 
     return message
 
@@ -345,6 +351,7 @@ def get_alert_type_and_level(data):
 ####################################################################
 def get_alerts(city):
     """function loads demo api call"""
+
 
     with open('seed_data/helena.json', 'r') as f:
         data = json.load(f)
@@ -368,9 +375,6 @@ def get_alerts(city):
 #     pprint(data)
 
 #     return data
-
-
-
 
 
 
