@@ -52,7 +52,7 @@ function initialize() {
 
         else {
             console.log("it is undefined");
-            alertIcon = '/static/img/noAlert-icon.jpeg';
+            alertIcon = '/static/img/no-alert-icon.png';
             titleInfo = "You are here";
             }
         
@@ -112,21 +112,21 @@ function initialize() {
             } else {
                 marker = mapKeys[update.postedLat + ',' + update.postedLng].marker;
                 html = (
-                    '<p>' + update.userName + ": " + update.post + '</p>' +
+                    '<br><p>' + update.userName + ": " + update.post + '</p>' +
                     '<p>written at: ' + update.postedAt + '</p>' +
                     '<p>from: ' + update.postedCounty + ' county</p>');
                 mapKeys[update.postedLat + ',' + update.postedLng].marker.title = "Multiple posts";
-                mapKeys[update.postedLat + ',' + update.postedLng].marker.icon = "/static/img/noAlert-icon.jpeg";
+                mapKeys[update.postedLat + ',' + update.postedLng].marker.icon = "/static/img/multiple-markers.png";
                 mapKeys[update.postedLat + ',' + update.postedLng].html +=  html;
             }
 
 
 
-            
-            
             bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
 
 
+            
+            
         }
 
         $.get('/strangers_map.json', function (strangers) {
@@ -145,25 +145,57 @@ function initialize() {
 
             for (var key in strangers) {
                 update = strangers[key];
-
                 console.log(update);
 
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(update.postedLat, update.postedLng),
-                    map: map,
-                    title: "Posted at: ",
-                    icon: '/static/img/strangers-icon.png'
-                });
 
-                html = (
-                    '<div class="window-content">' +
+                if (!mapKeys[update.postedLat + ',' + update.postedLng]) {
+
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(update.postedLat, update.postedLng),
+                        map: map,
+                        title: "Posted from: " + update.userName,
+                        icon: '/static/img/strangers-icon.png'
+                    });
+
+                    html = (
                     '<br><p>' + update.userName + ": " + update.post + '</p>' +
                     '<p>written at: ' + update.postedAt + '</p>' +
                     '<p>from: ' + update.postedCounty + '</p></div>');
 
-                bindInfoWindow(marker, map, infoWindow, html);
+                
+                    mapKeys[update.postedLat + ',' + update.postedLng] = {
+                        marker: marker,
+                        html: html
+                    };
+                } else {
+                    marker = mapKeys[update.postedLat + ',' + update.postedLng].marker;
+                    html = (
+                        '<br><p>' + update.userName + ": " + update.post + '</p>' +
+                        '<p>written at: ' + update.postedAt + '</p>' +
+                        '<p>from: ' + update.postedCounty + ' county</p>');
+                    mapKeys[update.postedLat + ',' + update.postedLng].marker.title = "Multiple posts";
+                    mapKeys[update.postedLat + ',' + update.postedLng].marker.icon = "/static/img/multiple-markers.png";
+                    mapKeys[update.postedLat + ',' + update.postedLng].html +=  html;
+                }
+
+
+
+
+
+                
+                
+
+                
+
+                bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
+
+
 
             }
+        
+
+        bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
+
         });
 
     });

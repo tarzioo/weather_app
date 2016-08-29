@@ -319,7 +319,7 @@ def get_alert_type_and_level(data):
 
     if len(data['alerts']) > 0:
 
-        alert_level_list = ["warning", "Warning", "Watch", "watch"]
+        alert_level_list = ["warning", "Warning", "Watch", "watch", "advisory", "Advisory"]
         alert_type_list = ["Thunderstorm", "thunderstorm", "Flood", "flood", "Tornado", "tornado"]
         message = data["alerts"][0]["message"]
         message_list = message.split(" ")
