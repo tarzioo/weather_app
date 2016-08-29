@@ -12,11 +12,8 @@ function getAlertDetails(evt) {
             }
             else {
                 $("#alert-details").html(response.alertType);
-
         }
-
-    });
-                
+    });                
 }
 
 $(document).on('ready', getAlertDetails);

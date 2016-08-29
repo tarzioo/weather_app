@@ -94,8 +94,6 @@ def post_updates():
     friendship_list = Friendship.get_friendship_list(user_id)
     result = Update.query.filter(Update.user_id.in_(friendship_list)).order_by('time desc').all()
 
-    #print user.location
-
     return render_template('updates.html', user=user, result=result)
 
 

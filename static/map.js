@@ -86,66 +86,90 @@ function initialize() {
         // }
         var update, marker, html;
 
+        var mapKeys = {};
+
         for (var key in friends) {
             update = friends[key];
 
-            console.log(update);
+            if (!mapKeys[update.postedLat + ',' + update.postedLng]) {
 
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(update.postedLat, update.postedLng),
-                map: map,
-                title: "Posted from: " + update.userName,
-                icon: '/static/img/friends-icon.png'
-            });
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(update.postedLat, update.postedLng),
+                    map: map,
+                    title: "Posted from: " + update.userName,
+                    icon: '/static/img/friends-icon.png'
+                });
 
-            html = (
-                '<div class="window-content">' +
-                '<p>' + update.userName + ": " + update.post + '</p>' +
-                '<p>written at: ' + update.postedAt + '</p>' +
-                '<p>from: ' + update.postedCounty + ' county</p></div>');
+                html = (
+                    '<p>' + update.userName + ": " + update.post + '</p>' +
+                    '<p>written at: ' + update.postedAt + '</p>' +
+                    '<p>from: ' + update.postedCounty + ' county</p>');
 
-            bindInfoWindow(marker, map, infoWindow, html);
+                mapKeys[update.postedLat + ',' + update.postedLng] = {
+                    marker: marker,
+                    html: html
+                };
+            } else {
+                marker = mapKeys[update.postedLat + ',' + update.postedLng].marker;
+                html = (
+                    '<p>' + update.userName + ": " + update.post + '</p>' +
+                    '<p>written at: ' + update.postedAt + '</p>' +
+                    '<p>from: ' + update.postedCounty + ' county</p>');
+                mapKeys[update.postedLat + ',' + update.postedLng].marker.title = "Multiple posts";
+                mapKeys[update.postedLat + ',' + update.postedLng].marker.icon = "/static/img/noAlert-icon.jpeg";
+                mapKeys[update.postedLat + ',' + update.postedLng].html +=  html;
+            }
+
+
+
+            
+            
+            bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
+
 
         }
+
+        $.get('/strangers_map.json', function (strangers) {
+            //json looks like this
+            // strangers = {
+                // status.update_id: {
+                //     "userName": status.user.first_name,
+                //     "post": status.post,
+                //     "postedAt": status.time,
+                //     "postedCounty": status.posted_county,
+                //     "postedLat": status.posted_lat,
+                //     "postedLng": status.posted_lng
+                // }
+
+            var update, marker, html;
+
+            for (var key in strangers) {
+                update = strangers[key];
+
+                console.log(update);
+
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(update.postedLat, update.postedLng),
+                    map: map,
+                    title: "Posted at: ",
+                    icon: '/static/img/strangers-icon.png'
+                });
+
+                html = (
+                    '<div class="window-content">' +
+                    '<br><p>' + update.userName + ": " + update.post + '</p>' +
+                    '<p>written at: ' + update.postedAt + '</p>' +
+                    '<p>from: ' + update.postedCounty + '</p></div>');
+
+                bindInfoWindow(marker, map, infoWindow, html);
+
+            }
+        });
+
     });
 
 
-   $.get('/strangers_map.json', function (strangers) {
-        //json looks like this
-        // strangers = {
-            // status.update_id: {
-            //     "userName": status.user.first_name,
-            //     "post": status.post,
-            //     "postedAt": status.time,
-            //     "postedCounty": status.posted_county,
-            //     "postedLat": status.posted_lat,
-            //     "postedLng": status.posted_lng
-            // }
-
-        var update, marker, html;
-
-        for (var key in strangers) {
-            update = strangers[key];
-
-            console.log(update);
-
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(update.postedLat, update.postedLng),
-                map: map,
-                title: "Posted at: ",
-                icon: '/static/img/strangers-icon.png'
-            });
-
-            html = (
-                '<div class="window-content">' +
-                '<br><p>' + update.userName + ": " + update.post + '</p>' +
-                '<p>written at: ' + update.postedAt + '</p>' +
-                '<p>from: ' + update.postedCounty + '</p></div>');
-
-            bindInfoWindow(marker, map, infoWindow, html);
-
-        }
-    });
+   
 
     
     
