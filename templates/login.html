@@ -5,13 +5,16 @@
 <h1>Welcome to the weather app</h1>
 
 <h1>For Existing users, please log in</h1>
-<form action='/login' method="POST">
+<form action='/login' id="login-form" method="POST">
     <label>Email (username):
-        <input type="text" name="email"></input></label><br>
+        <input type="text" id="email-length" name="email"></input></label><br>
+        <div id="error-email"></div>
     <label>Password:
         <input type="password" name="password"></input></label><br>
         <input type="submit" value="Log Me In">
 </form>
+ 
 
-{% endblock %}  
 
+
+{% endblock %} 

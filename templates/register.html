@@ -3,13 +3,14 @@
 {% block content %}
 
 <h1>New Users please register</h1>
-<form action='/register' method="POST">
+<form action='/register' id="login-form" method="POST">
     <label>First Name:
         <input type="text" name="firstname"></input></label><br>
     <label>Last Name:
         <input type="text" name="lastname"></input></label><br>   
     <label>Email (username): 
-        <input type="text" name="email"></input></label><br>
+        <input type="text" id="email-length" name="email"></input></label><br>
+        <div id="error-email"></div>
     <label>Password:
         <input type="password" name="password"></input></label><br>
     <label>Zipcode:
@@ -19,6 +20,18 @@
         <input type="radio" name="private" value=0>No</br>
     <input type="submit" value="Register Me">
 </form>
+
+<script>
+    $("#login-form").on('submit', function (evt) {
+        evt.preventDefault();
+        var emailCount = $('#email-length').val().length;
+        if (emailCount < 5) {
+            //alert("Email is too short");
+             $('#error-email').html("Email must be at least 5 characters long");
+
+        }
+    });
+</script>
 
 {% endblock %}
 
