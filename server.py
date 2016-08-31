@@ -352,7 +352,6 @@ def get_alert_type_and_level(data):
 def get_alerts(city):
     """function loads demo api call"""
 
-
     with open('seed_data/helena.json', 'r') as f:
         data = json.load(f)
     

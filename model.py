@@ -30,6 +30,7 @@ class User(db.Model):
 
     location = db.relationship("Location", backref=db.backref("users"))
 
+
     @staticmethod
     def add_user(email, password, first_name, last_name, zipcode, private):
         """Add new user"""
@@ -62,16 +63,17 @@ class User(db.Model):
 
         return user
 
+
     @staticmethod
     def update_zipcode(user_id, zipcode):
         """update existing zipcode"""
+
 
         user = User.query.filter_by(user_id=user_id).first()
         user.zipcode = zipcode
         db.session.commit()
 
         return user
-
 
 
     def __repr__(self):
@@ -123,18 +125,25 @@ class Update(db.Model):
 
     @staticmethod
     def get_friends_updates(user_id):
+        """Get user's friend updates"""
+
+
         user = User.query.get(user_id)
         friendship_list = Friendship.get_friendship_list(user_id)
         result = Update.query.filter(Update.user_id.in_(friendship_list)).all()
 
         return result
 
+
     @staticmethod
     def get_all_updates(user_id):
+        """Get all updates from all users that aren't user's friends"""
+
+
         user = User.query.get(user_id)
         friendship_list = Friendship.get_friendship_list(user_id)
         strangers = Update.query.filter(~Update.user_id.in_(friendship_list)).options(joinedload('user')).all()
-        print strangers
+
         for person in strangers:
             print "looking at person", person
             print "person stuff", dir(person)

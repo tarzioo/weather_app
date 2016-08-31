@@ -6,8 +6,7 @@ function getAlertDetails(evt) {
     var url;
 
     $.get('/alert-details.json', function (response) {
-        console.log(response);
-        
+        console.log(response);       
             if(response.alertType !== undefined){
                 if(response.alertType == "thunderstorm") {
                     url = "<img src='/static/img/thunderstorm-icon.png'/>";
@@ -23,8 +22,6 @@ function getAlertDetails(evt) {
                                             " " + response.alertLevel +
                                             url
                                             );
-
-
             }
             else {
                 $("#alert-details").html(response.alertType);

@@ -13,6 +13,7 @@ function initialize() {
         scrollable: false,
         scrollwheel: false,
         zoomControl: false,
+        styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"hue":"#00aaff"}]}]
 
 
     });
@@ -177,18 +178,9 @@ function initialize() {
                     mapKeys[update.postedLat + ',' + update.postedLng].marker.icon = "/static/img/multiple-markers.png";
                     mapKeys[update.postedLat + ',' + update.postedLng].html +=  html;
                 }
-
-
-
-
-
-                
-                
-
-                
+      
 
                 bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
-
 
 
             }
@@ -199,11 +191,6 @@ function initialize() {
         });
 
     });
-
-
-   
-
-    
     
 
     function bindInfoWindow(marker, map, infoWindow, html) {
@@ -219,3 +206,5 @@ function initialize() {
 
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+

@@ -2,9 +2,7 @@
 
 function getAlerts() {
 
-
-    $.get('/alerts.json', function (response) {
-        
+    $.get('/alerts.json', function (response) {        
         console.log(response);
         $('#alerts').html("Temperature: " + response.apparentTemperature + "<br>" +
                             "Humidity: " + response.humidity + "<br>" +
@@ -12,11 +10,9 @@ function getAlerts() {
                             "Nearest Storm Distance: " + response.nearestStormDistance + "<br>" +
                             "Summary: " + response.summary + "<br><br><br>" 
                             );  
-
     });
-
-
 }
+
 
 function getExtraAlerts() {
 
@@ -28,18 +24,14 @@ function getExtraAlerts() {
                                 "Expires: " + response.expires + "<br><br>" + 
                                 "message: " + response.message);
         }
-
         else {
             $('#alerts-extra').html("No Active Alerts");
         }
-    });
-        
-        
+    });         
 }
 
 $(document).on('ready', getAlerts);
 $(document).on('ready', getExtraAlerts);
-// });
 
 
 
