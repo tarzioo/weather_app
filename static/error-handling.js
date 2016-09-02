@@ -31,3 +31,11 @@ $("#login-form").on('submit', function (evt) {
              $('#error-password').html("*password must be longer than 4 characters");
         }
     });
+
+$("#login-form").on('submit', function (evt) {     
+        var zipcodeCount = $('#zipcode-length').val().length;
+        if (zipcodeCount != 5) {
+            evt.preventDefault();
+             $('#error-zipcode').html("*zipcode must have 5 numbers");
+        }
+    });

@@ -148,7 +148,6 @@ function initialize() {
                 update = strangers[key];
                 console.log(update);
 
-
                 if (!mapKeys[update.postedLat + ',' + update.postedLng]) {
 
                     marker = new google.maps.Marker({
@@ -186,7 +185,7 @@ function initialize() {
             }
         
 
-        bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
+        // bindInfoWindow(marker, map, infoWindow, '<div class="window-content">' + mapKeys[update.postedLat + ',' + update.postedLng].html + '</div>');
 
         });
 
