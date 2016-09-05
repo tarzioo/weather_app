@@ -2,3 +2,16 @@
   color: black;
 }
 /*# sourceMappingURL=styles.css.map */
+
+.warning {
+    background-color: orange;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+
+
+#map-contents {
+    height: 100px;
+    width: 100px;
+}

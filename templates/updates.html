@@ -7,7 +7,7 @@
 
 <ul>
     {% for item in result %}  
-        <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %H:%M:%S") }} <br>
+        <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>
             {{ item.post}} <br><b>from {{item.posted_county }} county</b></li><br>            
     {% endfor %}
 </ul>

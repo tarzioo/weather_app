@@ -4,27 +4,44 @@
 function getAlertDetails(evt) {
     evt.preventDefault();
     var url;
+    var cssClass;
 
     $.get('/alert-details.json', function (response) {
-        console.log(response);       
-            if(response.alertType !== undefined){
-                if(response.alertType == "thunderstorm") {
-                    url = "<img src='/static/img/thunderstorm-icon.png'/>";
-                }
-                else if(response.alertType == "flood") {
-                    url = "<img src='/static/img/flood-icon.png'/>";
-                }
-                else if(response.alertType == "tornado") {
-                    url = "<img src='/static/img/tornado-icon.png'/>";
-
-                }
-                $('#alert-details').html("You are in a " + response.alertType +
-                                            " " + response.alertLevel +
-                                            url
-                                            );
+        console.log(response);
+        if(response.alertLevel !== undefined){
+            if(response.alertLevel == "advisory") {
+                cssClass = "advisory";
+            } 
+            else if(response.alertLevel == "warning") {
+                cssClass = "warning";
+            } 
+            else if(response.alertLevel == "watch") {
+                cssClass = "watch";
             }
-            else {
-                $("#alert-details").html(response.alertType);
+        }
+        if(response.alertType !== undefined){
+            if(response.alertType == "thunderstorm") {
+                url = "<img src='/static/img/thunderstorm-icon.png'/>";
+                //cssClass = "thunderstorm";
+            }
+            else if(response.alertType == "flood") {
+                url = "<img src='/static/img/flood-icon.png'/>";
+               // cssClass = "flood";
+            }
+            else if(response.alertType == "tornado") {
+                url = "<img src='/static/img/tornado-icon.png'/>";
+                //cssClass = "tornado";
+
+            }
+            $('#alert-details').html("You are in a " + response.alertType +
+                                        " " + response.alertLevel +
+                                        url
+                                        );
+            $('#alert-details').attr("class", cssClass);
+        }
+
+        else {
+            $("#alert-details").html(response.alertType);
         }
     });                
 }
