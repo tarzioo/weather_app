@@ -6,34 +6,60 @@
     <link rel="stylesheet" type="text/css" href="static/styles.css">
 </head>
 <body>
-    <ul class="nav nav-pills">
-    <button type="button" class="btn btn-default navbar-btn"><a href='/'>Main Page</a></button>
 
-    {% if session['user_id'] is defined %}
-        <button><a href="/updates">Updates</a></button>
-        <button><a href="/friends">Friends</a></button>
-        <button><a href="/map">Map</a></button>
-        <button><a href="/alerts">Alerts</a></button>
-        <button><a href="/logout">Logout</a></button></br>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="/static/img/warn-me-sooner.png"/>
+                <a class="navbar-brand" href="#">Warn Me, Sooner</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Main Page</a></li>
+                    
+                    <li><a href="/updates">Updates</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">New Users, Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        {% if session['user_id'] is defined %}    
+        <button  type="button" class="btn btn-default navbar-btn"><a href="/updates">Updates</a></button>
+        <button  type="button" class="btn btn-default navbar-btn"><a href="/friends">Friends</a></button>
+        <button  type="button" class="btn btn-default navbar-btn"><a href="/map">Map</a></button>
+        <button  type="button" class="btn btn-default navbar-btn"><a href="/alerts">Alerts</a></button>
+        <button  type="button" class="btn btn-default navbar-btn"><a href="/logout">Logout</a></button></br>
         <br>
-        <p>Welcome {{ user.first_name }}, your current location is {{ user.location.city}}, {{ user.zipcode }}<br>
-        <label>Change Location to:
-            <input id="change-zipcode-field" type="text" name="zipcode">
+        <p class="navbar-zipcode">Welcome {{ user.first_name }}, your current location 
+            is {{ user.location.city}}, {{ user.zipcode }}
+            <input id="change-zipcode-field" placeholder="Update zipcode" type="text" name="zipcode">
             <button id="button-zipcode" type="button">Update Zipcode</button>
-        </label>
         </p>
         <div id="alert-details"></div>
         <br>
-        <label>Post and update:
-            <textarea id="post-update-field" type="text" name="update"></textarea>
+        <p class="navbar-update">
+            <textarea id="post-update-field" placeholder="Post Weather Update" type="text" name="update"></textarea>
             <button id="button-update" type="button">Post My Update</button>
-        </label>
+        </p>
         </form>
         </form>
-        <p>------------------------------------------------------------</p>
     {% endif %}
-
-</ul>
 
 
 
@@ -42,6 +68,7 @@
     {% endfor %}
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/alertDetails.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     {% block content %}BLOCK CONTENT HERE{% endblock %}
 
 <script src="/static/weather.js"></script>

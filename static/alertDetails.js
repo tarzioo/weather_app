@@ -5,6 +5,7 @@ function getAlertDetails(evt) {
     evt.preventDefault();
     var url;
     var cssClass;
+    var cssStorm;
 
     $.get('/alert-details.json', function (response) {
         console.log(response);
@@ -22,15 +23,15 @@ function getAlertDetails(evt) {
         if(response.alertType !== undefined){
             if(response.alertType == "thunderstorm") {
                 url = "<img src='/static/img/thunderstorm-icon.png'/>";
-                //cssClass = "thunderstorm";
+                cssStorm = "thunderstorm";
             }
             else if(response.alertType == "flood") {
                 url = "<img src='/static/img/flood-icon.png'/>";
-               // cssClass = "flood";
+               cssStorm = "flood";
             }
             else if(response.alertType == "tornado") {
                 url = "<img src='/static/img/tornado-icon.png'/>";
-                //cssClass = "tornado";
+                cssStorm = "tornado";
 
             }
             $('#alert-details').html("You are in a " + response.alertType +
