@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/styles.css">
-</head>
-<body>
+    <head>
+<!--         <meta name="viewport" content="width=device-width, initial-scale=1">
+ -->        <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
+        <!-- <link rel="stylesheet" 
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" 
+                integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous"> -->
+        <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
 
+        <link rel="stylesheet" type="text/css" href="static/styles.css">
+    </head>
+    <body>
 
+<div id="cloud"><span class='shadow'></span></div>
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -23,54 +30,71 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="/static/img/warn-me-sooner.png"/>
-                <a class="navbar-brand" href="#">Warn Me, Sooner</a>
+                <img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image">
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Main Page</a></li>
-                    
-                    <li><a href="/updates">Updates</a></li>
+                    <li><a href="/register">New Users, Register</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">New Users, Register</a></li>
+                    <li><a href="#">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-        {% if session['user_id'] is defined %}    
-        <button  type="button" class="btn btn-default navbar-btn"><a href="/updates">Updates</a></button>
-        <button  type="button" class="btn btn-default navbar-btn"><a href="/friends">Friends</a></button>
-        <button  type="button" class="btn btn-default navbar-btn"><a href="/map">Map</a></button>
-        <button  type="button" class="btn btn-default navbar-btn"><a href="/alerts">Alerts</a></button>
-        <button  type="button" class="btn btn-default navbar-btn"><a href="/logout">Logout</a></button></br>
-        <br>
-        <p class="navbar-zipcode">Welcome {{ user.first_name }}, your current location 
-            is {{ user.location.city}}, {{ user.zipcode }}
-            <input id="change-zipcode-field" placeholder="Update zipcode" type="text" name="zipcode">
-            <button id="button-zipcode" type="button">Update Zipcode</button>
-        </p>
+
+        {% if session['user_id'] is defined %}
+
+
+        <div id="logged-in-nav" class="container"><span class="shadow"></span>      
+            <div class="content">
+                <ul class="bmenu">
+                    <li><a href="/friends">Friends</a></li>
+                    <li><a href="updates">Updates</a></li>
+                    <li><a href="/map">Map</a></li>
+                    <li><a href="/alerts">Alerts</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>               
+            </div>
+        </div>
+
+
+
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                Welcome {{ user.first_name }}, your current location 
+                is {{ user.location.city}}, {{ user.zipcode }}
+                <input id="change-zipcode-field" type="text" name="zipcode" class="form-control" placeholder="Update Zipcode">
+            </div>
+            <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
+        </form>
+
+        
+            <div class="container-fluid">
+                <input id="post-update-field" type="text" name="update" class="form-control" placeholder="Post Update">
+            <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
+        </div>
+        
+
         <div id="alert-details"></div>
-        <br>
-        <p class="navbar-update">
-            <textarea id="post-update-field" placeholder="Post Weather Update" type="text" name="update"></textarea>
-            <button id="button-update" type="button">Post My Update</button>
-        </p>
-        </form>
-        </form>
-    {% endif %}
+    
+            
+        {% endif %}
 
 
 
-    {% for message in get_flashed_messages() %}
-        <p>{{ message }}</p>
-    {% endfor %}
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/static/alertDetails.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    {% block content %}BLOCK CONTENT HERE{% endblock %}
+        {% for message in get_flashed_messages() %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/static/alertDetails.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+        </script>
+        {% block content %}BLOCK CONTENT HERE{% endblock %}
+         <script src="/static/weather.js"></script>
 
-<script src="/static/weather.js"></script>
-</body>
+
+    </body>
 </html>

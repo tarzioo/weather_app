@@ -375,6 +375,31 @@ def get_alerts(city):
 
 #     return data
 
+#######################SELENIUM TESTING###################################
+
+
+# JS_TESTING_MODE = False
+
+# @app.before_request
+# def add_tests():
+#     g.jasmine_tests = JS_TESTING_MODE
+
+
+# @app.route('/')
+# def index():
+#     return render_template("homepage.html")
+
+
+# if __name__ == "__main__":
+#     import sys
+#     if sys.argv[-1] == "jstest":
+#         JS_TESTING_MODE = True
+        
+#     app.run(debug=True)
+
+
+#########################END OF SELENIUM TESTING###############################
+
 
 
 

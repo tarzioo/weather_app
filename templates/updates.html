@@ -5,14 +5,13 @@
 <h1>UPDATES</h1>
 
 
-<ul>
-    {% for item in result %}  
-        <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>
-            {{ item.post}} <br><b>from {{item.posted_county }} county</b></li><br>            
-    {% endfor %}
-</ul>
-
-
-
-{% endblock %}
+<div id="update-result" class="container-fluid">
+    <ul>
+        {% for item in result %}  
+            <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>
+                {{ item.post}} <br><b>from {{item.posted_county }} county</b></li><br>            
+        {% endfor %}
+    </ul>
+</div>
+    {% endblock %}
 

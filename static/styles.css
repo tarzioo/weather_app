@@ -1,13 +1,15 @@
-* {
-  color: black;
+.advisory {
+    background-color: yellow;
 }
-/*# sourceMappingURL=styles.css.map */
 
 .warning {
     background-color: orange;
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
+
+.severe {
+    background-color: red;
+}
+
 
 .table {
     width: 100px;
@@ -68,7 +70,6 @@ form {
     color: blue;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    color: blue;
     text-align: center;
     padding-bottom: 10px;
     margin-top: 125px;
@@ -127,15 +128,223 @@ input[type="submit"]:hover {
   animation-name: shake;
 }
 
--webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: blue;
 }
--moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder { /* Firefox 19+ */
   color: blue;
 }
--ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder { /* IE 10+ */
   color: blue;
 }
--moz-placeholder { /* Firefox 18- */
+:-moz-placeholder { /* Firefox 18- */
   color: blue;
+}
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+.bmenu{
+    padding: 50px 0px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(255,255,255,0.7);
+    width: 300px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+.bmenu:hover{
+    background: rgba(0,0,0,0.2);
+}
+.bmenu li{
+    font-size: 40px;
+    display: block;
+    line-height: 66px;
+}
+.bmenu li a{
+    white-space: nowrap;
+    color: transparent;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px #fff;
+    letter-spacing: 1px;
+    -moz-transform: scale(0.8); 
+    -ms-transform: scale(0.8); 
+    -o-transform: scale(0.8); 
+    -webkit-transform: scale(0.8); 
+    transform: scale(0.8);
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.bmenu:hover li a{
+    text-shadow: 0px 0px 10px #fff;
+}
+.bmenu li a:hover{
+    text-shadow: none;
+    color: #fff;
+    background: rgba(129,6,29,0.8);
+    -moz-transform: scale(1); 
+    -ms-transform: scale(1); 
+    -o-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1); 
+}
+
+/* STORMY */
+.stormy {
+    animation: stormy 5s ease-in-out infinite;
+    background: #222222;
+    border-radius: 50%;
+    box-shadow: 
+        #222222 65px -15px 0 -5px, 
+        #222222 25px -25px, 
+        #222222 30px 10px, 
+        #222222 60px 15px 0 -10px, 
+        #222222 85px 5px 0 -5px;
+    height: 50px;  
+    width: 50px; 
+    margin-left: -60px; 
+    position: absolute;
+    left: 947px; 
+    top: 70px; 
+}
+.stormy:after {
+    animation: stormy_shadow 5s ease-in-out infinite;
+    background: #000;
+    border-radius: 50%;
+    content: '';
+    height: 15px; 
+    width: 120px; 
+    opacity: 0.2;
+    position: absolute;
+    left: 5px; 
+    bottom: -60px;
+    transform: scale(.7);
+}
+.stormy:before {
+    animation: stormy_thunder 2s steps(1, end) infinite; 
+    border-left: 0px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 43px solid yellow; 
+    box-shadow: yellow -7px -32px;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 57px;
+    top: 70px;
+    transform: rotate(14deg);
+    transform-origin: 50% -60px;
+}
+@keyframes stormy {
+    50% { transform: translateY(-20px); } 
+}  
+@keyframes stormy_shadow {
+    50% { transform: translateY(20px) scale(1); opacity: 0.05; }
+}
+@keyframes stormy_thunder {
+    0%  { transform: rotate(20deg); opacity:1; }
+    5%  { transform: rotate(-34deg); opacity:1; }
+    10% { transform: rotate(0deg); opacity:1; }
+    15% { transform: rotate(-34deg); opacity:0; }
+}
+
+
+/*cloud shape*/
+
+#cloud {
+    width: 350px; height: 120px;
+    
+    background: gray;
+    background: linear-gradient(top, gray 5%, gray 100%);
+    background: -webkit-linear-gradient(top, gray 5%, gray 100%);
+    background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    
+    position: relative;
+    margin: 120px auto 20px;
+}
+
+#cloud:after, #cloud:before {
+    content: '';
+    position: absolute;
+    background: gray;
+    z-index: -1
+}
+
+#cloud:after {
+    width: 100px; height: 100px;
+    top: -50px; left: 50px;
+    
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#cloud:before {
+    width: 180px; height: 180px;
+    top: -90px; right: 50px;
+    
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.shadow {
+    width: 350px;
+    position: absolute; bottom: -10px; 
+    background: #000;
+    z-index: -1;
+    
+    box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+body {
+    font-family: 'Arvo', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*#logged-in-nav {
+    height: 10px;
+}*/
+
+#update-result {
+    
 }
