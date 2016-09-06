@@ -14,8 +14,7 @@
     </head>
     <body>
 
-<div id="cloud"><span class='shadow'></span></div>
-
+    {% if session['user_id'] is not defined %}
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -33,48 +32,58 @@
                 <img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image">
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Main Page</a></li>
+                <ul class="nav navbar-nav" style='padding:100px'>
+                    <li><a href="/" >Main Page</a></li>
                     <li><a href="/register">New Users, Register</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    {% endif %}
+
 
         {% if session['user_id'] is defined %}
 
+                        <div class="stormy"></div>
 
-        <div id="logged-in-nav" class="container"><span class="shadow"></span>      
-            <div class="content">
-                <ul class="bmenu">
+
+        <div class="container">     
+            <div class="row">
+                <div class="col-xs-3">
+                        <!-- My name is fred -->
+                         <a class="logo" href="/updates"><img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image"></a>
+                </div>
+               <div class="col-xs-9">
+                    <ul class="bmenu">
                     <li><a href="/friends">Friends</a></li>
-                    <li><a href="updates">Updates</a></li>
-                    <li><a href="/map">Map</a></li>
-                    <li><a href="/alerts">Alerts</a></li>
-                    <li><a href="/logout">Logout</a></li>
-                </ul>               
+                        <li><a href="updates">Updates</a></li>
+                        <li><a href="/map">Map</a></li>
+                        <li><a href="/alerts">Alerts</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>               
+                </div>
             </div>
         </div>
 
-
-
-        <form class="navbar-form navbar-left">
-            <div class="form-group">
-                Welcome {{ user.first_name }}, your current location 
-                is {{ user.location.city}}, {{ user.zipcode }}
-                <input id="change-zipcode-field" type="text" name="zipcode" class="form-control" placeholder="Update Zipcode">
-            </div>
-            <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
-        </form>
+        
+        <div id="cloud" class='shadow'>
 
         
             <div class="container-fluid">
-                <input id="post-update-field" type="text" name="update" class="form-control" placeholder="Post Update">
+                Welcome {{ user.first_name }}, your current location 
+                is {{ user.location.city}}, {{ user.zipcode }}
+                <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">        
+                <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
+            </div>
+        </div>
+        
+        <div id="cloud" class='shadow'>
+        
+            <div class="container-fluid">
+                <input id="post-update-field" type="text" name="update" placeholder="Post Update">
             <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
+            </div>
         </div>
         
 

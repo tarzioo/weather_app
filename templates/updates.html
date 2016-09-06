@@ -2,10 +2,11 @@
 {% block title %}Friends Updates{% endblock %}
 {% block content %}
 
-<h1>UPDATES</h1>
+
 
 
 <div id="update-result" class="container-fluid">
+    <h1>UPDATES</h1>
     <ul>
         {% for item in result %}  
             <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>

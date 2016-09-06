@@ -79,12 +79,12 @@ form {
 .btn {
   margin: 25px;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border: 1px solid #fff;
   text-transform: uppercase;
   letter-spacing: 0.015em;
   font-family: 'Raleway', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
   line-height: 1;
   color: blue;
@@ -100,7 +100,7 @@ form {
 }
 
 input[type="text"], input[type="password"] {
-  width: 350px;
+  width: 300px;
   padding: 10px 0px;
   background: transparent;
   border: 0;
@@ -159,13 +159,23 @@ button:active {
   transform: translateY(3px);
 }
 
+/*Logged in Nav*/
+
+.logo{
+
+    position: relative;
+    margin: 0;
+    top: 0;
+}
 
 .bmenu{
-    padding: 50px 0px;
-    margin: 0 auto;
+    /*padding: 50px 0px;*/
+    margin: 0 ;
     position: relative;
+    top: 0;
     background: rgba(255,255,255,0.7);
-    width: 300px;
+    width: 100%;
+    height: 75px;
     -webkit-border-radius: 250px;
     -moz-border-radius: 250px;
     border-radius: 250px;
@@ -179,14 +189,17 @@ button:active {
     background: rgba(0,0,0,0.2);
 }
 .bmenu li{
-    font-size: 40px;
-    display: block;
+/*    position: fixed;
+    top: 30px;*/
+    font-size: 35px;
+    display: inline;
     line-height: 66px;
+    padding: 0 5px;
 }
 .bmenu li a{
     white-space: nowrap;
     color: transparent;
-    display: block;
+    display: inline;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0px 0px 3px #fff;
@@ -341,10 +354,3 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/*#logged-in-nav {
-    height: 10px;
-}*/
-
-#update-result {
-    
-}
