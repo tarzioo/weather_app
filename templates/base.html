@@ -45,13 +45,9 @@
 
         {% if session['user_id'] is defined %}
 
-                        <div class="stormy"></div>
-
-
         <div class="container">     
             <div class="row">
                 <div class="col-xs-3">
-                        <!-- My name is fred -->
                          <a class="logo" href="/updates"><img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image"></a>
                 </div>
                <div class="col-xs-9">
@@ -65,27 +61,33 @@
                 </div>
             </div>
         </div>
+        <div class="stormy"></div>
+        <div class="rainy"></div>
 
-        
-        <div id="cloud" class='shadow'>
+    <div class="container">
+        <div class="row">   
+            <div class="col-xs-6"> 
+                <div id = "cloud"><span class='shadow'></span></div>
+            </div>        
+            <div class="col-xs-6">
+                <div id = "cloud"><span class='shadow'></span></div> 
+            </div>
+    </div>
+   
+                <div id="user-location-status">
+                    Welcome {{ user.first_name }}, your current location 
+                    is {{ user.location.city}}, {{ user.zipcode }}
+                    <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">        
+                    <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
+                </div>
 
-        
-            <div class="container-fluid">
-                Welcome {{ user.first_name }}, your current location 
-                is {{ user.location.city}}, {{ user.zipcode }}
-                <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">        
-                <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
+    
+                <div id="user-update-form" class="col-xs-6">
+                    <input id="post-update-field" type="text" name="update" placeholder="Post Update">
+                    <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
+                </div>
             </div>
-        </div>
-        
-        <div id="cloud" class='shadow'>
-        
-            <div class="container-fluid">
-                <input id="post-update-field" type="text" name="update" placeholder="Post Update">
-            <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
-            </div>
-        </div>
-        
+     
 
         <div id="alert-details"></div>
     
