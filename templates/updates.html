@@ -1,23 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Friends Updates{% endblock %}
 {% block content %}
-
-
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-offset-3 col-xs-6 div-background">
-            <h1>UPDATES</h1>
-            <ul>
-                {% for item in result %}  
-                    <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>
-                        {{ item.post}} <br><b>from {{item.posted_county }} county</b></li><br>            
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</div>
-
-    {% endblock %}
-
+    <h1>UPDATES</h1>
+    <ul>
+        {% for item in result %}
+            <li>{{ item.user.first_name }} wrote at {{ item.time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }} <br>
+            {{ item.post}} <br><b>from {{item.posted_county }} county</b></li><br>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}

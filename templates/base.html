@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-<!--         <meta name="viewport" content="width=device-width, initial-scale=1">
- -->        <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
-        <!-- <link rel="stylesheet" 
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" 
-                integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous"> -->
+        <title>{% block title %}BLOCK TITLE GOES HERE{% endblock %}</title>
+ 
         <link rel="stylesheet" 
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
-
-        <link rel="stylesheet" type="text/css" href="static/styles.css">
+         <link rel="stylesheet" type="text/css" href="static/new-styles.css">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/static/alertDetails.js"></script>
+ 
     </head>
-    <body>
 
-    {% if session['user_id'] is not defined %}
-    <nav class="navbar navbar-default">
+    <body>
+        {% if session['user_id'] is not defined %}
+        <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button"
@@ -32,9 +31,12 @@
                 <img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image">
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav" style='padding:100px'>
+                <ul class="nav navbar-nav" style='padding:60px'>
                     <li><a href="/" >Main Page</a></li>
                     <li><a href="/register">New Users, Register</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Log In</a></li>
                 </ul>
             </div>
         </div>
@@ -42,70 +44,55 @@
 
     {% endif %}
 
-
         {% if session['user_id'] is defined %}
-
-        <div class="container">     
-            <div class="row">
+        <div class="container-fluid full-height">
+            <div class="row full-height">
                 <div class="col-xs-3">
-                         <a class="logo" href="/updates"><img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image"></a>
-                </div>
-               <div class="col-xs-9">
+                    <a class="logo" href="/updates"><img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image"></a>
                     <ul class="bmenu">
-                    <li><a href="/friends">Friends</a></li>
+                        <li><a href="/friends">Friends</a></li>
                         <li><a href="updates">Updates</a></li>
                         <li><a href="/map">Map</a></li>
                         <li><a href="/alerts">Alerts</a></li>
                         <li><a href="/logout">Logout</a></li>
-                    </ul>               
+                    </ul>
+                    <div id="storm-icon">
+                    </div>               
                 </div>
-            </div>
-        </div>
-        <div class="stormy"></div>
-        <div class="rainy"></div>
-
-    <div class="container">
-        <div class="row">   
-            <div class="col-xs-6"> 
-                <div id = "cloud"><span class='shadow'></span></div>
-            </div>        
-            <div class="col-xs-6">
-                <div id = "cloud"><span class='shadow'></span></div> 
-            </div>
-    </div>
-   
-                <div id="user-location-status">
-                    Welcome {{ user.first_name }}, your current location 
-                    is {{ user.location.city}}, {{ user.zipcode }}
-                    <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">        
-                    <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
-                </div>
-
-    
-                <div id="user-update-form" class="col-xs-6">
-                    <input id="post-update-field" type="text" name="update" placeholder="Post Update">
-                    <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
-                </div>
-            </div>
-     
-
-        <div id="alert-details"></div>
-    
-            
-        {% endif %}
+                <div class="col-xs-9 full-height" id="main">
+                    
+                    <div class="row" id="status-alert">
+                        <div class="col-xs-9">
+                            <div id="user-location-status">
+                                Welcome {{ user.first_name }}, your current location 
+                                is {{ user.location.city}}, {{ user.zipcode }}
+                            </div>
+                            <div>
+                                <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">        
+                                <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
+                            </div>
+                            <div id="user-update-form">
+                                <input id="post-update-field" type="text" name="update" placeholder="Post Update">
+                                <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div id="alert-details"></div>
+                        </div>
+                    </div>
+                    <div id="content" class="row">
+                        {% endif %}
 
 
 
         {% for message in get_flashed_messages() %}
             <p>{{ message }}</p>
         {% endfor %}
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="/static/alertDetails.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
-        </script>
-        {% block content %}BLOCK CONTENT HERE{% endblock %}
-         <script src="/static/weather.js"></script>
-
-
+                        {% block content %}BLOCK CONTENT HERE{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/static/weather.js"></script>
     </body>
 </html>

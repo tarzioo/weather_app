@@ -1,17 +1,4 @@
-.advisory {
-    background: rgba(225, 225, 0, 0.5);
-    color: black;
-}
 
-.warning {
-    background: rgba(255,165,0, 0.5);
-    color: black;
-}
-
-.severe {
-    background: rgba(255, 0, 0, 0.5);
-    color: black;
-}
 
 
 .table {

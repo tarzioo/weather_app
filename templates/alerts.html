@@ -2,8 +2,7 @@
 {% block title %}Alerts{% endblock %}
 {% block content %}
 
-<div class="container">
-    <div class="row div-background">
+
     <h1>Alerts</h1>
 
     <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat={{ user.location.lat }}&lon={{ user.location.lng }}&name={{ user.location.city }}&color=#00aaff&font=Georgia&units=us"> </iframe>
@@ -11,12 +10,10 @@
     <!-- <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat={{ user.location.lat }}&lon={{ user.location.lng }}&name={{ user.location.city }}"> </iframe>
      -->
 
-    <div class="row">
-        <div id="alerts"></div>
-    <div class="row">
+    
+   
         <div id="alerts-extra"></div>
-    </div>
-</div>
+   
 <script src="/static/alerts.js"></script>
 
 {% endblock %}
