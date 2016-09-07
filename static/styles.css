@@ -20,8 +20,11 @@ body {
     height: 100%;
 }
 
+#legend {
+    background: rgba(0,0,0,0.3);
+}
 #legend img {
-    height: 20px;
+    height: 27px;
 
 }
 
@@ -42,4 +45,52 @@ body {
 .severe {
     background: rgba(255, 0, 0, 0.5);
     color: black;
+}
+
+.div-background {
+    background: rgba(0,0,0,0.3);
+
+}
+
+.logged-in-nav li a {
+    font-size: 40px;
+    color: #7AA9C1;
+}
+
+.user-info {
+    Padding: 10px;
+}
+
+#friend-search {
+    padding: 30px;
+}
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #5A0000;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+body {
+    font-family: 'Arvo', serif;
+    font-family: 'Raleway', sans-serif;
+    background: url(/static/img/clouds.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #5A0000;
+    line-height: 1.3;
+    font-size: 20px;
 }

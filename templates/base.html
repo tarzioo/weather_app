@@ -44,9 +44,9 @@
             {% if session['user_id'] is defined %}
                 <div class="container-fluid full-height">
                     <div class="row full-height">
-                        <div class="col-xs-3">
+                        <div class="col-xs-3 div-background">
                             <a class="logo" href="/updates"><img src="/static/img/warn-me-sooner.png" class="img-responsive" alt="Responsive image"></a>
-                            <ul class="bmenu">
+                            <ul class="logged-in-nav">
                                 <li><a href="/friends">Friends</a></li>
                                 <li><a href="updates">Updates</a></li>
                                 <li><a href="/map">Map</a></li>
@@ -61,14 +61,15 @@
                             <div class="row" id="status-alert">
                                 <div class="col-xs-9">
                                     <div id="user-location-status">
-                                        Welcome {{ user.first_name }}, your current location
+                                        <h3>Welcome {{ user.first_name }}, your current location
                                         is {{ user.location.city}}, {{ user.zipcode }}
+                                    </h3>
                                     </div>
-                                    <div>
+                                    <div class="user-info">
                                         <input id="change-zipcode-field" type="text" name="zipcode" placeholder="Update Zipcode">
                                         <button type="button" id="button-zipcode" class="btn btn-default">Update Zipcode</button>
                                     </div>
-                                    <div id="user-update-form">
+                                    <div class="user-info">
                                         <input id="post-update-field" type="text" name="update" placeholder="Post Update">
                                         <button id="button-update" type="button" class="btn btn-default">Post My Update</button>
                                     </div>
