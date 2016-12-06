@@ -27,6 +27,26 @@ A severe alert is the strongest alert. Events are currently happening.
 * [Bootstrap](http://getbootstrap.com/2.3.2/)
 
 
+#Login Page
+![login](static/img/login.png)
+
+#Add Friends
+![addfriends](static/img/addfriends.png)
+
+#View Friend's Updates
+![updates](static/img/updates.png)
+
+#View Status locations
+![locations](static/img/location.png)
+
+#Weekly Forecast
+![weeklyforecase](static/img/weeklyforecast.png)
+
+#Current Alerts
+![currentalerts](static/img/currentalerts.png)
+
+
+
 
 ## <a name="author"></a>Author
 Taraneh is a software engineer living in San Francisco, CA but is from Oklahoma.

@@ -1,0 +1,12 @@
+//describe your code
+describe ( 'updates.js' , function(){
+  
+  //what it should do
+  it ( 'should be informative', function(){
+      
+      //expect something 
+      expect( 
+          presentation.inform() 
+      ).toBeTruthy();
+  )};
+} );
