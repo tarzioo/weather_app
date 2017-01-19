@@ -147,10 +147,7 @@ button:active {
 body {
     font-family: 'Arvo', serif;
     font-family: 'Raleway', sans-serif;
-    background: url(/static/img/clouds.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: rgba(132, 143, 164, 0.96);
     color: #5A0000;
     line-height: 1.3;
     font-size: 20px;
