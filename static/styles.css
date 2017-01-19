@@ -166,18 +166,29 @@ body {
     display: inline-block;
 }
 
-.alert-update {
-    background-color: green;
+#alert-update-zipcode {
+    background-color: rgba(0, 153, 28, 1);
     width: 30%;
     float: right;
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
+}
+
+#alert-update-posted {
+    background-color: rgba(0, 153, 28, 1);
+    width: 30%;
+    float: right;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 
-.alert-friend-added {
-    background-color: green;
+#alert-friend-added {
+    background-color: rgba(0, 153, 28, 1);
     border-radius: 10px;
     width: 70%;
     padding: 10px;
