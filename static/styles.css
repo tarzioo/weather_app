@@ -133,6 +133,7 @@ body {
 }
 
 .btn {
+    margin-top: -5px;
     background-color: #0087cc;
 }
 
