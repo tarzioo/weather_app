@@ -132,6 +132,9 @@ body {
     15% { transform: rotate(-34deg); opacity:0; }
 }
 
+.btn {
+    background-color: #0087cc;
+}
 
 button {
   border: 0;
