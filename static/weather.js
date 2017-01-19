@@ -24,7 +24,6 @@ $("#button-zipcode").on("click", changeZipcode);
 
 
 function showNewUpdate(result) {
-    alert("New post updated");
 }
 
 function postUpdate(evt) {
@@ -66,7 +65,6 @@ function showSearchComplete(user) {
    
 
 function showFriendAdded(result) {
-    alert("Friend has been added");
 
 
 }

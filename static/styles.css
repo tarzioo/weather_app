@@ -174,3 +174,12 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+
+
+.alert-friend-added {
+    background-color: green;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+
+}
