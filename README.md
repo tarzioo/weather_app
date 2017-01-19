@@ -1,7 +1,7 @@
 # Warn Me, Sooner
 ![Warn Me, Sooner](/static/img/warn-me-sooner-large.png)
 
-Warn Me, Sooner is a web app created by Taraneh Tayaran which a social networking site for weather updates in Oklahoma. You can keep in touch in friends during severe storms and see if they are safe, you can also see what people in your area are posting about the weather conditions and if any roads might be blocked. It also feeds in alerts for your area using the wunderground api and the dark ski api.
+Warn Me, Sooner is a web app created by Taraneh BigBow which a social networking site for weather updates in Oklahoma. You can keep in touch in friends during severe storms and see if they are safe, you can also see what people in your area are posting about the weather conditions and if any roads might be blocked. It also feeds in alerts for your area using the wunderground api and the dark ski api.
 
 
 ## Table of Contents

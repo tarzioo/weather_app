@@ -33,6 +33,7 @@ body {
 }
 
 .advisory {
+    margin-top: 10px;
     border-radius: 20px;
     background: rgba(225, 225, 0, 0.5);
     color: black;
@@ -40,6 +41,7 @@ body {
 }
 
 .warning {
+    margin-top: 10px;
     border-radius: 20px;
     background: rgba(255,165,0, 0.5);
     color: black;
@@ -47,10 +49,11 @@ body {
 }
 
 .severe {
+    margin-top: 10px;
     border-radius: 20px;
     background: rgba(255, 0, 0, 0.5);
     color: black;
-    text-align: center;
+
 }
 
 .div-background {
