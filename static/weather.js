@@ -1,8 +1,7 @@
 "use strict";
 
 function showChangedZipcode(result) {
-    alert("Changed zipcode");
-
+    $('#alert-update-zipcode').css('visibility', 'visible');
 }
 
 function changeZipcode(evt) {
@@ -24,6 +23,7 @@ $("#button-zipcode").on("click", changeZipcode);
 
 
 function showNewUpdate(result) {
+    $('#alert-update-posted').css('visibility', 'visible');
 }
 
 function postUpdate(evt) {
@@ -65,6 +65,7 @@ function showSearchComplete(user) {
    
 
 function showFriendAdded(result) {
+    $('#alert-friend-added').css('visibility', 'visible');
 
 
 }

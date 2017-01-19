@@ -178,6 +178,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    visibility: hidden;
 }
 
 #alert-update-posted {
@@ -188,6 +189,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    visibility: hidden;
 }
 
 
@@ -196,5 +198,6 @@ body {
     border-radius: 10px;
     width: 70%;
     padding: 10px;
+    visibility: hidden;
 
 }
