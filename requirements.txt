@@ -40,7 +40,7 @@ simplegeneric==0.8.1
 simplejson==3.3.1
 six==1.5.2
 ssh-import-id==3.21
-urllib3==1.7.1
+urllib3==1.26.5
 virtualenv==1.11.4
 wadllib==1.3.2
 wheel==0.24.0
